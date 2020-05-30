@@ -31,8 +31,7 @@ jobs:
         run: yarn typecheck
 
       - name: Run linters
-        run: yarn lint:ts
-        run: yarn lint:css:ci
+        run: yarn lint:ts && yarn lint:css:ci
 
       - name: Run tests
         run: yarn test
