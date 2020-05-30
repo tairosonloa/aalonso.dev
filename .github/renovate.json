@@ -19,5 +19,5 @@
     "group:definitelyTyped",
     ":timezone(Europe/Madrid)"
   ],
-  "schedule": ["every saturday before 9:00 am"]
+  "schedule": ["every saturday before 9am"]
 }
