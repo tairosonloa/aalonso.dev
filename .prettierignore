@@ -1,0 +1,8 @@
+.github
+.cache
+.next
+package.json
+package-lock.json
+yarn.lock
+storybook-static
+out
