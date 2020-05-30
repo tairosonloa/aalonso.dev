@@ -1,0 +1,23 @@
+{
+  "extends": [
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":pinVersions",
+    ":semanticCommits",
+    ":renovatePrefix",
+    ":semanticPrefixChore",
+    ":prNotPending",
+    ":updateNotScheduled",
+    ":automergeDisabled",
+    ":ignoreModulesAndTests",
+    ":disableRateLimiting",
+    ":automergeDisabled",
+    ":assignAndReview(tairosonloa)",
+    ":enableVulnerabilityAlerts",
+    "group:allNonMajor",
+    "group:definitelyTyped",
+    ":timezone(Europe/Madrid)"
+  ],
+  "schedule": ["every saturday before 9:00 am"]
+}
