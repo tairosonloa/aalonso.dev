@@ -1,0 +1,5 @@
+.cache/*
+.next/*
+node_modules/*
+storybook-static/*
+src/repositories/http/swagger/schema.ts

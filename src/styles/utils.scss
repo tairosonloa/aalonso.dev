@@ -1,0 +1,17 @@
+@function grid_units($units) {
+  @return $units * 8px;
+}
+
+@function transition_all($time) {
+  @return all $time * 1ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin screenIn($device) {
+  @if $device == desktop {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  } @else {
+    @error "That device size doesn't exist";
+  }
+}
