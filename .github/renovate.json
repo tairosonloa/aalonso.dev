@@ -12,12 +12,15 @@
     ":automergeDisabled",
     ":ignoreModulesAndTests",
     ":disableRateLimiting",
-    ":automergeDisabled",
     ":assignAndReview(tairosonloa)",
     ":enableVulnerabilityAlerts",
     "group:allNonMajor",
     "group:definitelyTyped",
     ":timezone(Europe/Madrid)"
   ],
+  "updateLockFiles": true,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "schedule": ["before 9am on saturday"]
 }
