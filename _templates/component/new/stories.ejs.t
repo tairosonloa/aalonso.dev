@@ -2,6 +2,7 @@
 to: src/<%= path %>/<%= name %>/<%= name %>.stories.tsx
 ---
 import React from "react"
+import { dimensionsDecorator } from '../../../.storybook/utils/Dimensions'
 import { <%= name %> } from "./<%= name %>"
 
 export default {
@@ -10,4 +11,4 @@ export default {
   decorators: [dimensionsDecorator()],
 }
 
-export const Default = () => <<%= name %> />
+export const Default = (): JSX.Element => <<%= name %> />
