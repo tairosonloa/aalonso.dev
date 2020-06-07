@@ -1,7 +1,8 @@
 import React, { FC } from 'react'
+import { Cover } from '../components/Cover/Cover'
 
 const Index: FC = () => {
-  return <h1>Hello world!</h1>
+  return <Cover />
 }
 
 export const getServerSideProps = async (): Promise<Record<string, unknown>> =>
