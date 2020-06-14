@@ -3,7 +3,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -11,10 +10,13 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 .title,
 .subtitle {
+  padding-right: grid_units(4);
+  padding-left: grid_units(4);
   color: white;
   text-transform: uppercase;
 }

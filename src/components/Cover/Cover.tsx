@@ -8,7 +8,7 @@ export const Cover: FC = () => {
       <Text className={styles.title} textType={TextType.TITLE_BIG} htmlTag="h2">
         Aitor Alonso
       </Text>
-      <Text className={styles.subtitle} textType={TextType.PARAGRAPH_LEAD} htmlTag="h1">
+      <Text className={styles.subtitle} textType={TextType.TITLE_SMALL} htmlTag="h1">
         Full Stack Software Developer Engineer
       </Text>
     </div>
