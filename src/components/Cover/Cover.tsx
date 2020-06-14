@@ -9,7 +9,7 @@ export const Cover: FC = () => {
         Aitor Alonso
       </Text>
       <Text className={styles.subtitle} textType={TextType.PARAGRAPH_LEAD} htmlTag="h1">
-        Full Stack Software Developer Engineer and DevOps
+        Full Stack Software Developer Engineer
       </Text>
     </div>
   )
