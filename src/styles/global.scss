@@ -1,3 +1,5 @@
-/**
- * Use if we have any global rules
- */
+@import 'src/styles/palette.scss';
+
+a {
+  color: $burgundy;
+}

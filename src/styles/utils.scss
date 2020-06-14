@@ -1,5 +1,5 @@
 @function grid_units($units) {
-  @return $units * 8px;
+  @return $units * 5px;
 }
 
 @function transition_all($time) {
@@ -8,7 +8,15 @@
 
 @mixin screenIn($device) {
   @if $device == desktop {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
+      @content;
+    }
+  } @else if $device == tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $device == mobile {
+    @media screen and (max-width: 480px) {
       @content;
     }
   } @else {
