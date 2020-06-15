@@ -1,3 +1,4 @@
+import 'devicon/devicon.min.css'
 import App from 'next/app'
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
