@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "classnames": "2.2.6",
-    "devicon": "^2.2.0",
+    "devicon": "2.2.0",
     "lodash": "4.17.15",
     "next": "9.4.4",
     "react": "16.13.1",
