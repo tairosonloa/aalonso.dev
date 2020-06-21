@@ -1,0 +1,19 @@
+@import 'src/styles/utils.scss';
+@import 'src/styles/palette.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: grid_units(17) grid_units(4);
+  text-align: center;
+}
+
+.light {
+  background-color: $white;
+}
+
+.dark {
+  background-color: $grey-white;
+}

@@ -1,0 +1,49 @@
+@import 'src/styles/utils.scss';
+@import 'src/styles/palette.scss';
+
+.skillsContainer {
+  display: grid;
+  grid-gap: grid_units(15);
+  grid-template-columns: repeat(auto-fit, minmax(grid_units(50), 1fr));
+  align-items: start;
+  width: 100%;
+  max-width: grid_units(200);
+  padding-right: grid_units(4);
+  padding-left: grid_units(4);
+  text-align: center;
+}
+
+.headIcon {
+  color: $burgundy;
+  font-size: 40px;
+}
+
+.skillHeaderText {
+  margin-top: grid_units(2);
+  margin-bottom: grid_units(4);
+}
+
+.skillsLogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  & > div {
+    margin: grid_units(2);
+  }
+}
+
+.skillIcon {
+  margin-bottom: grid_units(1);
+  color: $burgundy;
+  font-size: 35px;
+}
+
+.iconWithDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

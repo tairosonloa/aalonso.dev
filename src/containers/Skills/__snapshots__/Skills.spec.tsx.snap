@@ -1,0 +1,616 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Skills/> should match the snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container light"
+      >
+        <div
+          class="container"
+        >
+          <h2
+            class="common title"
+            data-testid="section-title"
+          >
+            What I offer
+          </h2>
+          <h3
+            class="common titleSmall"
+            data-testid="section-subtitle"
+          >
+            Why you might want to work with me.
+          </h3>
+        </div>
+        <div
+          class="skillsContainer"
+        >
+          <div
+            data-testid="tech-skills"
+          >
+            <i
+              class="ri-code-box-fill icon headIcon"
+            />
+            <h4
+              class="common paragraphLead skillHeaderText"
+            >
+              Tech Skills
+            </h4>
+            <div
+              class="skillsLogos"
+            >
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-react-original icon skillIcon"
+                />
+                <span>
+                  React
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-nodejs-plain icon skillIcon"
+                />
+                <span>
+                  Node.js
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-typescript-plain icon skillIcon"
+                />
+                <span>
+                  TypeScript
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-html5-plain icon skillIcon"
+                />
+                <span>
+                  HTML 5
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-css3-plain icon skillIcon"
+                />
+                <span>
+                  CSS 3
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-python-plain icon skillIcon"
+                />
+                <span>
+                  Python 3
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-postgresql-plain icon skillIcon"
+                />
+                <span>
+                  PostgreSQL
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-mongodb-plain icon skillIcon"
+                />
+                <span>
+                  MongoDB
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-linux-plain icon skillIcon"
+                />
+                <span>
+                  Linux
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-docker-plain icon skillIcon"
+                />
+                <span>
+                  Docker
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="devicon-amazonwebservices-plain icon skillIcon"
+                />
+                <span>
+                  Amazon AWS
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            data-testid="soft-skills"
+          >
+            <i
+              class="ri-hand-heart-fill icon headIcon"
+            />
+            <h4
+              class="common paragraphLead skillHeaderText"
+            >
+              Soft Skills
+            </h4>
+            <div
+              class="skillsLogos"
+            >
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-team-fill icon skillIcon"
+                />
+                <span>
+                  Teamwork
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-chat-smile-2-fill icon skillIcon"
+                />
+                <span>
+                  Communication
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-heart-fill icon skillIcon"
+                />
+                <span>
+                  Empathy
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-questionnaire-fill icon skillIcon"
+                />
+                <span>
+                  Curiosity
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-timer-line icon skillIcon"
+                />
+                <span>
+                  Time management
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-pencil-ruler-2-line icon skillIcon"
+                />
+                <span>
+                  Problem solving
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-scales-3-line icon skillIcon"
+                />
+                <span>
+                  Accountability
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-earth-fill icon skillIcon"
+                />
+                <span>
+                  Open-mindedness
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-lightbulb-line icon skillIcon"
+                />
+                <span>
+                  Creativity
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-seedling-fill icon skillIcon"
+                />
+                <span>
+                  Adaptability
+                </span>
+              </div>
+              <div
+                class="iconWithDescription"
+              >
+                <i
+                  class="ri-run-fill icon skillIcon"
+                />
+                <span>
+                  Proactivity
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container light"
+    >
+      <div
+        class="container"
+      >
+        <h2
+          class="common title"
+          data-testid="section-title"
+        >
+          What I offer
+        </h2>
+        <h3
+          class="common titleSmall"
+          data-testid="section-subtitle"
+        >
+          Why you might want to work with me.
+        </h3>
+      </div>
+      <div
+        class="skillsContainer"
+      >
+        <div
+          data-testid="tech-skills"
+        >
+          <i
+            class="ri-code-box-fill icon headIcon"
+          />
+          <h4
+            class="common paragraphLead skillHeaderText"
+          >
+            Tech Skills
+          </h4>
+          <div
+            class="skillsLogos"
+          >
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-react-original icon skillIcon"
+              />
+              <span>
+                React
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-nodejs-plain icon skillIcon"
+              />
+              <span>
+                Node.js
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-typescript-plain icon skillIcon"
+              />
+              <span>
+                TypeScript
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-html5-plain icon skillIcon"
+              />
+              <span>
+                HTML 5
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-css3-plain icon skillIcon"
+              />
+              <span>
+                CSS 3
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-python-plain icon skillIcon"
+              />
+              <span>
+                Python 3
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-postgresql-plain icon skillIcon"
+              />
+              <span>
+                PostgreSQL
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-mongodb-plain icon skillIcon"
+              />
+              <span>
+                MongoDB
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-linux-plain icon skillIcon"
+              />
+              <span>
+                Linux
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-docker-plain icon skillIcon"
+              />
+              <span>
+                Docker
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="devicon-amazonwebservices-plain icon skillIcon"
+              />
+              <span>
+                Amazon AWS
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          data-testid="soft-skills"
+        >
+          <i
+            class="ri-hand-heart-fill icon headIcon"
+          />
+          <h4
+            class="common paragraphLead skillHeaderText"
+          >
+            Soft Skills
+          </h4>
+          <div
+            class="skillsLogos"
+          >
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-team-fill icon skillIcon"
+              />
+              <span>
+                Teamwork
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-chat-smile-2-fill icon skillIcon"
+              />
+              <span>
+                Communication
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-heart-fill icon skillIcon"
+              />
+              <span>
+                Empathy
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-questionnaire-fill icon skillIcon"
+              />
+              <span>
+                Curiosity
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-timer-line icon skillIcon"
+              />
+              <span>
+                Time management
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-pencil-ruler-2-line icon skillIcon"
+              />
+              <span>
+                Problem solving
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-scales-3-line icon skillIcon"
+              />
+              <span>
+                Accountability
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-earth-fill icon skillIcon"
+              />
+              <span>
+                Open-mindedness
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-lightbulb-line icon skillIcon"
+              />
+              <span>
+                Creativity
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-seedling-fill icon skillIcon"
+              />
+              <span>
+                Adaptability
+              </span>
+            </div>
+            <div
+              class="iconWithDescription"
+            >
+              <i
+                class="ri-run-fill icon skillIcon"
+              />
+              <span>
+                Proactivity
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

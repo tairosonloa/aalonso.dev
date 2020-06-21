@@ -1,0 +1,16 @@
+@import 'src/styles/utils.scss';
+@import 'src/styles/palette.scss';
+
+.image {
+  width: grid_units(34);
+  height: grid_units(34);
+  padding: grid_units(4);
+  border-radius: 50%;
+}
+
+.bio {
+  max-width: grid_units(160);
+  padding-right: grid_units(4);
+  padding-left: grid_units(4);
+  text-align: center;
+}

@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
-import { Bio } from '../components/Bio/Bio'
-import { Cover } from '../components/Cover/Cover'
-import { Skills } from '../components/Skills/Skills'
+import { Bio } from '../containers/Bio/Bio'
+import { Cover } from '../containers/Cover/Cover'
+import { Skills } from '../containers/Skills/Skills'
 
 const Index: FC = () => {
   return (
