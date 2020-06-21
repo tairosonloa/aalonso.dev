@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import React, { CSSProperties, FC, ReactHTML } from 'react'
+import sanitize from 'sanitize-html'
 import styles from './Text.module.scss'
 
 type TextProps = {
@@ -7,6 +8,7 @@ type TextProps = {
   className?: string
   style?: CSSProperties
   htmlTag?: keyof ReactHTML
+  innerHtml?: string
 }
 
 export enum TextType {
@@ -35,8 +37,17 @@ export const Text: FC<TextProps> = ({
   className,
   style,
   htmlTag,
+  innerHtml,
   ...props
 }) => {
+  if (innerHtml) {
+    return React.createElement(htmlTag || TextTypeToHtmlTag[textType], {
+      className: classNames(styles.common, styles[textType], className),
+      style,
+      dangerouslySetInnerHTML: { __html: sanitize(innerHtml) },
+      ...props,
+    })
+  }
   return React.createElement(
     htmlTag || TextTypeToHtmlTag[textType],
     {

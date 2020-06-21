@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { Bio } from '../containers/Bio/Bio'
+import { Career } from '../containers/Career/Career'
 import { Cover } from '../containers/Cover/Cover'
 import { Skills } from '../containers/Skills/Skills'
 
@@ -9,6 +10,7 @@ const Index: FC = () => {
       <Cover />
       <Bio />
       <Skills />
+      <Career />
     </>
   )
 }
