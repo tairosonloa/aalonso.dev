@@ -4,7 +4,7 @@
 .skillsContainer {
   display: grid;
   grid-gap: grid_units(15);
-  grid-template-columns: repeat(auto-fit, minmax(grid_units(50), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(grid_units(76), 1fr));
   align-items: start;
   width: 100%;
   max-width: grid_units(200);
@@ -27,8 +27,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: grid_units(100);
+  margin: auto;
 
   & > div {
     margin: grid_units(2);
