@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 import { dimensionsDecorator } from '../../../../.storybook/utils/Dimensions'
-import { Text, TextType } from './Text'
+import { Typography, TypographyType } from './Typography'
 
 export default {
-  title: 'Common|DataDisplay/Text',
-  component: Text,
+  title: 'Common|DataDisplay/Typography',
+  component: Typography,
   decorators: [dimensionsDecorator()],
 }
 
@@ -44,9 +44,9 @@ export const Default = (): JSX.Element => {
             />
           </td>
           <td>
-            <Text textType={TextType.TITLE_BIG}>
+            <Typography typographyType={TypographyType.TITLE_BIG}>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
-            </Text>
+            </Typography>
           </td>
         </tr>
         <tr>
@@ -60,10 +60,10 @@ export const Default = (): JSX.Element => {
             />
           </td>
           <td>
-            <Text textType={TextType.TITLE}>
+            <Typography typographyType={TypographyType.TITLE}>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
               nec elit.
-            </Text>
+            </Typography>
           </td>
         </tr>
         <tr>
@@ -77,11 +77,11 @@ export const Default = (): JSX.Element => {
             />
           </td>
           <td>
-            <Text textType={TextType.TITLE_SMALL}>
+            <Typography typographyType={TypographyType.TITLE_SMALL}>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
               nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
               tempus porttitor.
-            </Text>
+            </Typography>
           </td>
         </tr>
         <tr>
@@ -95,11 +95,11 @@ export const Default = (): JSX.Element => {
             />
           </td>
           <td>
-            <Text textType={TextType.PARAGRAPH_LEAD}>
+            <Typography typographyType={TypographyType.PARAGRAPH_LEAD}>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
               nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
               tempus porttitor. Maecenas faucibus mollis interdum.
-            </Text>
+            </Typography>
           </td>
         </tr>
         <tr>
@@ -113,11 +113,11 @@ export const Default = (): JSX.Element => {
             />
           </td>
           <td>
-            <Text textType={TextType.PARAGRAPH}>
+            <Typography typographyType={TypographyType.PARAGRAPH}>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
               nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
               tempus porttitor. Maecenas faucibus mollis interdum.
-            </Text>
+            </Typography>
           </td>
         </tr>
         <tr>
@@ -131,13 +131,13 @@ export const Default = (): JSX.Element => {
             />
           </td>
           <td>
-            <Text textType={TextType.PARAGRAPH_SMALL}>
+            <Typography typographyType={TypographyType.PARAGRAPH_SMALL}>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
               nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
               tempus porttitor. Maecenas faucibus mollis interdum. elit. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Curabitur blandit tempus porttitor. Maecenas faucibus
               mollis interdum.
-            </Text>
+            </Typography>
           </td>
         </tr>
         <tr>
@@ -151,13 +151,13 @@ export const Default = (): JSX.Element => {
             />
           </td>
           <td>
-            <Text textType={TextType.FOOTNOTE}>
+            <Typography typographyType={TypographyType.FOOTNOTE}>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
               nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit
               tempus porttitor. Maecenas faucibus mollis interdum. elit. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Curabitur blandit tempus porttitor. Maecenas faucibus
               mollis interdum.
-            </Text>
+            </Typography>
           </td>
         </tr>
       </tbody>

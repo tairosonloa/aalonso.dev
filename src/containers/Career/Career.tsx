@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import React, { FC } from 'react'
 import { SectionContainer } from '../../components/DataDisplays/SectionContainer/SectionContainer'
 import { SectionHeader } from '../../components/DataDisplays/SectionHeader/SectionHeader'
-import { Text, TextType } from '../../components/DataDisplays/Text/Text'
+import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
 import styles from './Career.module.scss'
 
 const career = [
@@ -52,9 +52,9 @@ export const Career: FC = () => {
           <li className={styles.step} key={step.title}>
             <img src={step.imageUrl} alt="" className={styles.stepImage} />
             <div className={classNames(styles.stepText, index % 2 ? styles.right : styles.left)}>
-              <Text textType={TextType.PARAGRAPH_LEAD}>{step.date}</Text>
-              <Text textType={TextType.PARAGRAPH_LEAD}>{step.title}</Text>
-              <Text innerHtml={step.description} />
+              <Typography typographyType={TypographyType.PARAGRAPH_LEAD}>{step.date}</Typography>
+              <Typography typographyType={TypographyType.PARAGRAPH_LEAD}>{step.title}</Typography>
+              <Typography innerHtml={step.description} />
             </div>
           </li>
         ))}

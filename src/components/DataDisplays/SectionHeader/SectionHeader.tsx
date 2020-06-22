@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Text, TextType } from '../Text/Text'
+import { Typography, TypographyType } from '../Typography/Typography'
 import styles from './SectionHeader.module.scss'
 
 type SectionHeaderProps = {
@@ -10,12 +10,12 @@ type SectionHeaderProps = {
 export const SectionHeader: FC<SectionHeaderProps> = ({ title, subtitle }) => {
   return (
     <div className={styles.container}>
-      <Text data-testid="section-title" textType={TextType.TITLE}>
+      <Typography data-testid="section-title" typographyType={TypographyType.TITLE}>
         {title}
-      </Text>
-      <Text data-testid="section-subtitle" textType={TextType.TITLE_SMALL}>
+      </Typography>
+      <Typography data-testid="section-subtitle" typographyType={TypographyType.TITLE_SMALL}>
         {subtitle}
-      </Text>
+      </Typography>
     </div>
   )
 }

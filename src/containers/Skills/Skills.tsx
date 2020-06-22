@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { SectionContainer } from '../../components/DataDisplays/SectionContainer/SectionContainer'
 import { SectionHeader } from '../../components/DataDisplays/SectionHeader/SectionHeader'
-import { Text, TextType } from '../../components/DataDisplays/Text/Text'
+import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
 import { DevIcon, DevIconName } from '../../components/Icons/DevIcon/DevIcon'
 import { IconName, RemixIcon } from '../../components/Icons/RemixIcon/RemixIcon'
 import styles from './Skills.module.scss'
@@ -41,9 +41,12 @@ export const Skills: FC = () => {
       <div className={styles.skillsContainer}>
         <div data-testid="tech-skills">
           <RemixIcon name={IconName.TECH_SKILLS} className={styles.headIcon} />
-          <Text textType={TextType.PARAGRAPH_LEAD} className={styles.skillHeaderText}>
+          <Typography
+            typographyType={TypographyType.PARAGRAPH_LEAD}
+            className={styles.skillHeaderText}
+          >
             Tech Skills
-          </Text>
+          </Typography>
           <div className={styles.skillsLogos}>
             {techSkills.map((skill) => (
               <div className={styles.iconWithDescription} key={skill.name}>
@@ -55,9 +58,12 @@ export const Skills: FC = () => {
         </div>
         <div data-testid="soft-skills">
           <RemixIcon name={IconName.SOFT_SKILLS} className={styles.headIcon} />
-          <Text textType={TextType.PARAGRAPH_LEAD} className={styles.skillHeaderText}>
+          <Typography
+            typographyType={TypographyType.PARAGRAPH_LEAD}
+            className={styles.skillHeaderText}
+          >
             Soft Skills
-          </Text>
+          </Typography>
           <div className={styles.skillsLogos}>
             {softSkills.map((skill) => (
               <div className={styles.iconWithDescription} key={skill.name}>
