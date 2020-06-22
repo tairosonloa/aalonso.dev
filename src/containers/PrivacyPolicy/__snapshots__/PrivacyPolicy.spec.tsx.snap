@@ -1,0 +1,726 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PrivacyPolicy/> should match the snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container"
+      >
+        <h1
+          class="common titleBig title"
+        >
+          Privacy Policy
+        </h1>
+        <h4
+          class="common paragraphLead lastModifiedDate"
+        >
+          Last modification: June 22, 2020
+        </h4>
+        <p
+          class="common paragraph"
+        >
+          I take your privacy seriously. To better protect your privacy I provide this privacy policy notice explaining the way your personal information is collected and used. By using this website, you agree to the collection and use of information in accordance with this policy.
+        </p>
+        <h2
+          class="common title title"
+        >
+          Information Collection And Use
+        </h2>
+        <h4
+          class="common paragraphLead title"
+        >
+          Personal Data
+        </h4>
+        <p
+          class="common paragraph"
+        >
+          I am the Responsible for the user's personal data treatment and informs that this data will be handled according to the disposed in the current personal data protection regulations, the 2016/679 UE Regulation of 27 April 2016 (GDPR) related to the protection of natural persons regarding personal data treatment and the free circulation of this data, and the 3/2018 Organic Law of 5 December, about personal data protection and digital rights guarantee (LOPDGDD)
+        </p>
+        <p
+          class="common paragraph"
+        >
+          While using my website, I may ask you to provide me with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
+        </p>
+        <p
+          class="common paragraph"
+        >
+          <ul>
+            <li>
+              Email address
+            </li>
+            <li>
+              Cookies
+            </li>
+            <li>
+              Usage Data
+            </li>
+          </ul>
+        </p>
+        <p
+          class="common paragraph"
+        >
+          I may also collect information how the website is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of my website that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+        </p>
+        <h4
+          class="common paragraphLead title"
+        >
+          Tracking & Cookies Data
+        </h4>
+        <p
+          class="common paragraph"
+        >
+          I use cookies and similar tracking technologies to track the activity on my website and hold certain information.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze my website.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of my website.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          <strong>
+            Examples of Cookies I use:
+          </strong>
+          <ul>
+            <li>
+              Preference Cookies. I use Preference Cookies to remember your preferences and various settings.
+            </li>
+            <li>
+              Analytics Cookies. I use Analytics Cookies to improve the website performance.
+            </li>
+            <li>
+              Security Cookies. I use Security Cookies for security purposes.
+            </li>
+          </ul>
+        </p>
+        <h2
+          class="common title title"
+        >
+          User rights
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          Consent can be withdrawn at any time. You have the right to access, request correction or erasure of your personal information, as well as the limitation or opposition of its treatment. You can exercise your rights by sending me an email to
+           
+          <a
+            href="mailto:aitor.alonso.nunez@gmail.com?subject=aalonso.dev Privacy"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            aitor.alonso.nunez@gmail.com
+          </a>
+          .
+        </p>
+        <h2
+          class="common title title"
+        >
+          Use of Data
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          I use the collected data for various purposes:
+        </p>
+        <p
+          class="common paragraph"
+        >
+          <ul>
+            <li>
+              To provide and maintain the website.
+            </li>
+            <li>
+              To notify you about changes to my website.
+            </li>
+            <li>
+              To allow you to participate in interactive features of my website when you choose to do so.
+            </li>
+            <li>
+              To provide analysis or valuable information so that I can improve the website.
+            </li>
+            <li>
+              To monitor the usage of the website to detect, prevent and address technical issues.
+            </li>
+          </ul>
+        </p>
+        <h2
+          class="common title title"
+        >
+          Transfer of Data
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          If you are located outside Spain and choose to provide information to me, please note that I transfer the data, including Personal Data, to Spain and process it there.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          I will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
+        </p>
+        <h2
+          class="common title title"
+        >
+          Legal Warning
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          I reserve the right to modify, at any time and without prior notice, the configuration and contents of this website. The information on this website is provided without warranty of any kind, either expressed or implied, and may be changed or updated without prior notice. The user compromises not to undertake in any conduct that could damage the interests and rights of me or third parties. All the information received by me through this website will not be considered confidential, except for the one included in the data confidentiality section.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          I do not assume any responsibility derived from the contents that third parties have included in the hyperlinks showcased in this page. The establishment of the hyperlink does not imply in any case the existence of a relationship between me and the owner of the website in which it is established, neither the acceptance and approval from me of its contents nor services offered there in public disposition.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          It is expressly forbidden any alteration, change, modification or adaptation of this website or any information that it contains.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          I am not liable for any loss or damage arising from access to its website or the use of information or applications contained therein. Likewise, it is not responsible, neither guarantees the availability and continuity in access to this website nor that it is free of errors. The user will be liable for damages and losses of any nature that I may suffer as a result of the breach of any of the obligations to which it is subject by these conditions.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          Any change in my policy will be communicated to you promptly and updates will be published on my website.
+        </p>
+        <h2
+          class="common title title"
+        >
+          Legal Requirements
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          I may disclose your Personal Data in the good faith belief that such action is necessary to:
+        </p>
+        <p
+          class="common paragraph"
+        >
+          <ul>
+            <li>
+              To comply with a legal obligation to protect and defend the rights or property of me.
+            </li>
+            <li>
+              To prevent or investigate possible wrongdoing in connection with the website.
+            </li>
+            <li>
+              To protect the personal safety of users of the website or the public.
+            </li>
+            <li>
+              To protect against legal liability.
+            </li>
+          </ul>
+        </p>
+        <h2
+          class="common title title"
+        >
+          Security Of Data
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          The security of your data is important to me, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While I strive to use commercially acceptable means to protect your Personal Data, I cannot guarantee its absolute security.
+        </p>
+        <h2
+          class="common title title"
+        >
+          Service Providers
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          I may employ third party companies and individuals to facilitate my website ("website Providers"), to provide the website on my behalf, to perform website-related services or to assist me in analyzing how my website is used.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          These third parties have access to your Personal Data only to perform these tasks on my behalf and are obligated not to disclose or use it for any other purpose. Please note that these providers may transfer the data, including Personal Data, to external countries where their server are located.
+        </p>
+        <h2
+          class="common title title"
+        >
+          Analytics
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          I may use third-party website Providers to monitor and analyze the use of my website.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          <strong>
+            Google Analytics
+          </strong>
+           - Google Analytics is a web traffic analysis tool. You can read the Privacy Policy for Statcounter here:
+           
+          <a
+            href="https://policies.google.com/privacy"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            https://policies.google.com/privacy
+          </a>
+        </p>
+        <h2
+          class="common title title"
+        >
+          Links to Other Sites
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          My website may contain links to other sites that are not operated by me. If you click on a third party link, you will be directed to that third party's site. I strongly advise you to review the Privacy Policy of every site you visit.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          I have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+        </p>
+        <h2
+          class="common title title"
+        >
+          Children's Privacy
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          My website does not address anyone under the age of 18 ("Children").
+        </p>
+        <p
+          class="common paragraph"
+        >
+          I do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided me with Personal Data, please contact me. If I become aware that I have collected Personal Data from children without verification of parental consent, I take steps to remove that information from my servers.
+        </p>
+        <h2
+          class="common title title"
+        >
+          Changes to This Privacy Policy
+        </h2>
+        <p
+          class="common paragraph"
+        >
+          I may update my Privacy Policy from time to time. I will notify you of any changes by posting the new Privacy Policy on this page.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          I will let you know via email and/or a prominent notice on my website, prior to the change becoming effective and update the "effective date" at the top of this Privacy Policy.
+        </p>
+        <p
+          class="common paragraph"
+        >
+          You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container"
+    >
+      <h1
+        class="common titleBig title"
+      >
+        Privacy Policy
+      </h1>
+      <h4
+        class="common paragraphLead lastModifiedDate"
+      >
+        Last modification: June 22, 2020
+      </h4>
+      <p
+        class="common paragraph"
+      >
+        I take your privacy seriously. To better protect your privacy I provide this privacy policy notice explaining the way your personal information is collected and used. By using this website, you agree to the collection and use of information in accordance with this policy.
+      </p>
+      <h2
+        class="common title title"
+      >
+        Information Collection And Use
+      </h2>
+      <h4
+        class="common paragraphLead title"
+      >
+        Personal Data
+      </h4>
+      <p
+        class="common paragraph"
+      >
+        I am the Responsible for the user's personal data treatment and informs that this data will be handled according to the disposed in the current personal data protection regulations, the 2016/679 UE Regulation of 27 April 2016 (GDPR) related to the protection of natural persons regarding personal data treatment and the free circulation of this data, and the 3/2018 Organic Law of 5 December, about personal data protection and digital rights guarantee (LOPDGDD)
+      </p>
+      <p
+        class="common paragraph"
+      >
+        While using my website, I may ask you to provide me with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
+      </p>
+      <p
+        class="common paragraph"
+      >
+        <ul>
+          <li>
+            Email address
+          </li>
+          <li>
+            Cookies
+          </li>
+          <li>
+            Usage Data
+          </li>
+        </ul>
+      </p>
+      <p
+        class="common paragraph"
+      >
+        I may also collect information how the website is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of my website that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+      </p>
+      <h4
+        class="common paragraphLead title"
+      >
+        Tracking & Cookies Data
+      </h4>
+      <p
+        class="common paragraph"
+      >
+        I use cookies and similar tracking technologies to track the activity on my website and hold certain information.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze my website.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of my website.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        <strong>
+          Examples of Cookies I use:
+        </strong>
+        <ul>
+          <li>
+            Preference Cookies. I use Preference Cookies to remember your preferences and various settings.
+          </li>
+          <li>
+            Analytics Cookies. I use Analytics Cookies to improve the website performance.
+          </li>
+          <li>
+            Security Cookies. I use Security Cookies for security purposes.
+          </li>
+        </ul>
+      </p>
+      <h2
+        class="common title title"
+      >
+        User rights
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        Consent can be withdrawn at any time. You have the right to access, request correction or erasure of your personal information, as well as the limitation or opposition of its treatment. You can exercise your rights by sending me an email to
+         
+        <a
+          href="mailto:aitor.alonso.nunez@gmail.com?subject=aalonso.dev Privacy"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          aitor.alonso.nunez@gmail.com
+        </a>
+        .
+      </p>
+      <h2
+        class="common title title"
+      >
+        Use of Data
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        I use the collected data for various purposes:
+      </p>
+      <p
+        class="common paragraph"
+      >
+        <ul>
+          <li>
+            To provide and maintain the website.
+          </li>
+          <li>
+            To notify you about changes to my website.
+          </li>
+          <li>
+            To allow you to participate in interactive features of my website when you choose to do so.
+          </li>
+          <li>
+            To provide analysis or valuable information so that I can improve the website.
+          </li>
+          <li>
+            To monitor the usage of the website to detect, prevent and address technical issues.
+          </li>
+        </ul>
+      </p>
+      <h2
+        class="common title title"
+      >
+        Transfer of Data
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        If you are located outside Spain and choose to provide information to me, please note that I transfer the data, including Personal Data, to Spain and process it there.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        I will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
+      </p>
+      <h2
+        class="common title title"
+      >
+        Legal Warning
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        I reserve the right to modify, at any time and without prior notice, the configuration and contents of this website. The information on this website is provided without warranty of any kind, either expressed or implied, and may be changed or updated without prior notice. The user compromises not to undertake in any conduct that could damage the interests and rights of me or third parties. All the information received by me through this website will not be considered confidential, except for the one included in the data confidentiality section.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        I do not assume any responsibility derived from the contents that third parties have included in the hyperlinks showcased in this page. The establishment of the hyperlink does not imply in any case the existence of a relationship between me and the owner of the website in which it is established, neither the acceptance and approval from me of its contents nor services offered there in public disposition.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        It is expressly forbidden any alteration, change, modification or adaptation of this website or any information that it contains.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        I am not liable for any loss or damage arising from access to its website or the use of information or applications contained therein. Likewise, it is not responsible, neither guarantees the availability and continuity in access to this website nor that it is free of errors. The user will be liable for damages and losses of any nature that I may suffer as a result of the breach of any of the obligations to which it is subject by these conditions.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        Any change in my policy will be communicated to you promptly and updates will be published on my website.
+      </p>
+      <h2
+        class="common title title"
+      >
+        Legal Requirements
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        I may disclose your Personal Data in the good faith belief that such action is necessary to:
+      </p>
+      <p
+        class="common paragraph"
+      >
+        <ul>
+          <li>
+            To comply with a legal obligation to protect and defend the rights or property of me.
+          </li>
+          <li>
+            To prevent or investigate possible wrongdoing in connection with the website.
+          </li>
+          <li>
+            To protect the personal safety of users of the website or the public.
+          </li>
+          <li>
+            To protect against legal liability.
+          </li>
+        </ul>
+      </p>
+      <h2
+        class="common title title"
+      >
+        Security Of Data
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        The security of your data is important to me, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While I strive to use commercially acceptable means to protect your Personal Data, I cannot guarantee its absolute security.
+      </p>
+      <h2
+        class="common title title"
+      >
+        Service Providers
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        I may employ third party companies and individuals to facilitate my website ("website Providers"), to provide the website on my behalf, to perform website-related services or to assist me in analyzing how my website is used.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        These third parties have access to your Personal Data only to perform these tasks on my behalf and are obligated not to disclose or use it for any other purpose. Please note that these providers may transfer the data, including Personal Data, to external countries where their server are located.
+      </p>
+      <h2
+        class="common title title"
+      >
+        Analytics
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        I may use third-party website Providers to monitor and analyze the use of my website.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        <strong>
+          Google Analytics
+        </strong>
+         - Google Analytics is a web traffic analysis tool. You can read the Privacy Policy for Statcounter here:
+         
+        <a
+          href="https://policies.google.com/privacy"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          https://policies.google.com/privacy
+        </a>
+      </p>
+      <h2
+        class="common title title"
+      >
+        Links to Other Sites
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        My website may contain links to other sites that are not operated by me. If you click on a third party link, you will be directed to that third party's site. I strongly advise you to review the Privacy Policy of every site you visit.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        I have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+      </p>
+      <h2
+        class="common title title"
+      >
+        Children's Privacy
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        My website does not address anyone under the age of 18 ("Children").
+      </p>
+      <p
+        class="common paragraph"
+      >
+        I do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided me with Personal Data, please contact me. If I become aware that I have collected Personal Data from children without verification of parental consent, I take steps to remove that information from my servers.
+      </p>
+      <h2
+        class="common title title"
+      >
+        Changes to This Privacy Policy
+      </h2>
+      <p
+        class="common paragraph"
+      >
+        I may update my Privacy Policy from time to time. I will notify you of any changes by posting the new Privacy Policy on this page.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        I will let you know via email and/or a prominent notice on my website, prior to the change becoming effective and update the "effective date" at the top of this Privacy Policy.
+      </p>
+      <p
+        class="common paragraph"
+      >
+        You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
