@@ -42,7 +42,7 @@ export const PrivacyPolicy: FC = () => {
         information that can be used to contact or identify you (&quot;Personal Data&quot;).
         Personally identifiable information may include, but is not limited to:
       </Typography>
-      <Typography>
+      <Typography htmlTag="div">
         <ul>
           <li>Email address</li>
           <li>Cookies</li>
@@ -76,6 +76,8 @@ export const PrivacyPolicy: FC = () => {
       </Typography>
       <Typography>
         <strong>Examples of Cookies I use:</strong>
+      </Typography>
+      <Typography htmlTag="div">
         <ul>
           <li>
             Preference Cookies. I use Preference Cookies to remember your preferences and various
@@ -107,7 +109,7 @@ export const PrivacyPolicy: FC = () => {
         Use of Data
       </Typography>
       <Typography>I use the collected data for various purposes:</Typography>
-      <Typography>
+      <Typography htmlTag="div">
         <ul>
           <li>To provide and maintain the website.</li>
           <li>To notify you about changes to my website.</li>
@@ -186,7 +188,7 @@ export const PrivacyPolicy: FC = () => {
       <Typography>
         I may disclose your Personal Data in the good faith belief that such action is necessary to:
       </Typography>
-      <Typography>
+      <Typography htmlTag="div">
         <ul>
           <li>
             To comply with a legal obligation to protect and defend the rights or property of me.

@@ -43,7 +43,7 @@ Object {
         >
           While using my website, I may ask you to provide me with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
         </p>
-        <p
+        <div
           class="common paragraph"
         >
           <ul>
@@ -57,7 +57,7 @@ Object {
               Usage Data
             </li>
           </ul>
-        </p>
+        </div>
         <p
           class="common paragraph"
         >
@@ -89,6 +89,10 @@ Object {
           <strong>
             Examples of Cookies I use:
           </strong>
+        </p>
+        <div
+          class="common paragraph"
+        >
           <ul>
             <li>
               Preference Cookies. I use Preference Cookies to remember your preferences and various settings.
@@ -100,7 +104,7 @@ Object {
               Security Cookies. I use Security Cookies for security purposes.
             </li>
           </ul>
-        </p>
+        </div>
         <h2
           class="common title title"
         >
@@ -130,7 +134,7 @@ Object {
         >
           I use the collected data for various purposes:
         </p>
-        <p
+        <div
           class="common paragraph"
         >
           <ul>
@@ -150,7 +154,7 @@ Object {
               To monitor the usage of the website to detect, prevent and address technical issues.
             </li>
           </ul>
-        </p>
+        </div>
         <h2
           class="common title title"
         >
@@ -216,7 +220,7 @@ Object {
         >
           I may disclose your Personal Data in the good faith belief that such action is necessary to:
         </p>
-        <p
+        <div
           class="common paragraph"
         >
           <ul>
@@ -233,7 +237,7 @@ Object {
               To protect against legal liability.
             </li>
           </ul>
-        </p>
+        </div>
         <h2
           class="common title title"
         >
@@ -377,7 +381,7 @@ Object {
       >
         While using my website, I may ask you to provide me with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:
       </p>
-      <p
+      <div
         class="common paragraph"
       >
         <ul>
@@ -391,7 +395,7 @@ Object {
             Usage Data
           </li>
         </ul>
-      </p>
+      </div>
       <p
         class="common paragraph"
       >
@@ -423,6 +427,10 @@ Object {
         <strong>
           Examples of Cookies I use:
         </strong>
+      </p>
+      <div
+        class="common paragraph"
+      >
         <ul>
           <li>
             Preference Cookies. I use Preference Cookies to remember your preferences and various settings.
@@ -434,7 +442,7 @@ Object {
             Security Cookies. I use Security Cookies for security purposes.
           </li>
         </ul>
-      </p>
+      </div>
       <h2
         class="common title title"
       >
@@ -464,7 +472,7 @@ Object {
       >
         I use the collected data for various purposes:
       </p>
-      <p
+      <div
         class="common paragraph"
       >
         <ul>
@@ -484,7 +492,7 @@ Object {
             To monitor the usage of the website to detect, prevent and address technical issues.
           </li>
         </ul>
-      </p>
+      </div>
       <h2
         class="common title title"
       >
@@ -550,7 +558,7 @@ Object {
       >
         I may disclose your Personal Data in the good faith belief that such action is necessary to:
       </p>
-      <p
+      <div
         class="common paragraph"
       >
         <ul>
@@ -567,7 +575,7 @@ Object {
             To protect against legal liability.
           </li>
         </ul>
-      </p>
+      </div>
       <h2
         class="common title title"
       >
