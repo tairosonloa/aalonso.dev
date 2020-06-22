@@ -11,6 +11,10 @@
   padding-right: grid_units(4);
   padding-left: grid_units(4);
   text-align: center;
+
+  @include screenIn(mobile) {
+    grid-template-columns: repeat(auto-fit, minmax(grid_units(56), 1fr));
+  }
 }
 
 .headIcon {
