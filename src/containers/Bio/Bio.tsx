@@ -13,7 +13,7 @@ export const Bio: FC = () => {
     <SectionContainer darkBackground>
       <SectionHeader title="About me" subtitle="Let me introduce myself first." />
       <img src="/images/me.jpeg" alt="" className={styles.image} />
-      <SocialMediaLinks />
+      <SocialMediaLinks className={styles.socialMediaLinks} />
       <Typography className={styles.bio}>
         I&apos;m a full stack developer full-time working for{' '}
         <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">

@@ -9,10 +9,6 @@ export class RouterSSRNext implements Router {
     this.ctx = ctx
   }
 
-  getPropertyId(): string | undefined {
-    return this.ctx?.params?.propertyId as string
-  }
-
   async pushTo(route: Route): Promise<void> {
     this.ctx.res.writeHead(302, { Location: route.getPath() })
     this.ctx.res.end()

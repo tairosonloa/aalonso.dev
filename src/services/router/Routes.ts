@@ -14,4 +14,6 @@ export class Route {
   }
 }
 
-export const Routes = {}
+export const Routes = {
+  privacyPolicy: (): Route => Route.of('/privacy-policy'),
+}

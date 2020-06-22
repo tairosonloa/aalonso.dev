@@ -30,7 +30,7 @@ Object {
           src="/images/me.jpeg"
         />
         <ul
-          class="container"
+          class="container socialMediaLinks"
         >
           <li>
             <a
@@ -120,7 +120,7 @@ Object {
         src="/images/me.jpeg"
       />
       <ul
-        class="container"
+        class="container socialMediaLinks"
       >
         <li>
           <a

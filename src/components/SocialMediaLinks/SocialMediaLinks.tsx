@@ -1,9 +1,14 @@
+import classNames from 'classnames'
 import React, { FC } from 'react'
 import { SiteMetadata } from '../../../site.metadata'
 import { IconName, RemixIcon } from '../Icons/RemixIcon/RemixIcon'
 import styles from './SocialMediaLinks.module.scss'
 
-export const SocialMediaLinks: FC = () => {
+export type SocialMediaLinksProps = {
+  className?: string
+}
+
+export const SocialMediaLinks: FC<SocialMediaLinksProps> = ({ className }) => {
   const { socialMediaUrls } = SiteMetadata
 
   const allSocialMedia = [
@@ -17,7 +22,7 @@ export const SocialMediaLinks: FC = () => {
   ]
 
   return (
-    <ul className={styles.container}>
+    <ul className={classNames(styles.container, className)}>
       {allSocialMedia.map(({ href, iconName, dataTestId }) => (
         <li key={dataTestId}>
           <a

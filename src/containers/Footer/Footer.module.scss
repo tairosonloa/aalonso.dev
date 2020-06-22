@@ -1,0 +1,35 @@
+@import 'src/styles/utils.scss';
+@import 'src/styles/palette.scss';
+
+.container {
+  display: grid;
+  grid-gap: grid_units(4);
+  grid-template-columns: repeat(auto-fit, minmax(grid_units(40), 1fr));
+  padding: grid_units(4);
+  background-color: $rich-black;
+
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grey-light;
+  }
+
+  @include screenIn(desktop) {
+    & > :first-child {
+      justify-content: flex-start;
+    }
+
+    & > :last-child {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.copyright {
+  margin: 0;
+}
+
+.socialMediaLinks i {
+  color: $grey-light;
+}

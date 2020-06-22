@@ -2,8 +2,6 @@
 @import 'src/styles/palette.scss';
 
 .container {
-  margin-top: grid_units(3);
-  margin-bottom: grid_units(6);
   list-style: none;
 
   & > li {
