@@ -15,7 +15,7 @@ const career = [
   },
   {
     imageUrl: '/images/uc3m.png',
-    date: '2018 - 2021 (expected)',
+    date: '2019 - 2022 (expected)',
     title: "Master's Degree in Computer Science and Engineering",
     description:
       "Currently half-time studing a Master's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid.",
@@ -23,7 +23,7 @@ const career = [
   {
     imageUrl: '/images/uc3m.png',
     date: '2017 - 2019',
-    title: 'Linux Systems Administrator',
+    title: 'DevOps Developer Intern',
     description:
       'Working as intern in the Computer Science and Engineering Department at my university. DevOps tasks, including full-stack development and setting infrastructure.',
   },
@@ -32,11 +32,11 @@ const career = [
     date: '2016 - 2020',
     title: 'T3chfest Collaborator and Volunteer',
     description:
-      'Helping making <a href="https://t3chfest.es/" target="_blank" rel="noopener noreferrer">T3chFest</a> possible for four years, working near the organizers and friends to position T3chFest as a reference IT event.',
+      'Helping making <a href="https://t3chfest.es/" target="_blank" rel="noopener noreferrer">T3chFest</a> possible for four years. Working near the organizers and friends to position T3chFest as a reference IT event.',
   },
   {
     imageUrl: '/images/uc3m.png',
-    date: '2015 - 2018',
+    date: '2015 - 2019',
     title: "Bachelor's Degree in Computer Science and Engineering",
     description:
       "Got my Bachelor's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid with honors. Specialized in artificial intelligence and data analysis.",
