@@ -30,12 +30,12 @@ export const PrivacyPolicy: FC = () => {
         Personal Data
       </Typography>
       <Typography>
-        I am the Responsible for the user&apos;s personal data treatment and informs that this data
-        will be handled according to the disposed in the current personal data protection
-        regulations, the 2016/679 UE Regulation of 27 April 2016 (GDPR) related to the protection of
-        natural persons regarding personal data treatment and the free circulation of this data, and
-        the 3/2018 Organic Law of 5 December, about personal data protection and digital rights
-        guarantee (LOPDGDD)
+        I (Aitor Alonso Núñez) am the Responsible for the user&apos;s personal data treatment and
+        informs that this data will be handled according to the disposed in the current personal
+        data protection regulations, the 2016/679 UE Regulation of 27 April 2016 (GDPR) related to
+        the protection of natural persons regarding personal data treatment and the free circulation
+        of this data, and the 3/2018 Organic Law of 5 December, about personal data protection and
+        digital rights guarantee (LOPDGDD)
       </Typography>
       <Typography>
         While using my website, I may ask you to provide me with certain personally identifiable
