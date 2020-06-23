@@ -14,7 +14,7 @@ export const Footer: FC<FooterProps> = ({ router }) => {
     <div className={styles.container}>
       <Copyright className={styles.copyright} />
       <SocialMediaLinks className={styles.socialMediaLinks} />
-      <div className={styles.link}>
+      <div>
         <a
           href={Routes.privacyPolicy().getPath()}
           onClick={(e) => {
