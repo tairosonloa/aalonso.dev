@@ -10,6 +10,10 @@ class MyApp extends App {
   render(): JSX.Element {
     const { Component, pageProps } = this.props
 
+    if (process.browser) {
+      window.scrollTo(0, 0)
+    }
+
     return <Component {...pageProps} />
   }
 }
