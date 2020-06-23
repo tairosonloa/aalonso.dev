@@ -15,7 +15,7 @@ export const PrivacyPolicy: FC = () => {
         typographyType={TypographyType.PARAGRAPH_LEAD}
         className={styles.lastModifiedDate}
       >
-        Last modification: June 22, 2020
+        Effective date: June 22, 2020
       </Typography>
       <Typography>
         I take your privacy seriously. To better protect your privacy I provide this privacy policy
