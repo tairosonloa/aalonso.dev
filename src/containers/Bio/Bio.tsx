@@ -10,7 +10,7 @@ export const Bio: FC = () => {
   const { employerInfo } = SiteMetadata
 
   return (
-    <SectionContainer darkBackground>
+    <SectionContainer sectionId="bio" darkBackground>
       <SectionHeader title="About me" subtitle="Let me introduce myself first." />
       <img src="/images/me.jpeg" alt="" className={styles.image} />
       <SocialMediaLinks className={styles.socialMediaLinks} />

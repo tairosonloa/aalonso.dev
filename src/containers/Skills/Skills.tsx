@@ -36,7 +36,7 @@ const softSkills = [
 
 export const Skills: FC = () => {
   return (
-    <SectionContainer>
+    <SectionContainer sectionId="skills">
       <SectionHeader title="What I offer" subtitle="Why you might want to work with me." />
       <div className={styles.skillsContainer}>
         <div data-testid="tech-skills">

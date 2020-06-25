@@ -4,7 +4,7 @@ import { SiteMetadata } from '../../../site.metadata'
 import { IconName, RemixIcon } from '../Icons/RemixIcon/RemixIcon'
 import styles from './SocialMediaLinks.module.scss'
 
-export type SocialMediaLinksProps = {
+type SocialMediaLinksProps = {
   className?: string
 }
 

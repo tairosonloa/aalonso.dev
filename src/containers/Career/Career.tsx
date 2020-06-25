@@ -45,7 +45,7 @@ const career = [
 
 export const Career: FC = () => {
   return (
-    <SectionContainer darkBackground>
+    <SectionContainer sectionId="career" darkBackground>
       <SectionHeader title="Career" subtitle="My journey so far." />
       <ul className={styles.career}>
         {career.map((step, index) => (

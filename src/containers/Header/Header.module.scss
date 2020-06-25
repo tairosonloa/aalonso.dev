@@ -1,0 +1,110 @@
+@import 'src/styles/utils.scss';
+@import 'src/styles/palette.scss';
+
+$animate: all 0.2s ease-in-out;
+
+.container {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: grid_units(2) grid_units(5);
+}
+
+.titleContainer {
+  min-height: grid_units(11);
+}
+
+.title {
+  position: sticky;
+  margin-bottom: grid_units(2);
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: none;
+
+  em {
+    color: $burgundy;
+    font-style: normal;
+  }
+}
+
+.solid {
+  background-color: $white;
+  box-shadow: 0 0 20px -10px $rich-black;
+
+  a {
+    color: $black;
+
+    * {
+      color: $black;
+    }
+
+    &::after {
+      border-top: 0.1em solid $black;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+  @include screenIn(mobile) {
+    display: none; // TODO: add hamburguer menu
+  }
+
+  a {
+    position: relative;
+    margin-right: grid_units(4);
+    margin-left: grid_units(4);
+    transition: $animate;
+    transition-duration: 0.75s;
+    border: none;
+    color: $grey-light;
+    text-decoration: none;
+    cursor: pointer;
+
+    * {
+      margin: 0;
+      color: $grey-light;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 115%;
+      left: -4%;
+      transition: $animate;
+      transition-duration: 0.75s;
+      border-top: 0.1em solid $grey-light;
+    }
+
+    &:hover {
+      right: 0;
+      color: $grey-light;
+      text-decoration: none;
+    }
+
+    &:hover::after {
+      right: 0;
+      border-color: $grey-light;
+    }
+  }
+}
+
+.solid a:hover {
+  color: $black;
+
+  &::after {
+    border-color: $black;
+  }
+}

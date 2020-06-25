@@ -7,6 +7,7 @@ Object {
     <div>
       <div
         class="container light"
+        id="skills"
       >
         <div
           class="container"
@@ -286,6 +287,7 @@ Object {
   "container": <div>
     <div
       class="container light"
+      id="skills"
     >
       <div
         class="container"

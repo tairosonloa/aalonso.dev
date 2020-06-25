@@ -5,13 +5,13 @@ import { Router } from '../../services/router/Router'
 import { Routes } from '../../services/router/Routes'
 import styles from './Footer.module.scss'
 
-export type FooterProps = {
+type FooterProps = {
   router: Router
 }
 
 export const Footer: FC<FooterProps> = ({ router }) => {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <Copyright className={styles.copyright} />
       <SocialMediaLinks className={styles.socialMediaLinks} />
       <div>
@@ -25,6 +25,6 @@ export const Footer: FC<FooterProps> = ({ router }) => {
           Privacy & Cookies
         </a>
       </div>
-    </div>
+    </footer>
   )
 }
