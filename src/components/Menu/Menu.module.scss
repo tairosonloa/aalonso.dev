@@ -1,0 +1,47 @@
+@import 'src/styles/utils.scss';
+@import 'src/styles/palette.scss';
+
+$animate: right 0.75s ease-in-out;
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+  @include screenIn(mobile) {
+    display: none; // TODO: add hamburguer menu
+  }
+
+  a {
+    position: relative;
+    margin-right: grid_units(4);
+    margin-left: grid_units(4);
+    transition: $animate;
+    text-decoration: none;
+    cursor: pointer;
+
+    * {
+      margin: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 115%;
+      left: -4%;
+      transition: $animate;
+      border-top: 0.1em solid;
+      border-color: inherit;
+    }
+
+    &:hover {
+      right: 0;
+      text-decoration: none;
+
+      &::after {
+        right: 0;
+      }
+    }
+  }
+}

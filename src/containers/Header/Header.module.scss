@@ -1,8 +1,6 @@
 @import 'src/styles/utils.scss';
 @import 'src/styles/palette.scss';
 
-$animate: right 0.2s ease-in-out;
-
 .container {
   position: fixed;
   z-index: 20;
@@ -34,79 +32,23 @@ $animate: right 0.2s ease-in-out;
     font-style: normal;
   }
 }
+.menu {
+  border-color: $grey-light;
+  color: $grey-light;
+
+  * {
+    border-color: $grey-light;
+    color: $grey-light;
+  }
+}
 
 .solid {
+  border-color: $black;
   background-color: $white;
   box-shadow: 0 0 20px -10px $rich-black;
-
-  a {
-    color: $black;
-
-    * {
-      color: $black;
-    }
-
-    &::after {
-      border-top: 0.1em solid $black;
-    }
-  }
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-
-  @include screenIn(mobile) {
-    display: none; // TODO: add hamburguer menu
-  }
-
-  a {
-    position: relative;
-    margin-right: grid_units(4);
-    margin-left: grid_units(4);
-    transition: $animate;
-    transition-duration: 0.75s;
-    border: none;
-    color: $grey-light;
-    text-decoration: none;
-    cursor: pointer;
-
-    * {
-      margin: 0;
-      color: inherit;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      right: 115%;
-      left: -4%;
-      transition: $animate;
-      transition-duration: 0.75s;
-      border-top: 0.1em solid $grey-light;
-    }
-
-    &:hover {
-      right: 0;
-      color: $grey-light;
-      text-decoration: none;
-    }
-
-    &:hover::after {
-      right: 0;
-      border-color: $grey-light;
-    }
-  }
-}
-
-.solid a {
   color: $black;
 
-  &:hover,
-  &:hover::after,
-  &::after {
+  * {
     border-color: $black;
     color: $black;
   }

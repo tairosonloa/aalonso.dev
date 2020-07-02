@@ -9,9 +9,8 @@ const headerLinks = [
 ]
 
 describe('<Header/>', () => {
-  it.each(headerLinks)('should display the links to $href with text $text', ({ href, text }) => {
+  it('should match the snapshot', () => {
     const renderResult = render(<Header links={headerLinks} />)
-    expect(renderResult.getByText(text)).toBeTruthy()
-    expect(renderResult.getByTestId(text)).toHaveAttribute('href', href)
+    expect(renderResult).toMatchSnapshot()
   })
 })

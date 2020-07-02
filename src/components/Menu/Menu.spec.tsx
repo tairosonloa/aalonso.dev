@@ -1,0 +1,17 @@
+import { render } from '@testing-library/react'
+import * as React from 'react'
+import { Menu } from './Menu'
+
+const links = [
+  { href: '#bio', text: 'About me' },
+  { href: '#skills', text: 'Skills' },
+  { href: '#career', text: 'Career' },
+]
+
+describe('<Header/>', () => {
+  it.each(links)('should display the links to $href with text $text', ({ href, text }) => {
+    const renderResult = render(<Menu links={links} />)
+    expect(renderResult.getByText(text)).toBeTruthy()
+    expect(renderResult.getByTestId(text)).toHaveAttribute('href', href)
+  })
+})

@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import React, { FC, useState } from 'react'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
+import { Menu } from '../../components/Menu/Menu'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
 import styles from './Header.module.scss'
 
@@ -19,17 +20,6 @@ export const Header: FC<HeaderProps> = ({ links }) => {
     [solid],
   )
 
-  const smoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault()
-    const id = e.currentTarget.getAttribute('href')
-    const element = document.querySelector((id as unknown) as string)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-      })
-    }
-  }
-
   return (
     <header className={classNames(styles.container, solid && styles.solid)}>
       <div className={styles.contentContainer}>
@@ -40,13 +30,7 @@ export const Header: FC<HeaderProps> = ({ links }) => {
             </Typography>
           )}
         </div>
-        <nav className={styles.links}>
-          {links.map(({ href, text }) => (
-            <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
-              <Typography typographyType={TypographyType.TITLE_SMALL}>{text}</Typography>
-            </a>
-          ))}
-        </nav>
+        <Menu links={links} className={styles.menu} />
       </div>
     </header>
   )
