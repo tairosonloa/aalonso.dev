@@ -3,7 +3,9 @@
 exports[`<Header/> should match the snapshot 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": <body
+    style="overflow: unset;"
+  >
     <div>
       <header
         class="container"
@@ -14,40 +16,56 @@ Object {
           <div
             class="titleContainer"
           />
-          <nav
-            class="links menu"
+          <div
+            class="container menu"
           >
-            <a
-              data-testid="About me"
-              href="#bio"
+            <button
+              aria-label="Menu"
+              class="button"
+              type="button"
             >
-              <h3
-                class="common titleSmall"
-              >
-                About me
-              </h3>
-            </a>
-            <a
-              data-testid="Skills"
-              href="#skills"
+              <i
+                class="ri-menu-line icon buttonIcon activeIcon"
+              />
+              <i
+                class="ri-close-line icon buttonIcon closeIcon"
+              />
+            </button>
+            <nav
+              class="links"
             >
-              <h3
-                class="common titleSmall"
+              <a
+                data-testid="About me"
+                href="#bio"
               >
-                Skills
-              </h3>
-            </a>
-            <a
-              data-testid="Career"
-              href="#career"
-            >
-              <h3
-                class="common titleSmall"
+                <h4
+                  class="common titleSmall"
+                >
+                  About me
+                </h4>
+              </a>
+              <a
+                data-testid="Skills"
+                href="#skills"
               >
-                Career
-              </h3>
-            </a>
-          </nav>
+                <h4
+                  class="common titleSmall"
+                >
+                  Skills
+                </h4>
+              </a>
+              <a
+                data-testid="Career"
+                href="#career"
+              >
+                <h4
+                  class="common titleSmall"
+                >
+                  Career
+                </h4>
+              </a>
+            </nav>
+          </div>
         </div>
       </header>
     </div>
@@ -62,40 +80,56 @@ Object {
         <div
           class="titleContainer"
         />
-        <nav
-          class="links menu"
+        <div
+          class="container menu"
         >
-          <a
-            data-testid="About me"
-            href="#bio"
+          <button
+            aria-label="Menu"
+            class="button"
+            type="button"
           >
-            <h3
-              class="common titleSmall"
-            >
-              About me
-            </h3>
-          </a>
-          <a
-            data-testid="Skills"
-            href="#skills"
+            <i
+              class="ri-menu-line icon buttonIcon activeIcon"
+            />
+            <i
+              class="ri-close-line icon buttonIcon closeIcon"
+            />
+          </button>
+          <nav
+            class="links"
           >
-            <h3
-              class="common titleSmall"
+            <a
+              data-testid="About me"
+              href="#bio"
             >
-              Skills
-            </h3>
-          </a>
-          <a
-            data-testid="Career"
-            href="#career"
-          >
-            <h3
-              class="common titleSmall"
+              <h4
+                class="common titleSmall"
+              >
+                About me
+              </h4>
+            </a>
+            <a
+              data-testid="Skills"
+              href="#skills"
             >
-              Career
-            </h3>
-          </a>
-        </nav>
+              <h4
+                class="common titleSmall"
+              >
+                Skills
+              </h4>
+            </a>
+            <a
+              data-testid="Career"
+              href="#career"
+            >
+              <h4
+                class="common titleSmall"
+              >
+                Career
+              </h4>
+            </a>
+          </nav>
+        </div>
       </div>
     </header>
   </div>,
