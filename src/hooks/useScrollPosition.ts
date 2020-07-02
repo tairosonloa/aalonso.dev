@@ -22,12 +22,12 @@ function getScrollPosition({
   element,
   useWindow = true,
 }: {
-  element?: React.RefObject<any>
+  element?: React.RefObject<HTMLElement>
   useWindow?: boolean
 }): ScrollPosition {
   if (!isBrowser) return { x: 0, y: 0 }
 
-  const target = element ? element.current : document.body
+  const target = element?.current ? element.current : document.body
   const position = target.getBoundingClientRect()
 
   return useWindow
@@ -46,7 +46,7 @@ function getScrollPosition({
 export function useScrollPosition(
   effect: ScrollCallback,
   deps?: DependencyList,
-  element?: React.RefObject<unknown>,
+  element?: React.RefObject<HTMLElement>,
   useWindow = true,
   waitMiliseconds?: number,
 ): void {
