@@ -1,7 +1,7 @@
 @import 'src/styles/utils.scss';
 @import 'src/styles/palette.scss';
 
-$animate: all 0.2s ease-in-out;
+$animate: right 0.2s ease-in-out;
 
 .container {
   position: fixed;
@@ -75,7 +75,7 @@ $animate: all 0.2s ease-in-out;
 
     * {
       margin: 0;
-      color: $grey-light;
+      color: inherit;
     }
 
     &::after {
@@ -101,10 +101,13 @@ $animate: all 0.2s ease-in-out;
   }
 }
 
-.solid a:hover {
+.solid a {
   color: $black;
 
+  &:hover,
+  &:hover::after,
   &::after {
     border-color: $black;
+    color: $black;
   }
 }
