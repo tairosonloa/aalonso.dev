@@ -30,6 +30,7 @@ export default class extends Document {
             href="/images/favicons/favicon-192.png"
             key="favicon-192"
           />
+          <link rel="manifest" href="/manifest.webmanifest" key="webmanifest" />
         </Head>
         <body>
           <Main />

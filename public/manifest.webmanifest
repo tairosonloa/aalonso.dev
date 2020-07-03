@@ -1,0 +1,40 @@
+{
+  "short_name": "aalonso",
+  "name": "Aitor Alonso",
+  "description": "Full Stack Developer Engineer for NodeJS, React and TypeScript",
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#97294b",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "/images/favicons/favicon-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/images/favicons/favicon-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/images/favicons/favicon-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/images/favicons/favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Terms & Conditions",
+      "short_name": "T&C",
+      "description": "Termms & conditions, privacy and cookies policy",
+      "url": "/privacy-policy"
+    }
+  ]
+}
