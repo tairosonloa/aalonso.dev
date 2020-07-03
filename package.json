@@ -23,6 +23,7 @@
     "devicon": "2.2.0",
     "lodash": "4.17.15",
     "next": "9.4.4",
+    "next-seo": "^4.7.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "remixicon": "2.5.0",
