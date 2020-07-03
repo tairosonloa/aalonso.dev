@@ -12,26 +12,22 @@ export const SocialMediaLinks: FC<SocialMediaLinksProps> = ({ className }) => {
   const { socialMediaUrls } = SiteMetadata
 
   const allSocialMedia = [
-    { href: socialMediaUrls.github, iconName: IconName.GITHUB, dataTestId: 'github' },
-    { href: socialMediaUrls.linkedin, iconName: IconName.LINKEDIN, dataTestId: 'linkedin' },
+    { href: socialMediaUrls.github, iconName: IconName.GITHUB, name: 'github' },
+    { href: socialMediaUrls.linkedin, iconName: IconName.LINKEDIN, name: 'linkedin' },
     {
       href: `mailto:${socialMediaUrls.emailAddress}`,
       iconName: IconName.EMAIL,
-      dataTestId: 'email',
+      name: 'email',
     },
   ]
 
   return (
     <ul className={classNames(styles.container, className)}>
-      {allSocialMedia.map(({ href, iconName, dataTestId }) => (
-        <li key={dataTestId}>
-          <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-testid={`${dataTestId}-link`}
-          >
-            <RemixIcon name={iconName} data-testid={dataTestId} />
+      {allSocialMedia.map(({ href, iconName, name }) => (
+        <li key={name}>
+          <a href={href} target="_blank" rel="noopener noreferrer" data-testid={`${name}-link`}>
+            <RemixIcon name={iconName} data-testid={name} />
+            <span className={styles.hiddenTextForAccessibility}>{name}</span>
           </a>
         </li>
       ))}

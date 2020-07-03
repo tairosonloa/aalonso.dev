@@ -14,6 +14,11 @@ describe('<Footer/>', () => {
     expect(renderResult.getByText('Privacy & Cookies')).toBeTruthy()
   })
 
+  it('should match the snapshot', () => {
+    const renderResult = render(<Footer router={routerSpy} />)
+    expect(renderResult).toMatchSnapshot()
+  })
+
   describe('Footer links', () => {
     it('should navigate to privacy policy page', async () => {
       const renderResult = render(<Footer router={routerSpy} />)

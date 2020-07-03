@@ -1,35 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Bio/> should match the snapshot 1`] = `
+exports[`<Footer/> should match the snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="container dark"
-        id="bio"
+      <footer
+        class="container"
       >
-        <div
-          class="container"
+        <p
+          class="common paragraph copyright"
         >
-          <h2
-            class="common title"
-            data-testid="section-title"
-          >
-            About me
-          </h2>
-          <h3
-            class="common titleSmall"
-            data-testid="section-subtitle"
-          >
-            Let me introduce myself first.
-          </h3>
-        </div>
-        <img
-          alt=""
-          class="image"
-          src="/images/me.jpeg"
-        />
+          Copyright © 
+          2020
+           
+          Aitor Alonso
+        </p>
         <ul
           class="container socialMediaLinks"
         >
@@ -88,54 +74,28 @@ Object {
             </a>
           </li>
         </ul>
-        <p
-          class="common paragraph bio"
-        >
-          I'm a full stack developer full-time working for
-           
+        <div>
           <a
-            href="https://acidtango.com/"
-            rel="noopener noreferrer"
-            target="_blank"
+            href="/privacy-policy"
           >
-            Acid Tango
+            Privacy & Cookies
           </a>
-          , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with NodeJS and React, I use these technologies both professionally and for personal side projects, like this website.
-        </p>
-        <p
-          class="common paragraph bio"
-        >
-          I've always been proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I' consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
-        </p>
-      </div>
+        </div>
+      </footer>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="container dark"
-      id="bio"
+    <footer
+      class="container"
     >
-      <div
-        class="container"
+      <p
+        class="common paragraph copyright"
       >
-        <h2
-          class="common title"
-          data-testid="section-title"
-        >
-          About me
-        </h2>
-        <h3
-          class="common titleSmall"
-          data-testid="section-subtitle"
-        >
-          Let me introduce myself first.
-        </h3>
-      </div>
-      <img
-        alt=""
-        class="image"
-        src="/images/me.jpeg"
-      />
+        Copyright © 
+        2020
+         
+        Aitor Alonso
+      </p>
       <ul
         class="container socialMediaLinks"
       >
@@ -194,26 +154,14 @@ Object {
           </a>
         </li>
       </ul>
-      <p
-        class="common paragraph bio"
-      >
-        I'm a full stack developer full-time working for
-         
+      <div>
         <a
-          href="https://acidtango.com/"
-          rel="noopener noreferrer"
-          target="_blank"
+          href="/privacy-policy"
         >
-          Acid Tango
+          Privacy & Cookies
         </a>
-        , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with NodeJS and React, I use these technologies both professionally and for personal side projects, like this website.
-      </p>
-      <p
-        class="common paragraph bio"
-      >
-        I've always been proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I' consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
-      </p>
-    </div>
+      </div>
+    </footer>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
