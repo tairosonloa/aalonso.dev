@@ -30,6 +30,30 @@ export default class extends Document {
             href="/images/favicons/favicon-192.png"
             key="favicon-192"
           />
+          <link
+            rel="apple-touch-icon"
+            sizes="48x48"
+            href="/images/favicons/favicon-48.png"
+            key="apple-favicon-48"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="96x96"
+            href="/images/favicons/favicon-96.png"
+            key="apple-favicon-96"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="/images/favicons/favicon-144.png"
+            key="apple-favicon-144"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="192x192"
+            href="/images/favicons/favicon-192.png"
+            key="apple-favicon-192"
+          />
           <link rel="manifest" href="/manifest.webmanifest" key="webmanifest" />
         </Head>
         <body>
