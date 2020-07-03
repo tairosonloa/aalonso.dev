@@ -55,6 +55,28 @@ export default class extends Document {
             key="apple-favicon-192"
           />
           <link rel="manifest" href="/manifest.webmanifest" key="webmanifest" />
+
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          {/* TODO: use Next.js plugin when stable release */}
+          {/* See: https://www.npmjs.com/package/@next/plugin-google-analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}
+          />
+          <script
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${process.env.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         </Head>
         <body>
           <Main />
