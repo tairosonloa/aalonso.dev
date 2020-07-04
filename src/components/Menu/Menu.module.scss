@@ -21,6 +21,8 @@ $icon-font-size: 1.75rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 
   @include screenIn(smallTablet) {
     display: block;
@@ -111,8 +113,11 @@ $icon-font-size: 1.75rem;
   *,
   a h4 {
     margin-bottom: grid_units(5);
-    border-color: $white;
     color: $white;
     font-size: 1.5rem;
+  }
+
+  a::after {
+    border: none;
   }
 }
