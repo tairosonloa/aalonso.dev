@@ -30,7 +30,4 @@ const Index: FC = () => {
   )
 }
 
-export const getServerSideProps = async (): Promise<Record<string, unknown>> =>
-  Promise.resolve({ props: {} })
-
 export default Index

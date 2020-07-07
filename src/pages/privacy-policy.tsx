@@ -5,7 +5,4 @@ const PrivacyPolicyPage: FC = () => {
   return <PrivacyPolicy />
 }
 
-export const getServerSideProps = async (): Promise<Record<string, unknown>> =>
-  Promise.resolve({ props: {} })
-
 export default PrivacyPolicyPage
