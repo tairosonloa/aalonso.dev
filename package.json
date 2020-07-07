@@ -12,6 +12,7 @@
     "build-storybook": "build-storybook",
     "typecheck": "tsc",
     "g:component": "hygen component new",
+    "g:robots-sitemap": "node src/utils/generateSitemapAndRobots.js",
     "lint:ts": "eslint --fix \"**/*.{ts,tsx}\" --no-error-on-unmatched-pattern",
     "lint:css": "stylelint --fix \"**/*.scss\"",
     "lint:css:ci": "stylelint --max-warnings 0 \"**/*.scss\"",
