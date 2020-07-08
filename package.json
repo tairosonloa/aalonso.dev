@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/prebuild.js",
     "build": "next build",
     "start": "next start",
     "export": "next export",
@@ -12,6 +13,7 @@
     "build-storybook": "build-storybook",
     "typecheck": "tsc",
     "g:component": "hygen component new",
+    "g:production-build": "npm run prebuild && next build && next export",
     "lint:ts": "eslint --fix \"**/*.{ts,tsx}\" --no-error-on-unmatched-pattern",
     "lint:css": "stylelint --fix \"**/*.scss\"",
     "lint:css:ci": "stylelint --max-warnings 0 \"**/*.scss\"",

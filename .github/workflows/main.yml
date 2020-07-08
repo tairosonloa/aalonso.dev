@@ -6,14 +6,16 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@master
         with:
           node-version: '12.x'
 
       - name: Cache Node.js modules
-        uses: actions/cache@v2
+        uses: actions/cache@master
         with:
           path: ~/.yarn
           key: ${{ runner.OS }}-node-${{ hashFiles('**/yarn-lock.json') }}
@@ -32,3 +34,47 @@ jobs:
 
       - name: Run tests
         run: yarn test
+
+  build:
+    if: github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+      
+      - name: Prebuild
+        run: yarn prebuild
+        env:
+          DOMAIN: ${{ secrets.DOMAIN }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }
+      
+      - name: Build
+        run: yarn build
+        env:
+          DOMAIN: ${{ secrets.DOMAIN }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }
+
+      - name: Export
+        run: yarn export
+        env:
+          DOMAIN: ${{ secrets.DOMAIN }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }
+
+  deploy:
+    if: github.ref == 'refs/heads/master'
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Deploy to netlify
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=out --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+
