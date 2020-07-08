@@ -28,3 +28,8 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# generated on build time by prebuild.js
+public/_redirects
+public/robots.txt
+sitemap.xml

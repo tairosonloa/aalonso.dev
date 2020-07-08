@@ -232,7 +232,7 @@ export const PrivacyPolicy: FC = () => {
       </Typography>
       <Typography>
         <strong>Google Analytics</strong> - Google Analytics is a web traffic analysis tool. You can
-        read the Privacy Policy for Statcounter here:{' '}
+        read the Privacy Policy for Google Analytics here:{' '}
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
           https://policies.google.com/privacy
         </a>
