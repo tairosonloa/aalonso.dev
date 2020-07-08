@@ -78,6 +78,12 @@ jobs:
           DOMAIN: ${{ secrets.DOMAIN }}
           GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
+      - name: Upload production build artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: production-build
+          path: out/
+
   deploy:
     if: github.ref == 'refs/heads/master'
     needs: [test, build]
@@ -86,12 +92,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@master
 
+      - name: Download production build artifact
+        uses: actions/download-artifact@master
+        with:
+          name: production-build
+          path: out
+
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=out --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        with:
-          args: deploy --dir=out --prod
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
 
