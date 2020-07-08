@@ -42,6 +42,23 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@master
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@master
+        with:
+          node-version: '12.x'
+
+      - name: Cache Node.js modules
+        uses: actions/cache@master
+        with:
+          path: ~/.yarn
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/yarn-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile --cache-folder ~/.yarn
       
       - name: Prebuild
         run: yarn prebuild
