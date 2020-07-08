@@ -47,19 +47,19 @@ jobs:
         run: yarn prebuild
         env:
           DOMAIN: ${{ secrets.DOMAIN }}
-          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       
       - name: Build
         run: yarn build
         env:
           DOMAIN: ${{ secrets.DOMAIN }}
-          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
       - name: Export
         run: yarn export
         env:
           DOMAIN: ${{ secrets.DOMAIN }}
-          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
   deploy:
     if: github.ref == 'refs/heads/master'
