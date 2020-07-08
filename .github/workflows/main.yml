@@ -98,10 +98,25 @@ jobs:
           name: production-build
           path: out
 
-      - name: Deploy to netlify
-        uses: netlify/actions/cli@master
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@master
         with:
-          args: deploy --dir=out --prod
+          node-version: '12.x'
+
+      - name: Cache Node.js modules
+        uses: actions/cache@master
+        with:
+          path: ~/.yarn
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/yarn-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile --cache-folder ~/.yarn
+
+      - name: Deploy to netlify
+        run: npx netlify deploy --dir=out --message="$(git log -1 --pretty=format:'%s')" --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
