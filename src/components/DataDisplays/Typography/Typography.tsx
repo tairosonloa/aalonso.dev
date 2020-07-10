@@ -40,21 +40,16 @@ export const Typography: FC<TypographyProps> = ({
   innerHtml,
   ...props
 }) => {
-  if (innerHtml) {
-    return React.createElement(htmlTag || TextTypeToHtmlTag[typographyType], {
-      className: classNames(styles.common, styles[typographyType], className),
-      style,
-      dangerouslySetInnerHTML: { __html: sanitize(innerHtml) },
-      ...props,
-    })
-  }
-  return React.createElement(
-    htmlTag || TextTypeToHtmlTag[typographyType],
-    {
-      className: classNames(styles.common, styles[typographyType], className),
-      style,
-      ...props,
-    },
-    children,
-  )
+  return React.createElement(htmlTag || TextTypeToHtmlTag[typographyType], {
+    className: classNames(styles.common, styles[typographyType], className),
+    style,
+    ...(innerHtml
+      ? {
+          dangerouslySetInnerHTML: {
+            __html: sanitize(innerHtml),
+          },
+        }
+      : { children }),
+    ...props,
+  })
 }
