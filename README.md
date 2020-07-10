@@ -1,30 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![CI/CD pipeline](https://github.com/tairosonloa/aalonso.dev/workflows/CI/CD%20pipeline/badge.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f0a5323-37e0-4578-b642-61a3518cc574/deploy-status)](https://app.netlify.com/sites/aalonso/deploys)
 
-## Getting Started
+## About this repository
 
-First, run the development server:
+This is my personal website I made from scratch using React and TypeScript.
+I use the [Next.js](https://nextjs.org/) React framework to develop it.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I started this development after graduating from University and started to
+work for [Acid Tango](https://acidtango.com/), where I acquired more
+professional skills and better programming and design practices. Before
+that, I had another site made with GatbsyJS I used during my student
+years. The old archive repo can be found [here](https://github.com/tairosonloa/aalonso.eu).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Copyright (C) 2020 Aitor Alonso
 
-## Learn More
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-To learn more about Next.js, take a look at the following resources:
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see https://www.gnu.org/licenses/.
