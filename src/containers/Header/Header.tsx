@@ -11,7 +11,7 @@ type HeaderProps = {
 
 export const Header: FC<HeaderProps> = ({ links }) => {
   const [solid, setSolid] = useState<boolean>(false)
-  const HEADER_HEIGHT = 70
+  const HEADER_HEIGHT = 75
 
   useScrollPosition(
     ({ currentPosition }) => {

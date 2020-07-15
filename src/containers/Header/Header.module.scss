@@ -23,6 +23,12 @@
 .title {
   position: sticky;
   margin-bottom: grid_units(2);
+
+  @include screenIn(smallTablet) {
+    margin-top: grid_units(1);
+    margin-bottom: grid_units(1);
+  }
+
   font-size: 2.25rem;
   font-weight: bold;
   text-transform: none;
@@ -35,6 +41,10 @@
 .menu {
   border-color: $grey-light;
   color: $grey-light;
+
+  @include screenIn(smallTablet) {
+    margin-top: grid_units(3);
+  }
 
   * {
     border-color: $grey-light;

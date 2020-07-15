@@ -59,7 +59,7 @@ $icon-font-size: 1.75rem;
   height: 100%;
 
   @include screenIn(smallTablet) {
-    display: none; // TODO: add hamburguer menu
+    display: none;
   }
 
   a {
