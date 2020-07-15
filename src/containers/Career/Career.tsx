@@ -18,7 +18,7 @@ const career = [
     date: '2019 - 2022 (expected)',
     title: "Master's Degree in Computer Science and Engineering",
     description:
-      "Currently half-time studing a Master's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid.",
+      "Part-time studing a Master's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid, while working full-time.",
   },
   {
     imageUrl: '/images/uc3m.png',

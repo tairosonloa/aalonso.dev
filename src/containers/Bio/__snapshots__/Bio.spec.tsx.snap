@@ -100,12 +100,12 @@ Object {
           >
             Acid Tango
           </a>
-          , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with NodeJS and React, I use these technologies both professionally and for personal side projects, like this website.
+          , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with Node.js and React, I use these technologies both professionally and for personal side projects, like this website.
         </p>
         <p
           class="common paragraph bio"
         >
-          I've always been proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I' consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
+          I'm proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I'll consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
         </p>
       </div>
     </div>
@@ -206,12 +206,12 @@ Object {
         >
           Acid Tango
         </a>
-        , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with NodeJS and React, I use these technologies both professionally and for personal side projects, like this website.
+        , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with Node.js and React, I use these technologies both professionally and for personal side projects, like this website.
       </p>
       <p
         class="common paragraph bio"
       >
-        I've always been proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I' consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
+        I'm proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I'll consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
       </p>
     </div>
   </div>,

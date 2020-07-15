@@ -20,15 +20,15 @@ export const Bio: FC = () => {
           {employerInfo.name}
         </a>
         , while studying for a Master&apos;s Degree in Computer Science and Engineering on weekends.
-        Focused on TypeScript with NodeJS and React, I use these technologies both professionally
+        Focused on TypeScript with Node.js and React, I use these technologies both professionally
         and for personal side projects, like this website.
       </Typography>
       <Typography className={styles.bio}>
-        I&apos;ve always been proactive, enthusiastic and curious, so I never stop learning and
-        doing new stuff. I&apos;ve been playing with python for artificial intelligence and machine
-        learning for a few years, specially around neural networks. Free software lover and DevOps
-        soul, I&apos; consider myself an experienced Linux system administrator, so I self
-        maintained my own virtual private server for years.
+        I&apos;m proactive, enthusiastic and curious, so I never stop learning and doing new stuff.
+        I&apos;ve been playing with python for artificial intelligence and machine learning for a
+        few years, specially around neural networks. Free software lover and DevOps soul, I&apos;ll
+        consider myself an experienced Linux system administrator, so I self maintained my own
+        virtual private server for years.
       </Typography>
     </SectionContainer>
   )
