@@ -6,6 +6,7 @@ export default class extends Document {
     return (
       <html lang="en">
         <Head>
+          <meta charSet="utf-8" />
           <link
             rel="shortcut icon"
             sizes="48x48"
