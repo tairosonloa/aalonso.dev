@@ -1,5 +1,30 @@
+@import 'src/styles/utils.scss';
 @import 'src/styles/palette.scss';
 
 a {
   color: $burgundy;
+}
+
+.cookiesBanner {
+  display: flex !important;
+  align-items: center !important;
+  min-height: grid_units(15);
+  opacity: 0.85;
+  // The !important are needed due to react-cookie-consent class preferences
+  background-color: $rich-black !important;
+  color: $grey-light !important;
+  line-height: 1.25em;
+
+  a {
+    color: $grey-light;
+    white-space: nowrap;
+  }
+
+  button {
+    padding: grid_units(2) grid_units(4) !important;
+    border-radius: grid_units(1) !important;
+    background-color: $burgundy !important;
+    color: $grey-light !important;
+    text-transform: uppercase !important;
+  }
 }

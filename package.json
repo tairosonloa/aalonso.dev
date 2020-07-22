@@ -28,6 +28,7 @@
     "next": "9.4.4",
     "next-seo": "4.7.3",
     "react": "16.13.1",
+    "react-cookie-consent": "5.1.2",
     "react-dom": "16.13.1",
     "react-intersection-observer": "8.26.2",
     "remixicon": "2.5.0",
