@@ -10,7 +10,7 @@ Object {
         id="skills"
       >
         <div
-          class="container"
+          class="container hidden"
         >
           <h2
             class="common title"
@@ -29,6 +29,7 @@ Object {
           class="skillsContainer"
         >
           <div
+            class="hidden"
             data-testid="tech-skills"
           >
             <i
@@ -155,6 +156,7 @@ Object {
             </div>
           </div>
           <div
+            class="hidden"
             data-testid="soft-skills"
           >
             <i
@@ -290,7 +292,7 @@ Object {
       id="skills"
     >
       <div
-        class="container"
+        class="container hidden"
       >
         <h2
           class="common title"
@@ -309,6 +311,7 @@ Object {
         class="skillsContainer"
       >
         <div
+          class="hidden"
           data-testid="tech-skills"
         >
           <i
@@ -435,6 +438,7 @@ Object {
           </div>
         </div>
         <div
+          class="hidden"
           data-testid="soft-skills"
         >
           <i

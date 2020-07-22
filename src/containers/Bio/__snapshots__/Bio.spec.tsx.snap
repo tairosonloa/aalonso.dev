@@ -10,7 +10,7 @@ Object {
         id="bio"
       >
         <div
-          class="container"
+          class="container hidden"
         >
           <h2
             class="common title"
@@ -25,6 +25,119 @@ Object {
             Let me introduce myself first.
           </h3>
         </div>
+        <div
+          class="hidden"
+        >
+          <img
+            alt=""
+            class="image"
+            src="/images/me.jpeg"
+          />
+          <ul
+            class="container socialMediaLinks"
+          >
+            <li>
+              <a
+                data-testid="github-link"
+                href="https://github.com/tairosonloa"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="ri-github-fill icon"
+                  data-testid="github"
+                />
+                <span
+                  class="hiddenTextForAccessibility"
+                >
+                  github
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="linkedin-link"
+                href="https://www.linkedin.com/in/aitoralonsonunez/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="ri-linkedin-box-fill icon"
+                  data-testid="linkedin"
+                />
+                <span
+                  class="hiddenTextForAccessibility"
+                >
+                  linkedin
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="email-link"
+                href="mailto:aitor@aalonso.dev"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="ri-mail-fill icon"
+                  data-testid="email"
+                />
+                <span
+                  class="hiddenTextForAccessibility"
+                >
+                  email
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p
+            class="common paragraph bio"
+          >
+            I'm a full stack developer full-time working for
+             
+            <a
+              href="https://acidtango.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Acid Tango
+            </a>
+            , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with Node.js and React, I use these technologies both professionally and for personal side projects, like this website.
+          </p>
+          <p
+            class="common paragraph bio"
+          >
+            I'm proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I'll consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container dark"
+      id="bio"
+    >
+      <div
+        class="container hidden"
+      >
+        <h2
+          class="common title"
+          data-testid="section-title"
+        >
+          About me
+        </h2>
+        <h3
+          class="common titleSmall"
+          data-testid="section-subtitle"
+        >
+          Let me introduce myself first.
+        </h3>
+      </div>
+      <div
+        class="hidden"
+      >
         <img
           alt=""
           class="image"
@@ -108,111 +221,6 @@ Object {
           I'm proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I'll consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
         </p>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="container dark"
-      id="bio"
-    >
-      <div
-        class="container"
-      >
-        <h2
-          class="common title"
-          data-testid="section-title"
-        >
-          About me
-        </h2>
-        <h3
-          class="common titleSmall"
-          data-testid="section-subtitle"
-        >
-          Let me introduce myself first.
-        </h3>
-      </div>
-      <img
-        alt=""
-        class="image"
-        src="/images/me.jpeg"
-      />
-      <ul
-        class="container socialMediaLinks"
-      >
-        <li>
-          <a
-            data-testid="github-link"
-            href="https://github.com/tairosonloa"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i
-              class="ri-github-fill icon"
-              data-testid="github"
-            />
-            <span
-              class="hiddenTextForAccessibility"
-            >
-              github
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            data-testid="linkedin-link"
-            href="https://www.linkedin.com/in/aitoralonsonunez/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i
-              class="ri-linkedin-box-fill icon"
-              data-testid="linkedin"
-            />
-            <span
-              class="hiddenTextForAccessibility"
-            >
-              linkedin
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            data-testid="email-link"
-            href="mailto:aitor@aalonso.dev"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i
-              class="ri-mail-fill icon"
-              data-testid="email"
-            />
-            <span
-              class="hiddenTextForAccessibility"
-            >
-              email
-            </span>
-          </a>
-        </li>
-      </ul>
-      <p
-        class="common paragraph bio"
-      >
-        I'm a full stack developer full-time working for
-         
-        <a
-          href="https://acidtango.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Acid Tango
-        </a>
-        , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with Node.js and React, I use these technologies both professionally and for personal side projects, like this website.
-      </p>
-      <p
-        class="common paragraph bio"
-      >
-        I'm proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I'll consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
-      </p>
     </div>
   </div>,
   "debug": [Function],

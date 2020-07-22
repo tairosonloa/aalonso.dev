@@ -15,4 +15,4 @@ const props = {
     "Got my Bachelor's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid with honors. Specialized in artificial intelligence and data analysis.",
 }
 
-export const Default = (): JSX.Element => <CareerStep {...props} stepIsOnTheLeft />
+export const Default = (): JSX.Element => <CareerStep {...props} />

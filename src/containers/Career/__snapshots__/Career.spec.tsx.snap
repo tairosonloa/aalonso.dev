@@ -10,7 +10,7 @@ Object {
         id="career"
       >
         <div
-          class="container"
+          class="container hidden"
         >
           <h2
             class="common title"
@@ -37,7 +37,7 @@ Object {
               src="/images/acidtango.jpeg"
             />
             <div
-              class="stepText left"
+              class="container left hidden"
             >
               <h4
                 class="common paragraphLead"
@@ -72,7 +72,7 @@ Object {
               src="/images/uc3m.png"
             />
             <div
-              class="stepText right"
+              class="container right hidden"
             >
               <h4
                 class="common paragraphLead"
@@ -100,7 +100,7 @@ Object {
               src="/images/uc3m.png"
             />
             <div
-              class="stepText left"
+              class="container left hidden"
             >
               <h4
                 class="common paragraphLead"
@@ -128,7 +128,7 @@ Object {
               src="/images/techfest.png"
             />
             <div
-              class="stepText right"
+              class="container right hidden"
             >
               <h4
                 class="common paragraphLead"
@@ -163,7 +163,7 @@ Object {
               src="/images/uc3m.png"
             />
             <div
-              class="stepText left"
+              class="container left hidden"
             >
               <h4
                 class="common paragraphLead"
@@ -192,7 +192,7 @@ Object {
       id="career"
     >
       <div
-        class="container"
+        class="container hidden"
       >
         <h2
           class="common title"
@@ -219,7 +219,7 @@ Object {
             src="/images/acidtango.jpeg"
           />
           <div
-            class="stepText left"
+            class="container left hidden"
           >
             <h4
               class="common paragraphLead"
@@ -254,7 +254,7 @@ Object {
             src="/images/uc3m.png"
           />
           <div
-            class="stepText right"
+            class="container right hidden"
           >
             <h4
               class="common paragraphLead"
@@ -282,7 +282,7 @@ Object {
             src="/images/uc3m.png"
           />
           <div
-            class="stepText left"
+            class="container left hidden"
           >
             <h4
               class="common paragraphLead"
@@ -310,7 +310,7 @@ Object {
             src="/images/techfest.png"
           />
           <div
-            class="stepText right"
+            class="container right hidden"
           >
             <h4
               class="common paragraphLead"
@@ -345,7 +345,7 @@ Object {
             src="/images/uc3m.png"
           />
           <div
-            class="stepText left"
+            class="container left hidden"
           >
             <h4
               class="common paragraphLead"

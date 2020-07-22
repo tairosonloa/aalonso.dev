@@ -7,9 +7,9 @@
   align-items: center;
   justify-content: center;
   padding: grid_units(17) grid_units(4);
+  overflow-x: hidden; // fade-in right animations breaks layout
   text-align: center;
   scroll-margin: grid_units(10);
-  overflow-x: hidden; // fade-in right animations breaks layout
 }
 
 .light {

@@ -8,7 +8,7 @@ type CareerStepProps = {
   date: string
   title: string
   description: string
-  stepIsOnTheLeft: boolean
+  stepIsOnTheLeft?: boolean
   className?: string
 }
 
@@ -16,7 +16,7 @@ export const CareerStep: FC<CareerStepProps> = ({
   date,
   title,
   description,
-  stepIsOnTheLeft,
+  stepIsOnTheLeft = true,
   className,
 }) => {
   const [ref, inView] = useInView({ triggerOnce: true })
