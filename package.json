@@ -21,6 +21,7 @@
     "precommit": "npm run typecheck && npm run format && npm run lint:ts && npm run lint:css && npm run test"
   },
   "dependencies": {
+    "animate.css": "4.1.0",
     "classnames": "2.2.6",
     "devicon": "2.2.0",
     "lodash": "4.17.19",
@@ -28,6 +29,7 @@
     "next-seo": "4.7.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-intersection-observer": "8.26.2",
     "remixicon": "2.5.0",
     "sanitize-html": "1.27.1",
     "sass": "1.26.10",

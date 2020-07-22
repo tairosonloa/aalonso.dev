@@ -1,4 +1,6 @@
+import classNames from 'classnames'
 import React, { FC } from 'react'
+import { useInView } from 'react-intersection-observer'
 import { SectionContainer } from '../../components/DataDisplays/SectionContainer/SectionContainer'
 import { SectionHeader } from '../../components/DataDisplays/SectionHeader/SectionHeader'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
@@ -35,11 +37,20 @@ const softSkills = [
 ]
 
 export const Skills: FC = () => {
+  const [refTech, inViewTech] = useInView({ triggerOnce: true })
+  const [refSoft, inViewSoft] = useInView({ triggerOnce: true })
+
   return (
     <SectionContainer sectionId="skills">
       <SectionHeader title="What I offer" subtitle="Why you might want to work with me." />
       <div className={styles.skillsContainer}>
-        <div data-testid="tech-skills">
+        <div
+          data-testid="tech-skills"
+          ref={refTech}
+          className={classNames(
+            inViewTech ? 'animate__animated animate__fadeInLeft' : styles.hidden,
+          )}
+        >
           <RemixIcon name={IconName.TECH_SKILLS} className={styles.headIcon} />
           <Typography
             typographyType={TypographyType.PARAGRAPH_LEAD}
@@ -56,7 +67,13 @@ export const Skills: FC = () => {
             ))}
           </div>
         </div>
-        <div data-testid="soft-skills">
+        <div
+          data-testid="soft-skills"
+          ref={refSoft}
+          className={classNames(
+            inViewSoft ? 'animate__animated animate__fadeInRight' : styles.hidden,
+          )}
+        >
           <RemixIcon name={IconName.SOFT_SKILLS} className={styles.headIcon} />
           <Typography
             typographyType={TypographyType.PARAGRAPH_LEAD}

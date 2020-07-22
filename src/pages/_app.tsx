@@ -1,3 +1,4 @@
+import 'animate.css/animate.min.css'
 import 'devicon/devicon.min.css'
 import { DefaultSeo } from 'next-seo'
 import { Router } from 'next/router'

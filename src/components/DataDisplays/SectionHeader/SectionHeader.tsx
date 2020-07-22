@@ -1,4 +1,6 @@
+import classNames from 'classnames'
 import React, { FC } from 'react'
+import { useInView } from 'react-intersection-observer'
 import { Typography, TypographyType } from '../Typography/Typography'
 import styles from './SectionHeader.module.scss'
 
@@ -8,8 +10,16 @@ type SectionHeaderProps = {
 }
 
 export const SectionHeader: FC<SectionHeaderProps> = ({ title, subtitle }) => {
+  const [ref, inView] = useInView({ triggerOnce: true })
+
   return (
-    <div className={styles.container}>
+    <div
+      className={classNames(
+        styles.container,
+        inView ? 'animate__animated animate__fadeInDown' : styles.hidden,
+      )}
+      ref={ref}
+    >
       <Typography data-testid="section-title" typographyType={TypographyType.TITLE}>
         {title}
       </Typography>
