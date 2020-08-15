@@ -41,7 +41,7 @@
     "@babel/plugin-proposal-class-properties": "7.10.4",
     "@babel/preset-typescript": "7.10.4",
     "@storybook/addon-actions": "5.3.19",
-    "@storybook/addon-backgrounds": "5.3.19",
+    "@storybook/addon-backgrounds": "6.0.10",
     "@storybook/addon-links": "5.3.19",
     "@storybook/addon-viewport": "5.3.19",
     "@storybook/addons": "5.3.19",
