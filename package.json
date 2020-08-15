@@ -44,7 +44,7 @@
     "@storybook/addon-backgrounds": "5.3.19",
     "@storybook/addon-links": "5.3.19",
     "@storybook/addon-viewport": "5.3.19",
-    "@storybook/addons": "5.3.19",
+    "@storybook/addons": "6.0.10",
     "@storybook/react": "5.3.19",
     "@testing-library/jest-dom": "5.11.3",
     "@testing-library/react": "10.4.8",
