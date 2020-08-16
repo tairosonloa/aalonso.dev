@@ -9,7 +9,7 @@
     ":semanticPrefixChore",
     ":prNotPending",
     ":updateNotScheduled",
-    ":automergeDisabled",
+    ":automergeMinor",
     ":ignoreModulesAndTests",
     ":disableRateLimiting",
     ":assignAndReview(tairosonloa)",
