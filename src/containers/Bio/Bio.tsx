@@ -18,20 +18,58 @@ export const Bio: FC = () => {
         <img src="/images/me.jpeg" alt="" className={styles.image} />
         <SocialMediaLinks className={styles.socialMediaLinks} />
         <Typography className={styles.bio}>
-          I&apos;m a full stack developer full-time working for{' '}
+          I&apos;m a full-stack developer{' '}
+          <span role="img" aria-label="man with a computer">
+            👨‍💻
+          </span>{' '}
+          full-time working for{' '}
           <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">
             {employerInfo.name}
-          </a>
-          , while studying for a Master&apos;s Degree in Computer Science and Engineering on
-          weekends. Focused on TypeScript with Node.js and React, I use these technologies both
-          professionally and for personal side projects, like this website.
+          </a>{' '}
+          <span role="img" aria-label="lemon">
+            🍋
+          </span>
+          , while studying for a Master&apos;s Degree in Computer Science and Engineering{' '}
+          <span role="img" aria-label="graduation cap">
+            🎓
+          </span>{' '}
+          on weekends. Focused on TypeScript with Node.js and React{' '}
+          <span role="img" aria-label="atom">
+            ⚛️
+          </span>
+          , I mainly work with{' '}
+          <a href="https://nestjs.com/" target="_blank" rel="noopener noreferrer">
+            NestJS
+          </a>{' '}
+          for backend APIs and{' '}
+          <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+            Next.js
+          </a>{' '}
+          for websites.
         </Typography>
         <Typography className={styles.bio}>
-          I&apos;m proactive, enthusiastic and curious, so I never stop learning and doing new
-          stuff. I&apos;ve been playing with python for artificial intelligence and machine learning
-          for a few years, specially around neural networks. Free software lover and DevOps soul,
-          I&apos;ll consider myself an experienced Linux system administrator, so I self maintained
-          my own virtual private server for years.
+          I&apos;m proactive, enthusiastic and curious , so I never stop learning and doing new
+          stuff. I&apos;ve been playing around artificial intelligence and machine learning with
+          python for a few years, specially around neural networks.
+        </Typography>
+        <Typography className={styles.bio}>
+          Free software contributor{' '}
+          <span role="img" aria-label="hearth">
+            ❤️
+          </span>
+          , Linux fan{' '}
+          <span role="img" aria-label="penguin">
+            🐧
+          </span>{' '}
+          and DevOps soul{' '}
+          <span role="img" aria-label="gear">
+            ⚙️
+          </span>{' '}
+          . <br />
+          Swipe down to know my history!{' '}
+          <span role="img" aria-label="swipe down">
+            👇
+          </span>
         </Typography>
       </div>
     </SectionContainer>

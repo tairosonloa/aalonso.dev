@@ -14,6 +14,7 @@ export const SocialMediaLinks: FC<SocialMediaLinksProps> = ({ className }) => {
   const allSocialMedia = [
     { href: socialMediaUrls.github, iconName: IconName.GITHUB, name: 'github' },
     { href: socialMediaUrls.linkedin, iconName: IconName.LINKEDIN, name: 'linkedin' },
+    { href: socialMediaUrls.twitter, iconName: IconName.TWITTER, name: 'twitter' },
     {
       href: `mailto:${socialMediaUrls.emailAddress}`,
       iconName: IconName.EMAIL,
