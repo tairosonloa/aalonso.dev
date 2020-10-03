@@ -5,7 +5,7 @@ import { Cover } from './Cover'
 describe('<Cover/>', () => {
   it('should display the default message', () => {
     const title = 'Aitor Alonso'
-    const subtitle = 'Full Stack Software Developer Engineer'
+    const subtitle = 'Full-Stack Software Developer Engineer'
 
     const renderResult = render(<Cover />)
 
