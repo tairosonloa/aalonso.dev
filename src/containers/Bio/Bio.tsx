@@ -4,6 +4,7 @@ import { SiteMetadata } from '../../../site.metadata'
 import { SectionContainer } from '../../components/DataDisplays/SectionContainer/SectionContainer'
 import { SectionHeader } from '../../components/DataDisplays/SectionHeader/SectionHeader'
 import { Typography } from '../../components/DataDisplays/Typography/Typography'
+import { Emoji } from '../../components/Emoji/Emoji'
 import { SocialMediaLinks } from '../../components/SocialMediaLinks/SocialMediaLinks'
 import styles from './Bio.module.scss'
 
@@ -18,26 +19,14 @@ export const Bio: FC = () => {
         <img src="/images/me.jpeg" alt="" className={styles.image} />
         <SocialMediaLinks className={styles.socialMediaLinks} />
         <Typography className={styles.bio}>
-          I&apos;m a full-stack developer{' '}
-          <span role="img" aria-label="man with a computer">
-            👨‍💻
-          </span>{' '}
-          full-time working for{' '}
+          I&apos;m a full-stack developer <Emoji emoji="👨‍💻" label="man with a computer" /> full-time
+          working for{' '}
           <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">
             {employerInfo.name}
           </a>{' '}
-          <span role="img" aria-label="lemon">
-            🍋
-          </span>
-          , while studying for a Master&apos;s Degree in Computer Science and Engineering{' '}
-          <span role="img" aria-label="graduation cap">
-            🎓
-          </span>{' '}
-          on weekends. Focused on TypeScript with Node.js and React{' '}
-          <span role="img" aria-label="atom">
-            ⚛️
-          </span>
-          , I mainly work with{' '}
+          <Emoji emoji="🍋" label="lemon" />, while studying for a Master&apos;s Degree in Computer
+          Science and Engineering <Emoji emoji="🎓" label="graduation cap" /> on weekends. Focused
+          on TypeScript with Node.js and React <Emoji emoji="⚛️" label="atom" />, I mainly work with{' '}
           <a href="https://nestjs.com/" target="_blank" rel="noopener noreferrer">
             NestJS
           </a>{' '}
@@ -53,23 +42,10 @@ export const Bio: FC = () => {
           python for a few years, specially around neural networks.
         </Typography>
         <Typography className={styles.bio}>
-          Free software contributor{' '}
-          <span role="img" aria-label="hearth">
-            ❤️
-          </span>
-          , Linux fan{' '}
-          <span role="img" aria-label="penguin">
-            🐧
-          </span>{' '}
-          and DevOps soul{' '}
-          <span role="img" aria-label="gear">
-            ⚙️
-          </span>{' '}
+          Free software contributor <Emoji emoji="❤️" label="hearth" />, Linux fan{' '}
+          <Emoji emoji="🐧" label="penguin" /> and DevOps soul <Emoji emoji="⚙️" label="gear" />
           . <br />
-          Swipe down to know my history!{' '}
-          <span role="img" aria-label="swipe down">
-            👇
-          </span>
+          Swipe down to know my history! <Emoji emoji="👇" label="swipe down" />
         </Typography>
       </div>
     </SectionContainer>
