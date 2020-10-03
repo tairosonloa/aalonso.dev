@@ -1,4 +1,4 @@
-import { DependencyList, useLayoutEffect, useRef } from 'react'
+import { DependencyList, useEffect, useRef } from 'react'
 
 // Custom TypeScript version of the hook useScrollPosition from:
 // https://dev.to/n8tb1t/tracking-scroll-position-with-react-hooks-3bbj
@@ -61,7 +61,7 @@ export function useScrollPosition(
     throttleTimeout = (null as unknown) as NodeJS.Timeout
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       if (waitMiliseconds) {
         if (throttleTimeout === null) {
