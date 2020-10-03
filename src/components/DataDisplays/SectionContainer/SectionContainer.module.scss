@@ -10,6 +10,7 @@
   overflow-x: hidden; // fade-in right animations breaks layout
   text-align: center;
   scroll-margin: grid_units(10);
+  border-bottom: 1px solid $grey-platinum;
 }
 
 .light {

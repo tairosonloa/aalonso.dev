@@ -13,7 +13,7 @@ export const Cover: FC = () => {
         typographyType={TypographyType.TITLE_SMALL}
         htmlTag="h1"
       >
-        Full Stack Software Developer Engineer
+        Full-Stack Software Developer Engineer
       </Typography>
     </div>
   )

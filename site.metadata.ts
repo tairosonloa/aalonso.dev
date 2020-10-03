@@ -4,6 +4,7 @@ export const SiteMetadata = {
   socialMediaUrls: {
     github: 'https://github.com/tairosonloa',
     linkedin: 'https://www.linkedin.com/in/aitoralonsonunez/',
+    twitter: 'https://twitter.com/tairosonloa',
     emailAddress: 'aitor@aalonso.dev',
   },
   employerInfo: {
@@ -11,7 +12,7 @@ export const SiteMetadata = {
     website: 'https://acidtango.com/',
   },
   seo: {
-    title: 'Full Stack Software Developer Engineer',
+    title: 'Full-Stack Software Developer Engineer',
     titleTemplate: '%s | Aitor Alonso (aalonso)',
     description:
       'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...',
@@ -22,7 +23,7 @@ export const SiteMetadata = {
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      title: 'Aitor Alonso | Full Stack Developer',
+      title: 'Aitor Alonso | Full-Stack Developer',
       description:
         'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...',
       image: 'https://aalonso.dev/images/me.jpeg',
@@ -41,7 +42,7 @@ export const SiteMetadata = {
       {
         name: 'keywords',
         content:
-          'Aitor, Alonso, aalonso, tairosonloa, full stack, fullstack, backend, frontend, software, developer, engineer, react, node, js, javascript, typescript, python, SQL, noSQL, graphSQL, docker, git, github, gitlab, web, aws, linux, code, freelance',
+          'Aitor, Alonso, aalonso, tairosonloa, full stack, fullstack, full-stack, backend, frontend, software, developer, engineer, react, node, js, javascript, typescript, python, SQL, noSQL, graphSQL, docker, git, github, gitlab, web, aws, linux, code, freelance',
       },
     ] as MetaTag[],
   },

@@ -8,9 +8,9 @@ const career = [
   {
     imageUrl: '/images/acidtango.jpeg',
     date: '2019 - today',
-    title: 'Full Stack Developer',
+    title: 'Full-Stack Developer',
     description:
-      'Joined <a href="https://acidtango.com/" target="_blank" rel="noopener noreferrer">Acid Tango</a> to work as a Full Stack Developer with Node.js and React. My stack is mainly TypeScript, using Next.js for the frontend and NestJS for the backend.',
+      'Joined <a href="https://acidtango.com/" target="_blank" rel="noopener noreferrer">Acid Tango</a> to work as a full-stack Developer with Node.js and React. My stack is mainly TypeScript, using Next.js for the frontend and NestJS for the backend.',
   },
   {
     imageUrl: '/images/uc3m.png',
