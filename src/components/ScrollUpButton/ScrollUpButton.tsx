@@ -1,8 +1,10 @@
 import React, { FC } from 'react'
+import smoothscroll from 'smoothscroll-polyfill'
 import { IconName, RemixIcon } from '../Icons/RemixIcon/RemixIcon'
 import styles from './ScrollUpButton.module.scss'
 
 export const ScrollUpButton: FC = () => {
+  if (typeof window !== 'undefined') smoothscroll.polyfill()
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
