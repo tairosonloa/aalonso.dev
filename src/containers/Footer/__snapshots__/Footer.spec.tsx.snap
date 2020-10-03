@@ -8,6 +8,15 @@ Object {
       <footer
         class="container"
       >
+        <button
+          class="scrollTop"
+          data-testid="scrollUpButton"
+          type="button"
+        >
+          <i
+            class="ri-arrow-up-line icon"
+          />
+        </button>
         <p
           class="common paragraph copyright"
         >
@@ -107,6 +116,15 @@ Object {
     <footer
       class="container"
     >
+      <button
+        class="scrollTop"
+        data-testid="scrollUpButton"
+        type="button"
+      >
+        <i
+          class="ri-arrow-up-line icon"
+        />
+      </button>
       <p
         class="common paragraph copyright"
       >

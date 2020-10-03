@@ -3,6 +3,7 @@
 
 .container {
   display: grid;
+  position: relative;
   grid-gap: grid_units(4);
   grid-template-columns: repeat(auto-fit, minmax(grid_units(45), 1fr));
   padding: grid_units(4);
@@ -16,7 +17,7 @@
   }
 
   @include screenIn(desktop) {
-    & > :first-child {
+    & > :nth-child(2) {
       justify-content: flex-start;
     }
 
