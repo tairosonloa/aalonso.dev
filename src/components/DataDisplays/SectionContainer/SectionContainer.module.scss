@@ -8,6 +8,7 @@
   justify-content: center;
   padding: grid_units(17) grid_units(4);
   overflow-x: hidden; // fade-in right animations breaks layout
+  border-bottom: 1px solid $grey-platinum;
   text-align: center;
   scroll-margin: grid_units(10);
 }

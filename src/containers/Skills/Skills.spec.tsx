@@ -5,7 +5,7 @@ import { Skills } from './Skills'
 describe('<Skills/>', () => {
   it('should display the default message', () => {
     const title = 'What I offer'
-    const subtitle = 'Why you might want to work with me.'
+    const subtitle = 'What people get when work with me.'
 
     const renderResult = render(<Skills />)
 

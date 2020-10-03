@@ -42,7 +42,7 @@ export const Skills: FC = () => {
 
   return (
     <SectionContainer sectionId="skills">
-      <SectionHeader title="What I offer" subtitle="Why you might want to work with me." />
+      <SectionHeader title="What I offer" subtitle="What people get when work with me." />
       <div className={styles.skillsContainer}>
         <div
           data-testid="tech-skills"

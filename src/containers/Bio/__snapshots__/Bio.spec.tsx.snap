@@ -74,6 +74,24 @@ Object {
             </li>
             <li>
               <a
+                data-testid="twitter-link"
+                href="https://twitter.com/tairosonloa"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="ri-twitter-fill icon"
+                  data-testid="twitter"
+                />
+                <span
+                  class="hiddenTextForAccessibility"
+                >
+                  twitter
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
                 data-testid="email-link"
                 href="mailto:aitor@aalonso.dev"
                 rel="noopener noreferrer"
@@ -94,7 +112,16 @@ Object {
           <p
             class="common paragraph bio"
           >
-            I'm a full stack developer full-time working for
+            I'm a full-stack developer
+             
+            <span
+              aria-label="man with a computer"
+              role="img"
+            >
+              👨‍💻
+            </span>
+             
+            full-time working for
              
             <a
               href="https://acidtango.com/"
@@ -103,12 +130,96 @@ Object {
             >
               Acid Tango
             </a>
-            , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with Node.js and React, I use these technologies both professionally and for personal side projects, like this website.
+             
+            <span
+              aria-label="lemon"
+              role="img"
+            >
+              🍋
+            </span>
+            , while studying for a Master's Degree in Computer Science and Engineering
+             
+            <span
+              aria-label="graduation cap"
+              role="img"
+            >
+              🎓
+            </span>
+             
+            on weekends. Focused on TypeScript with Node.js and React
+             
+            <span
+              aria-label="atom"
+              role="img"
+            >
+              ⚛️
+            </span>
+            , I mainly work with
+             
+            <a
+              href="https://nestjs.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              NestJS
+            </a>
+             
+            for backend APIs and
+             
+            <a
+              href="https://nextjs.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Next.js
+            </a>
+             
+            for websites.
           </p>
           <p
             class="common paragraph bio"
           >
-            I'm proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I'll consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
+            I'm proactive, enthusiastic and curious , so I never stop learning and doing new stuff. I've been playing around artificial intelligence and machine learning with python for a few years, specially around neural networks.
+          </p>
+          <p
+            class="common paragraph bio"
+          >
+            Free software contributor
+             
+            <span
+              aria-label="hearth"
+              role="img"
+            >
+              ❤️
+            </span>
+            , Linux fan
+             
+            <span
+              aria-label="penguin"
+              role="img"
+            >
+              🐧
+            </span>
+             
+            and DevOps soul
+             
+            <span
+              aria-label="gear"
+              role="img"
+            >
+              ⚙️
+            </span>
+             
+            . 
+            <br />
+            Swipe down to know my history!
+             
+            <span
+              aria-label="swipe down"
+              role="img"
+            >
+              👇
+            </span>
           </p>
         </div>
       </div>
@@ -184,6 +295,24 @@ Object {
           </li>
           <li>
             <a
+              data-testid="twitter-link"
+              href="https://twitter.com/tairosonloa"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-twitter-fill icon"
+                data-testid="twitter"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                twitter
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
               data-testid="email-link"
               href="mailto:aitor@aalonso.dev"
               rel="noopener noreferrer"
@@ -204,7 +333,16 @@ Object {
         <p
           class="common paragraph bio"
         >
-          I'm a full stack developer full-time working for
+          I'm a full-stack developer
+           
+          <span
+            aria-label="man with a computer"
+            role="img"
+          >
+            👨‍💻
+          </span>
+           
+          full-time working for
            
           <a
             href="https://acidtango.com/"
@@ -213,12 +351,96 @@ Object {
           >
             Acid Tango
           </a>
-          , while studying for a Master's Degree in Computer Science and Engineering on weekends. Focused on TypeScript with Node.js and React, I use these technologies both professionally and for personal side projects, like this website.
+           
+          <span
+            aria-label="lemon"
+            role="img"
+          >
+            🍋
+          </span>
+          , while studying for a Master's Degree in Computer Science and Engineering
+           
+          <span
+            aria-label="graduation cap"
+            role="img"
+          >
+            🎓
+          </span>
+           
+          on weekends. Focused on TypeScript with Node.js and React
+           
+          <span
+            aria-label="atom"
+            role="img"
+          >
+            ⚛️
+          </span>
+          , I mainly work with
+           
+          <a
+            href="https://nestjs.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            NestJS
+          </a>
+           
+          for backend APIs and
+           
+          <a
+            href="https://nextjs.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Next.js
+          </a>
+           
+          for websites.
         </p>
         <p
           class="common paragraph bio"
         >
-          I'm proactive, enthusiastic and curious, so I never stop learning and doing new stuff. I've been playing with python for artificial intelligence and machine learning for a few years, specially around neural networks. Free software lover and DevOps soul, I'll consider myself an experienced Linux system administrator, so I self maintained my own virtual private server for years.
+          I'm proactive, enthusiastic and curious , so I never stop learning and doing new stuff. I've been playing around artificial intelligence and machine learning with python for a few years, specially around neural networks.
+        </p>
+        <p
+          class="common paragraph bio"
+        >
+          Free software contributor
+           
+          <span
+            aria-label="hearth"
+            role="img"
+          >
+            ❤️
+          </span>
+          , Linux fan
+           
+          <span
+            aria-label="penguin"
+            role="img"
+          >
+            🐧
+          </span>
+           
+          and DevOps soul
+           
+          <span
+            aria-label="gear"
+            role="img"
+          >
+            ⚙️
+          </span>
+           
+          . 
+          <br />
+          Swipe down to know my history!
+           
+          <span
+            aria-label="swipe down"
+            role="img"
+          >
+            👇
+          </span>
         </p>
       </div>
     </div>

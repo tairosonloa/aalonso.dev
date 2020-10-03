@@ -16,6 +16,7 @@ export const Footer: FC<FooterProps> = ({ router }) => {
       <SocialMediaLinks className={styles.socialMediaLinks} />
       <div>
         <a
+          className={styles.link}
           href={Routes.privacyPolicy().getPath()}
           onClick={(e) => {
             e.preventDefault()

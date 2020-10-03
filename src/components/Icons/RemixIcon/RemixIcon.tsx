@@ -5,6 +5,7 @@ import styles from './RemixIcon.module.scss'
 export enum IconName {
   GITHUB = 'github',
   LINKEDIN = 'linkedin-box',
+  TWITTER = 'twitter',
   EMAIL = 'mail',
   TECH_SKILLS = 'code-box',
   SOFT_SKILLS = 'hand-heart',
@@ -33,6 +34,7 @@ export enum IconType {
 const iconTypeToString: { [key in IconName]: string } = {
   [IconName.GITHUB]: IconType.FILL,
   [IconName.LINKEDIN]: IconType.FILL,
+  [IconName.TWITTER]: IconType.FILL,
   [IconName.EMAIL]: IconType.FILL,
   [IconName.TECH_SKILLS]: IconType.FILL,
   [IconName.SOFT_SKILLS]: IconType.FILL,
