@@ -1,0 +1,25 @@
+@import 'src/styles/utils.scss';
+@import 'src/styles/palette.scss';
+
+.scrollTop {
+  position: absolute;
+  z-index: 10;
+  top: grid_units(-15);
+  right: grid_units(5);
+  width: grid_units(10);
+  height: grid_units(10);
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.4;
+  background-color: $burgundy;
+  cursor: pointer;
+
+  & i {
+    color: $white;
+  }
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}

@@ -22,6 +22,7 @@ export enum IconName {
   PROACTIVITY = 'run',
   MENU = 'menu',
   CLOSE = 'close',
+  ARROW_UP = 'arrow-up',
 }
 
 export enum IconType {
@@ -51,6 +52,7 @@ const iconTypeToString: { [key in IconName]: string } = {
   [IconName.PROACTIVITY]: IconType.FILL,
   [IconName.MENU]: IconType.LINE,
   [IconName.CLOSE]: IconType.LINE,
+  [IconName.ARROW_UP]: IconType.LINE,
 }
 
 export type IconProps = {
