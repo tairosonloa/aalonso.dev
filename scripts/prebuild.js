@@ -31,6 +31,20 @@ https://aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
 https://www.aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
 `
 
+const headers = `# Cloudflare must cache Netlify assets for 7 days (604 800 seconds).
+# This means I'm using custom headers on Netlify to tell Cloudflare CDN
+# how long to cache assets.
+#
+# I'll then control how long browsers cache using cloudflare CDN settings.
+
+/images/*
+Cache-Control: public, s-max-age=604800
+/*.css
+Cache-Control: public, s-max-age=604800
+/*.js
+Cache-Control: public, s-max-age=604800
+`
+
 const generateSitemap = async () => {
   const stream = new SitemapStream({
     hostname: `https://${process.env.DOMAIN}`,
@@ -54,4 +68,5 @@ const generateSitemap = async () => {
 
 fs.writeFileSync(path.resolve(__dirname, '../public/robots.txt'), robots)
 fs.writeFileSync(path.resolve(__dirname, '../public/_redirects'), redirects)
+fs.writeFileSync(path.resolve(__dirname, '../public/_headers'), headers)
 generateSitemap().then(() => process.exit(0))

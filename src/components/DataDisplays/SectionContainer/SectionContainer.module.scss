@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: grid_units(17) grid_units(4);
-  overflow-x: hidden; // fade-in right animations breaks layout
+  overflow: hidden; // fade-in animations breaks layout with a weird scroll bug
   border-bottom: 1px solid $grey-platinum;
   text-align: center;
   scroll-margin: grid_units(10);

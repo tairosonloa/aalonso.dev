@@ -31,5 +31,6 @@ yarn-error.log*
 
 # generated on build time by prebuild.js
 public/_redirects
+public/_headers
 public/robots.txt
 sitemap.xml

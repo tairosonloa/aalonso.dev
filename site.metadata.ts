@@ -3,7 +3,7 @@ import { NextSeoProps } from 'next-seo/lib/types.d'
 export const { DOMAIN } = process.env
 
 const title = 'Full-Stack Software Developer Engineer'
-const titleTemplate = 'Aitor Alonso (aalonso)'
+const titleTemplate = 'Aitor Alonso (aalonso.dev)'
 const description =
   'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...'
 const author = 'Aitor Alonso'
@@ -35,7 +35,7 @@ export const SiteMetadata = {
       title: `${title} | ${titleTemplate}`,
       description,
       images: [{ url: `https://${DOMAIN}/images/me.webp` }],
-      site_name: 'aalonso',
+      site_name: 'aalonso.dev',
     },
     additionalMetaTags: [
       {
