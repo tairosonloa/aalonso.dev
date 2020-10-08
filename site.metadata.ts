@@ -34,7 +34,7 @@ export const SiteMetadata = {
       locale: 'en_US',
       title: `${title} | ${titleTemplate}`,
       description,
-      images: [{ url: `https://${DOMAIN}/images/me.jpeg` }],
+      images: [{ url: `https://${DOMAIN}/images/me.webp` }],
       site_name: 'aalonso',
     },
     additionalMetaTags: [

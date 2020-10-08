@@ -34,7 +34,7 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/acidtango.jpeg"
+              src="/images/acidtango.webp"
             />
           </li>
           <li
@@ -43,7 +43,7 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/uc3m.png"
+              src="/images/uc3m.webp"
             />
           </li>
           <li
@@ -52,7 +52,7 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/uc3m.png"
+              src="/images/uc3m.webp"
             />
           </li>
           <li
@@ -61,7 +61,7 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/techfest.png"
+              src="/images/techfest.webp"
             />
           </li>
           <li
@@ -70,7 +70,7 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/uc3m.png"
+              src="/images/uc3m.webp"
             />
           </li>
         </ul>
@@ -107,7 +107,7 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/acidtango.jpeg"
+            src="/images/acidtango.webp"
           />
         </li>
         <li
@@ -116,7 +116,7 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/uc3m.png"
+            src="/images/uc3m.webp"
           />
         </li>
         <li
@@ -125,7 +125,7 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/uc3m.png"
+            src="/images/uc3m.webp"
           />
         </li>
         <li
@@ -134,7 +134,7 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/techfest.png"
+            src="/images/techfest.webp"
           />
         </li>
         <li
@@ -143,7 +143,7 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/uc3m.png"
+            src="/images/uc3m.webp"
           />
         </li>
       </ul>

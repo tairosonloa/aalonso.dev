@@ -20,7 +20,7 @@ export const Bio: FC = () => {
     <SectionContainer sectionId="bio" darkBackground>
       <SectionHeader title="About me" subtitle="Let me introduce myself first." />
       <div ref={ref} className={inView ? 'animate__animated animate__fadeInUp' : styles.hidden}>
-        <img src="/images/me.jpeg" alt="" className={styles.image} />
+        <img src="/images/me.webp" alt="" className={styles.image} />
         <SocialMediaLinks className={styles.socialMediaLinks} />
         <Typography className={styles.bio}>
           I&apos;m a full-stack developer <Emoji emoji="👨‍💻" label="man with a computer" /> full-time
