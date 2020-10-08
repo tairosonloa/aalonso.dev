@@ -55,11 +55,14 @@
 .solid {
   border-color: $black;
   background-color: $white;
-  box-shadow: 0 0 20px -10px $rich-black;
   color: $black;
 
   * {
     border-color: $black;
     color: $black;
   }
+}
+
+.shadow {
+  box-shadow: 0 0 20px -10px $rich-black;
 }

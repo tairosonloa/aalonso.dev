@@ -3,8 +3,7 @@ import React, { FC } from 'react'
 import { Bio } from '../containers/Bio/Bio'
 import { Career } from '../containers/Career/Career'
 import { Cover } from '../containers/Cover/Cover'
-import { Footer } from '../containers/Footer/Footer'
-import { Header } from '../containers/Header/Header'
+import { Layout } from '../containers/Layout/Layout'
 import { Skills } from '../containers/Skills/Skills'
 import { RouterClientNext } from '../services/router/RouterClientNext'
 
@@ -19,14 +18,12 @@ const Index: FC = () => {
   ]
 
   return (
-    <>
-      <Header links={headerLinks} />
+    <Layout headerLinks={headerLinks} router={router}>
       <Cover />
       <Bio />
       <Skills />
       <Career />
-      <Footer router={router} />
-    </>
+    </Layout>
   )
 }
 
