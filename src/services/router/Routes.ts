@@ -15,5 +15,6 @@ export class Route {
 }
 
 export const Routes = {
+  home: (): Route => Route.of('/'),
   privacyPolicy: (): Route => Route.of('/privacy-policy'),
 }

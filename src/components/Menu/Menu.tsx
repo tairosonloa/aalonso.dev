@@ -1,15 +1,18 @@
 import classNames from 'classnames'
 import React, { FC, useEffect, useState } from 'react'
+import { Router } from '../../services/router/Router'
+import { Route } from '../../services/router/Routes'
 import { Typography, TypographyType } from '../DataDisplays/Typography/Typography'
 import { IconName, RemixIcon } from '../Icons/RemixIcon/RemixIcon'
 import styles from './Menu.module.scss'
 
 type MenuProps = {
-  links: { href: string; text: string }[]
+  links: { href: string | Route; text: string }[]
+  router: Router
   className?: string
 }
 
-export const Menu: FC<MenuProps> = ({ links, className }) => {
+export const Menu: FC<MenuProps> = ({ links, router, className }) => {
   const [menuExpanded, setMenuExpanded] = useState<boolean>(false)
 
   const smoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -58,13 +61,32 @@ export const Menu: FC<MenuProps> = ({ links, className }) => {
         />
       </button>
       <nav className={classNames(styles.links, menuExpanded && styles.mobileLinks)}>
-        {links.map(({ href, text }) => (
-          <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
-            <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h4">
-              {text}
-            </Typography>
-          </a>
-        ))}
+        {links.map(({ href, text }) => {
+          if (typeof href === 'string') {
+            return (
+              <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
+                <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h4">
+                  {text}
+                </Typography>
+              </a>
+            )
+          }
+          return (
+            <a
+              href={href.getPath()}
+              key={text}
+              onClick={(e) => {
+                e.preventDefault()
+                router.pushTo(href)
+              }}
+              data-testid={text}
+            >
+              <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h4">
+                {text}
+              </Typography>
+            </a>
+          )
+        })}
       </nav>
     </div>
   )

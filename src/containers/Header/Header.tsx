@@ -3,25 +3,37 @@ import React, { FC, useState } from 'react'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
 import { Menu } from '../../components/Menu/Menu'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
+import { Router } from '../../services/router/Router'
+import { Route } from '../../services/router/Routes'
 import styles from './Header.module.scss'
 
 type HeaderProps = {
-  links: { href: string; text: string }[]
+  links: { href: string | Route; text: string }[]
+  router: Router
+  fixed?: boolean
 }
 
-export const Header: FC<HeaderProps> = ({ links }) => {
-  const [solid, setSolid] = useState<boolean>(false)
+export const Header: FC<HeaderProps> = ({ links, router, fixed = false }) => {
+  const [solid, setSolid] = useState<boolean>(fixed)
+  const [shadow, setShadow] = useState<boolean>(false)
   const HEADER_HEIGHT = 75
 
   useScrollPosition(
     ({ currentPosition }) => {
-      setSolid(currentPosition.y > window.innerHeight - HEADER_HEIGHT)
+      if (!fixed) setSolid(currentPosition.y > window.innerHeight - HEADER_HEIGHT)
+      setShadow(currentPosition.y > HEADER_HEIGHT)
     },
-    [solid],
+    [solid, shadow],
   )
 
   return (
-    <header className={classNames(styles.container, solid && styles.solid)}>
+    <header
+      className={classNames(
+        styles.container,
+        solid && styles.solid,
+        solid && shadow && styles.shadow,
+      )}
+    >
       <div className={styles.contentContainer}>
         <div className={styles.titleContainer}>
           {solid && (
@@ -30,7 +42,7 @@ export const Header: FC<HeaderProps> = ({ links }) => {
             </Typography>
           )}
         </div>
-        <Menu links={links} className={styles.menu} />
+        <Menu links={links} router={router} className={styles.menu} />
       </div>
     </header>
   )

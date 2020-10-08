@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
+import { DOMAIN } from '../../site.metadata'
 import { Bio } from '../containers/Bio/Bio'
 import { Career } from '../containers/Career/Career'
 import { Cover } from '../containers/Cover/Cover'
-import { Footer } from '../containers/Footer/Footer'
-import { Header } from '../containers/Header/Header'
+import { Layout, OverwriteDefaultSeo } from '../containers/Layout/Layout'
 import { Skills } from '../containers/Skills/Skills'
 import { RouterClientNext } from '../services/router/RouterClientNext'
 
@@ -18,15 +18,19 @@ const Index: FC = () => {
     { href: '#career', text: 'Career' },
   ]
 
+  const url = `https://${DOMAIN}/`
+  const seo: OverwriteDefaultSeo = {
+    canonical: url,
+    openGraph: { url },
+  }
+
   return (
-    <>
-      <Header links={headerLinks} />
+    <Layout headerLinks={headerLinks} router={router} seo={seo}>
       <Cover />
       <Bio />
       <Skills />
       <Career />
-      <Footer router={router} />
-    </>
+    </Layout>
   )
 }
 
