@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
-import { Layout } from '../containers/Layout/Layout'
+import { DOMAIN } from '../../site.metadata'
+import { Layout, OverwriteDefaultSeo } from '../containers/Layout/Layout'
 import { PrivacyPolicy } from '../containers/PrivacyPolicy/PrivacyPolicy'
 import { RouterClientNext } from '../services/router/RouterClientNext'
 import { Routes } from '../services/router/Routes'
@@ -11,8 +12,14 @@ const PrivacyPolicyPage: FC = () => {
 
   const headerLinks = [{ href: Routes.home(), text: 'Home' }]
 
+  const url = `https://${DOMAIN}${Routes.privacyPolicy().getPath()}`
+  const seo: OverwriteDefaultSeo = {
+    canonical: url,
+    openGraph: { url },
+  }
+
   return (
-    <Layout headerLinks={headerLinks} router={router} fixedHeader>
+    <Layout headerLinks={headerLinks} router={router} fixedHeader seo={seo}>
       <PrivacyPolicy />
     </Layout>
   )

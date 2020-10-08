@@ -1,4 +1,14 @@
-import { MetaTag, OpenGraph, Twitter } from 'next-seo/lib/types.d'
+import { NextSeoProps } from 'next-seo/lib/types.d'
+
+export const { DOMAIN } = process.env
+
+const title = 'Full-Stack Software Developer Engineer'
+const titleTemplate = 'Aitor Alonso (aalonso)'
+const description =
+  'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...'
+const author = 'Aitor Alonso'
+const keywords =
+  'Aitor, Alonso, aalonso, tairosonloa, full stack, fullstack, full-stack, backend, frontend, software, developer, engineer, react, node, js, javascript, typescript, python, SQL, noSQL, graphSQL, docker, git, github, gitlab, web, aws, linux, code, freelance'
 
 export const SiteMetadata = {
   socialMediaUrls: {
@@ -12,38 +22,34 @@ export const SiteMetadata = {
     website: 'https://acidtango.com/',
   },
   seo: {
-    title: 'Full-Stack Software Developer Engineer',
-    titleTemplate: '%s | Aitor Alonso (aalonso)',
-    description:
-      'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...',
+    title,
+    titleTemplate: `%s | ${titleTemplate}`,
+    description,
     twitter: {
       handle: '@tairosonloa',
       cardType: 'summary_large_image',
-    } as Twitter,
+    },
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      title: 'Full-Stack Software Developer Engineer | Aitor Alonso (aalonso)',
-      description:
-        'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...',
-      images: [{ url: 'https://aalonso.dev/images/me.jpeg' }],
-      url: 'https://aalonso.dev/',
+      title: `${title} | ${titleTemplate}`,
+      description,
+      images: [{ url: `https://${DOMAIN}/images/me.jpeg` }],
       site_name: 'aalonso',
-    } as OpenGraph,
+    },
     additionalMetaTags: [
       {
         name: 'author',
-        content: 'Aitor Alonso',
+        content: author,
       },
       {
         name: 'copyright',
-        content: 'Aitor Alonso',
+        content: author,
       },
       {
         name: 'keywords',
-        content:
-          'Aitor, Alonso, aalonso, tairosonloa, full stack, fullstack, full-stack, backend, frontend, software, developer, engineer, react, node, js, javascript, typescript, python, SQL, noSQL, graphSQL, docker, git, github, gitlab, web, aws, linux, code, freelance',
+        content: keywords,
       },
-    ] as MetaTag[],
-  },
+    ],
+  } as NextSeoProps,
 }
