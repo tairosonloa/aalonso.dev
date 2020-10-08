@@ -35,3 +35,5 @@ export const SocialMediaLinks: FC<SocialMediaLinksProps> = ({ className }) => {
     </ul>
   )
 }
+
+export default SocialMediaLinks

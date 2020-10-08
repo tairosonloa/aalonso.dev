@@ -14,9 +14,12 @@ export const ScrollUpButton: FC = () => {
       type="button"
       onClick={scrollTop}
       className={styles.scrollTop}
+      aria-label="Scroll to top"
       data-testid="scrollUpButton"
     >
       <RemixIcon name={IconName.ARROW_UP} />
     </button>
   )
 }
+
+export default ScrollUpButton

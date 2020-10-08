@@ -46,7 +46,12 @@ export const Typography: FC<TypographyProps> = ({
     ...(innerHtml
       ? {
           dangerouslySetInnerHTML: {
-            __html: sanitize(innerHtml),
+            __html: sanitize(innerHtml, {
+              allowedAttributes: {
+                a: ['href', 'name', 'target', 'rel'],
+                img: ['src'],
+              },
+            }),
           },
         }
       : { children }),

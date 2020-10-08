@@ -14,7 +14,7 @@ describe('<Bio/>', () => {
   })
 
   it('should display the image', () => {
-    const imagePath = '/images/me.jpeg'
+    const imagePath = '/images/me.webp'
 
     const renderResult = render(<Bio />)
     expect(renderResult.getByAltText('')).toHaveAttribute('src', imagePath)

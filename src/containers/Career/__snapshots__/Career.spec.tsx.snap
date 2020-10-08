@@ -34,34 +34,8 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/acidtango.jpeg"
+              src="/images/acidtango.webp"
             />
-            <div
-              class="container left hidden"
-            >
-              <h4
-                class="common paragraphLead"
-              >
-                2019 - today
-              </h4>
-              <h4
-                class="common paragraphLead"
-              >
-                Full-Stack Developer
-              </h4>
-              <p
-                class="common paragraph"
-              >
-                Joined 
-                <a
-                  href="https://acidtango.com/"
-                  target="_blank"
-                >
-                  Acid Tango
-                </a>
-                 to work as a full-stack Developer with Node.js and React. My stack is mainly TypeScript, using Next.js for the frontend and NestJS for the backend.
-              </p>
-            </div>
           </li>
           <li
             class="step"
@@ -69,27 +43,8 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/uc3m.png"
+              src="/images/uc3m.webp"
             />
-            <div
-              class="container right hidden"
-            >
-              <h4
-                class="common paragraphLead"
-              >
-                2019 - 2022 (expected)
-              </h4>
-              <h4
-                class="common paragraphLead"
-              >
-                Master's Degree in Computer Science and Engineering
-              </h4>
-              <p
-                class="common paragraph"
-              >
-                Part-time studing a Master's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid, while working full-time.
-              </p>
-            </div>
           </li>
           <li
             class="step"
@@ -97,27 +52,8 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/uc3m.png"
+              src="/images/uc3m.webp"
             />
-            <div
-              class="container left hidden"
-            >
-              <h4
-                class="common paragraphLead"
-              >
-                2017 - 2019
-              </h4>
-              <h4
-                class="common paragraphLead"
-              >
-                DevOps Developer Intern
-              </h4>
-              <p
-                class="common paragraph"
-              >
-                Working as intern in the Computer Science and Engineering Department at my university. DevOps tasks, including full-stack development and setting infrastructure.
-              </p>
-            </div>
           </li>
           <li
             class="step"
@@ -125,34 +61,8 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/techfest.png"
+              src="/images/techfest.webp"
             />
-            <div
-              class="container right hidden"
-            >
-              <h4
-                class="common paragraphLead"
-              >
-                2016 - 2020
-              </h4>
-              <h4
-                class="common paragraphLead"
-              >
-                T3chfest Collaborator and Volunteer
-              </h4>
-              <p
-                class="common paragraph"
-              >
-                Helping making 
-                <a
-                  href="https://t3chfest.es/"
-                  target="_blank"
-                >
-                  T3chFest
-                </a>
-                 possible for four years. Working near the organizers and friends to position T3chFest as a reference IT event.
-              </p>
-            </div>
           </li>
           <li
             class="step"
@@ -160,27 +70,8 @@ Object {
             <img
               alt=""
               class="stepImage"
-              src="/images/uc3m.png"
+              src="/images/uc3m.webp"
             />
-            <div
-              class="container left hidden"
-            >
-              <h4
-                class="common paragraphLead"
-              >
-                2015 - 2019
-              </h4>
-              <h4
-                class="common paragraphLead"
-              >
-                Bachelor's Degree in Computer Science and Engineering
-              </h4>
-              <p
-                class="common paragraph"
-              >
-                Got my Bachelor's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid with honors. Specialized in artificial intelligence and data analysis.
-              </p>
-            </div>
           </li>
         </ul>
       </div>
@@ -216,34 +107,8 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/acidtango.jpeg"
+            src="/images/acidtango.webp"
           />
-          <div
-            class="container left hidden"
-          >
-            <h4
-              class="common paragraphLead"
-            >
-              2019 - today
-            </h4>
-            <h4
-              class="common paragraphLead"
-            >
-              Full-Stack Developer
-            </h4>
-            <p
-              class="common paragraph"
-            >
-              Joined 
-              <a
-                href="https://acidtango.com/"
-                target="_blank"
-              >
-                Acid Tango
-              </a>
-               to work as a full-stack Developer with Node.js and React. My stack is mainly TypeScript, using Next.js for the frontend and NestJS for the backend.
-            </p>
-          </div>
         </li>
         <li
           class="step"
@@ -251,27 +116,8 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/uc3m.png"
+            src="/images/uc3m.webp"
           />
-          <div
-            class="container right hidden"
-          >
-            <h4
-              class="common paragraphLead"
-            >
-              2019 - 2022 (expected)
-            </h4>
-            <h4
-              class="common paragraphLead"
-            >
-              Master's Degree in Computer Science and Engineering
-            </h4>
-            <p
-              class="common paragraph"
-            >
-              Part-time studing a Master's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid, while working full-time.
-            </p>
-          </div>
         </li>
         <li
           class="step"
@@ -279,27 +125,8 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/uc3m.png"
+            src="/images/uc3m.webp"
           />
-          <div
-            class="container left hidden"
-          >
-            <h4
-              class="common paragraphLead"
-            >
-              2017 - 2019
-            </h4>
-            <h4
-              class="common paragraphLead"
-            >
-              DevOps Developer Intern
-            </h4>
-            <p
-              class="common paragraph"
-            >
-              Working as intern in the Computer Science and Engineering Department at my university. DevOps tasks, including full-stack development and setting infrastructure.
-            </p>
-          </div>
         </li>
         <li
           class="step"
@@ -307,34 +134,8 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/techfest.png"
+            src="/images/techfest.webp"
           />
-          <div
-            class="container right hidden"
-          >
-            <h4
-              class="common paragraphLead"
-            >
-              2016 - 2020
-            </h4>
-            <h4
-              class="common paragraphLead"
-            >
-              T3chfest Collaborator and Volunteer
-            </h4>
-            <p
-              class="common paragraph"
-            >
-              Helping making 
-              <a
-                href="https://t3chfest.es/"
-                target="_blank"
-              >
-                T3chFest
-              </a>
-               possible for four years. Working near the organizers and friends to position T3chFest as a reference IT event.
-            </p>
-          </div>
         </li>
         <li
           class="step"
@@ -342,27 +143,8 @@ Object {
           <img
             alt=""
             class="stepImage"
-            src="/images/uc3m.png"
+            src="/images/uc3m.webp"
           />
-          <div
-            class="container left hidden"
-          >
-            <h4
-              class="common paragraphLead"
-            >
-              2015 - 2019
-            </h4>
-            <h4
-              class="common paragraphLead"
-            >
-              Bachelor's Degree in Computer Science and Engineering
-            </h4>
-            <p
-              class="common paragraph"
-            >
-              Got my Bachelor's Degree in Computer Science and Engineering at Universidad Carlos III de Madrid with honors. Specialized in artificial intelligence and data analysis.
-            </p>
-          </div>
         </li>
       </ul>
     </div>
