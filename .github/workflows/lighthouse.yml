@@ -1,5 +1,7 @@
 name: Lighthouse
+
 on: [push]
+
 jobs:
   lhci:
     name: Lighthouse
@@ -10,11 +12,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - name: npm install, build
+      - name: Install dependencies and build
         run: |
-          npm install
-          npm run build
+          yarn
+          yarn prebuild
+          yarn build
+          yarn export
+        env:
+          DOMAIN: ${{ secrets.DOMAIN }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       - name: run Lighthouse CI
         run: |
-          npm install -g @lhci/cli@0.4.x
+          yarn install -g @lhci/cli@0.4.x
           lhci autorun
