@@ -23,5 +23,5 @@ jobs:
           GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       - name: run Lighthouse CI
         run: |
-          yarn install -g @lhci/cli@0.4.x
+          yarn globbal add @lhci/cli
           lhci autorun
