@@ -33,93 +33,10 @@ Object {
             class="image"
             src="/images/me.jpeg"
           />
-          <ul
-            class="container socialMediaLinks"
-          >
-            <li>
-              <a
-                data-testid="github-link"
-                href="https://github.com/tairosonloa"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i
-                  class="ri-github-fill icon"
-                  data-testid="github"
-                />
-                <span
-                  class="hiddenTextForAccessibility"
-                >
-                  github
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                data-testid="linkedin-link"
-                href="https://www.linkedin.com/in/aitoralonsonunez/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i
-                  class="ri-linkedin-box-fill icon"
-                  data-testid="linkedin"
-                />
-                <span
-                  class="hiddenTextForAccessibility"
-                >
-                  linkedin
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                data-testid="twitter-link"
-                href="https://twitter.com/tairosonloa"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i
-                  class="ri-twitter-fill icon"
-                  data-testid="twitter"
-                />
-                <span
-                  class="hiddenTextForAccessibility"
-                >
-                  twitter
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                data-testid="email-link"
-                href="mailto:aitor@aalonso.dev"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i
-                  class="ri-mail-fill icon"
-                  data-testid="email"
-                />
-                <span
-                  class="hiddenTextForAccessibility"
-                >
-                  email
-                </span>
-              </a>
-            </li>
-          </ul>
           <p
             class="common paragraph bio"
           >
             I'm a full-stack developer 
-            <span
-              aria-label="man with a computer"
-              class="emoji"
-              role="img"
-            >
-              👨‍💻
-            </span>
              full-time working for
              
             <a
@@ -130,29 +47,8 @@ Object {
               Acid Tango
             </a>
              
-            <span
-              aria-label="lemon"
-              class="emoji"
-              role="img"
-            >
-              🍋
-            </span>
             , while studying for a Master's Degree in Computer Science and Engineering 
-            <span
-              aria-label="graduation cap"
-              class="emoji"
-              role="img"
-            >
-              🎓
-            </span>
              on weekends. Focused on TypeScript with Node.js and React 
-            <span
-              aria-label="atom"
-              class="emoji"
-              role="img"
-            >
-              ⚛️
-            </span>
             , I mainly work with
              
             <a
@@ -184,40 +80,12 @@ Object {
             class="common paragraph bio"
           >
             Free software contributor 
-            <span
-              aria-label="hearth"
-              class="emoji"
-              role="img"
-            >
-              ❤️
-            </span>
             , Linux fan
              
-            <span
-              aria-label="penguin"
-              class="emoji"
-              role="img"
-            >
-              🐧
-            </span>
              and DevOps soul 
-            <span
-              aria-label="gear"
-              class="emoji"
-              role="img"
-            >
-              ⚙️
-            </span>
             . 
             <br />
             Swipe down to know my history! 
-            <span
-              aria-label="swipe down"
-              class="emoji"
-              role="img"
-            >
-              👇
-            </span>
           </p>
         </div>
       </div>
@@ -252,93 +120,10 @@ Object {
           class="image"
           src="/images/me.jpeg"
         />
-        <ul
-          class="container socialMediaLinks"
-        >
-          <li>
-            <a
-              data-testid="github-link"
-              href="https://github.com/tairosonloa"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i
-                class="ri-github-fill icon"
-                data-testid="github"
-              />
-              <span
-                class="hiddenTextForAccessibility"
-              >
-                github
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              data-testid="linkedin-link"
-              href="https://www.linkedin.com/in/aitoralonsonunez/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i
-                class="ri-linkedin-box-fill icon"
-                data-testid="linkedin"
-              />
-              <span
-                class="hiddenTextForAccessibility"
-              >
-                linkedin
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              data-testid="twitter-link"
-              href="https://twitter.com/tairosonloa"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i
-                class="ri-twitter-fill icon"
-                data-testid="twitter"
-              />
-              <span
-                class="hiddenTextForAccessibility"
-              >
-                twitter
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              data-testid="email-link"
-              href="mailto:aitor@aalonso.dev"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i
-                class="ri-mail-fill icon"
-                data-testid="email"
-              />
-              <span
-                class="hiddenTextForAccessibility"
-              >
-                email
-              </span>
-            </a>
-          </li>
-        </ul>
         <p
           class="common paragraph bio"
         >
           I'm a full-stack developer 
-          <span
-            aria-label="man with a computer"
-            class="emoji"
-            role="img"
-          >
-            👨‍💻
-          </span>
            full-time working for
            
           <a
@@ -349,29 +134,8 @@ Object {
             Acid Tango
           </a>
            
-          <span
-            aria-label="lemon"
-            class="emoji"
-            role="img"
-          >
-            🍋
-          </span>
           , while studying for a Master's Degree in Computer Science and Engineering 
-          <span
-            aria-label="graduation cap"
-            class="emoji"
-            role="img"
-          >
-            🎓
-          </span>
            on weekends. Focused on TypeScript with Node.js and React 
-          <span
-            aria-label="atom"
-            class="emoji"
-            role="img"
-          >
-            ⚛️
-          </span>
           , I mainly work with
            
           <a
@@ -403,40 +167,12 @@ Object {
           class="common paragraph bio"
         >
           Free software contributor 
-          <span
-            aria-label="hearth"
-            class="emoji"
-            role="img"
-          >
-            ❤️
-          </span>
           , Linux fan
            
-          <span
-            aria-label="penguin"
-            class="emoji"
-            role="img"
-          >
-            🐧
-          </span>
            and DevOps soul 
-          <span
-            aria-label="gear"
-            class="emoji"
-            role="img"
-          >
-            ⚙️
-          </span>
           . 
           <br />
           Swipe down to know my history! 
-          <span
-            aria-label="swipe down"
-            class="emoji"
-            role="img"
-          >
-            👇
-          </span>
         </p>
       </div>
     </div>

@@ -32,9 +32,6 @@ Object {
             class="hidden"
             data-testid="tech-skills"
           >
-            <i
-              class="ri-code-box-fill icon headIcon"
-            />
             <h4
               class="common paragraphLead skillHeaderText"
             >
@@ -46,9 +43,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-react-original icon skillIcon"
-                />
                 <span>
                   React
                 </span>
@@ -56,9 +50,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-nodejs-plain icon skillIcon"
-                />
                 <span>
                   Node.js
                 </span>
@@ -66,9 +57,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-typescript-plain icon skillIcon"
-                />
                 <span>
                   TypeScript
                 </span>
@@ -76,9 +64,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-html5-plain icon skillIcon"
-                />
                 <span>
                   HTML 5
                 </span>
@@ -86,9 +71,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-css3-plain icon skillIcon"
-                />
                 <span>
                   CSS 3
                 </span>
@@ -96,9 +78,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-python-plain icon skillIcon"
-                />
                 <span>
                   Python 3
                 </span>
@@ -106,9 +85,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-postgresql-plain icon skillIcon"
-                />
                 <span>
                   PostgreSQL
                 </span>
@@ -116,9 +92,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-mongodb-plain icon skillIcon"
-                />
                 <span>
                   MongoDB
                 </span>
@@ -126,9 +99,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-linux-plain icon skillIcon"
-                />
                 <span>
                   Linux
                 </span>
@@ -136,9 +106,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-docker-plain icon skillIcon"
-                />
                 <span>
                   Docker
                 </span>
@@ -146,9 +113,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="devicon-amazonwebservices-plain icon skillIcon"
-                />
                 <span>
                   Amazon AWS
                 </span>
@@ -159,9 +123,6 @@ Object {
             class="hidden"
             data-testid="soft-skills"
           >
-            <i
-              class="ri-hand-heart-fill icon headIcon"
-            />
             <h4
               class="common paragraphLead skillHeaderText"
             >
@@ -173,9 +134,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-team-fill icon skillIcon"
-                />
                 <span>
                   Teamwork
                 </span>
@@ -183,9 +141,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-chat-smile-2-fill icon skillIcon"
-                />
                 <span>
                   Communication
                 </span>
@@ -193,9 +148,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-heart-fill icon skillIcon"
-                />
                 <span>
                   Empathy
                 </span>
@@ -203,9 +155,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-questionnaire-fill icon skillIcon"
-                />
                 <span>
                   Curiosity
                 </span>
@@ -213,9 +162,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-timer-line icon skillIcon"
-                />
                 <span>
                   Time management
                 </span>
@@ -223,9 +169,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-pencil-ruler-2-line icon skillIcon"
-                />
                 <span>
                   Problem solving
                 </span>
@@ -233,9 +176,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-scales-3-line icon skillIcon"
-                />
                 <span>
                   Accountability
                 </span>
@@ -243,9 +183,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-earth-fill icon skillIcon"
-                />
                 <span>
                   Open-mindedness
                 </span>
@@ -253,9 +190,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-lightbulb-line icon skillIcon"
-                />
                 <span>
                   Creativity
                 </span>
@@ -263,9 +197,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-seedling-fill icon skillIcon"
-                />
                 <span>
                   Adaptability
                 </span>
@@ -273,9 +204,6 @@ Object {
               <div
                 class="iconWithDescription"
               >
-                <i
-                  class="ri-run-fill icon skillIcon"
-                />
                 <span>
                   Proactivity
                 </span>
@@ -314,9 +242,6 @@ Object {
           class="hidden"
           data-testid="tech-skills"
         >
-          <i
-            class="ri-code-box-fill icon headIcon"
-          />
           <h4
             class="common paragraphLead skillHeaderText"
           >
@@ -328,9 +253,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-react-original icon skillIcon"
-              />
               <span>
                 React
               </span>
@@ -338,9 +260,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-nodejs-plain icon skillIcon"
-              />
               <span>
                 Node.js
               </span>
@@ -348,9 +267,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-typescript-plain icon skillIcon"
-              />
               <span>
                 TypeScript
               </span>
@@ -358,9 +274,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-html5-plain icon skillIcon"
-              />
               <span>
                 HTML 5
               </span>
@@ -368,9 +281,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-css3-plain icon skillIcon"
-              />
               <span>
                 CSS 3
               </span>
@@ -378,9 +288,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-python-plain icon skillIcon"
-              />
               <span>
                 Python 3
               </span>
@@ -388,9 +295,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-postgresql-plain icon skillIcon"
-              />
               <span>
                 PostgreSQL
               </span>
@@ -398,9 +302,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-mongodb-plain icon skillIcon"
-              />
               <span>
                 MongoDB
               </span>
@@ -408,9 +309,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-linux-plain icon skillIcon"
-              />
               <span>
                 Linux
               </span>
@@ -418,9 +316,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-docker-plain icon skillIcon"
-              />
               <span>
                 Docker
               </span>
@@ -428,9 +323,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="devicon-amazonwebservices-plain icon skillIcon"
-              />
               <span>
                 Amazon AWS
               </span>
@@ -441,9 +333,6 @@ Object {
           class="hidden"
           data-testid="soft-skills"
         >
-          <i
-            class="ri-hand-heart-fill icon headIcon"
-          />
           <h4
             class="common paragraphLead skillHeaderText"
           >
@@ -455,9 +344,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-team-fill icon skillIcon"
-              />
               <span>
                 Teamwork
               </span>
@@ -465,9 +351,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-chat-smile-2-fill icon skillIcon"
-              />
               <span>
                 Communication
               </span>
@@ -475,9 +358,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-heart-fill icon skillIcon"
-              />
               <span>
                 Empathy
               </span>
@@ -485,9 +365,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-questionnaire-fill icon skillIcon"
-              />
               <span>
                 Curiosity
               </span>
@@ -495,9 +372,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-timer-line icon skillIcon"
-              />
               <span>
                 Time management
               </span>
@@ -505,9 +379,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-pencil-ruler-2-line icon skillIcon"
-              />
               <span>
                 Problem solving
               </span>
@@ -515,9 +386,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-scales-3-line icon skillIcon"
-              />
               <span>
                 Accountability
               </span>
@@ -525,9 +393,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-earth-fill icon skillIcon"
-              />
               <span>
                 Open-mindedness
               </span>
@@ -535,9 +400,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-lightbulb-line icon skillIcon"
-              />
               <span>
                 Creativity
               </span>
@@ -545,9 +407,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-seedling-fill icon skillIcon"
-              />
               <span>
                 Adaptability
               </span>
@@ -555,9 +414,6 @@ Object {
             <div
               class="iconWithDescription"
             >
-              <i
-                class="ri-run-fill icon skillIcon"
-              />
               <span>
                 Proactivity
               </span>
