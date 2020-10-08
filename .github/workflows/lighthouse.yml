@@ -22,6 +22,4 @@ jobs:
           DOMAIN: ${{ secrets.DOMAIN }}
           GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       - name: run Lighthouse CI
-        run: |
-          yarn global add @lhci/cli@0.5.x
-          npx lhci autorun
+        run: npx @lhci/cli autorun
