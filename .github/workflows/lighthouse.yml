@@ -7,9 +7,9 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@main
         with:
           node-version: 12.x
       - name: Install dependencies and build
@@ -22,4 +22,6 @@ jobs:
           DOMAIN: ${{ secrets.DOMAIN }}
           GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       - name: run Lighthouse CI
-        run: npx @lhci/cli autorun
+        run: |
+          npm install -g @lhci/cli
+          lhci autorun
