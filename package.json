@@ -61,7 +61,7 @@
     "@types/sanitize-html": "1.27.0",
     "@types/smoothscroll-polyfill": "^0.3.1",
     "@typescript-eslint/eslint-plugin": "3.10.1",
-    "@typescript-eslint/parser": "4.3.0",
+    "@typescript-eslint/parser": "4.4.0",
     "babel-loader": "8.1.0",
     "babel-preset-react-app": "9.1.2",
     "eslint": "7.10.0",
