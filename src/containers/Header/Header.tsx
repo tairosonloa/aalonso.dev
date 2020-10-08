@@ -47,3 +47,5 @@ export const Header: FC<HeaderProps> = ({ links, router, fixed = false }) => {
     </header>
   )
 }
+
+export default Header

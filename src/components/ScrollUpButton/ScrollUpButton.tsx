@@ -20,3 +20,5 @@ export const ScrollUpButton: FC = () => {
     </button>
   )
 }
+
+export default ScrollUpButton

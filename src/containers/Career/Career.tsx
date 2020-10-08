@@ -1,8 +1,10 @@
+import loadable from '@loadable/component'
 import React, { FC } from 'react'
-import { CareerStep } from '../../components/DataDisplays/CareerStep/CareerStep'
 import { SectionContainer } from '../../components/DataDisplays/SectionContainer/SectionContainer'
 import { SectionHeader } from '../../components/DataDisplays/SectionHeader/SectionHeader'
 import styles from './Career.module.scss'
+
+const CareerStep = loadable(() => import('../../components/DataDisplays/CareerStep/CareerStep'))
 
 const career = [
   {

@@ -42,3 +42,5 @@ export const CareerStep: FC<CareerStepProps> = ({
     </div>
   )
 }
+
+export default CareerStep

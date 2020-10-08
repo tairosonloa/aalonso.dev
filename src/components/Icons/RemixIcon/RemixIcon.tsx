@@ -83,3 +83,5 @@ export const RemixIcon: FC<IProps & IconProps> = ({
     />
   )
 }
+
+export default RemixIcon

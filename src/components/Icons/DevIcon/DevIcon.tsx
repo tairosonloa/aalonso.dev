@@ -65,3 +65,5 @@ export const DevIcon: FC<IProps & DevIconProps> = ({
     />
   )
 }
+
+export default DevIcon

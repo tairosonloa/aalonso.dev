@@ -1,12 +1,16 @@
+import loadable from '@loadable/component'
 import classNames from 'classnames'
 import React, { FC } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { SectionContainer } from '../../components/DataDisplays/SectionContainer/SectionContainer'
 import { SectionHeader } from '../../components/DataDisplays/SectionHeader/SectionHeader'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
-import { DevIcon, DevIconName } from '../../components/Icons/DevIcon/DevIcon'
-import { IconName, RemixIcon } from '../../components/Icons/RemixIcon/RemixIcon'
+import { DevIconName } from '../../components/Icons/DevIcon/DevIcon'
+import { IconName } from '../../components/Icons/RemixIcon/RemixIcon'
 import styles from './Skills.module.scss'
+
+const DevIcon = loadable(() => import('../../components/Icons/DevIcon/DevIcon'))
+const RemixIcon = loadable(() => import('../../components/Icons/RemixIcon/RemixIcon'))
 
 const techSkills = [
   { icon: DevIconName.REACT, name: 'React' },

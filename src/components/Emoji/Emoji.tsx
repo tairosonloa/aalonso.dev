@@ -13,3 +13,5 @@ export const Emoji: FC<EmojiProps> = ({ emoji, label }) => {
     </span>
   )
 }
+
+export default Emoji

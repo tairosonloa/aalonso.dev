@@ -1,12 +1,16 @@
+import loadable from '@loadable/component'
 import React, { FC } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { SiteMetadata } from '../../../site.metadata'
 import { SectionContainer } from '../../components/DataDisplays/SectionContainer/SectionContainer'
 import { SectionHeader } from '../../components/DataDisplays/SectionHeader/SectionHeader'
 import { Typography } from '../../components/DataDisplays/Typography/Typography'
-import { Emoji } from '../../components/Emoji/Emoji'
-import { SocialMediaLinks } from '../../components/SocialMediaLinks/SocialMediaLinks'
 import styles from './Bio.module.scss'
+
+const Emoji = loadable(() => import('../../components/Emoji/Emoji'))
+const SocialMediaLinks = loadable(
+  () => import('../../components/SocialMediaLinks/SocialMediaLinks'),
+)
 
 export const Bio: FC = () => {
   const { employerInfo } = SiteMetadata
