@@ -23,10 +23,10 @@ export const SiteMetadata = {
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      title: 'Aitor Alonso | Full-Stack Developer',
+      title: 'Full-Stack Software Developer Engineer | Aitor Alonso (aalonso)',
       description:
         'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...',
-      image: 'https://aalonso.dev/images/me.jpeg',
+      images: [{ url: 'https://aalonso.dev/images/me.jpeg' }],
       url: 'https://aalonso.dev/',
       site_name: 'aalonso',
     } as OpenGraph,
