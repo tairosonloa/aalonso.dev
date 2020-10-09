@@ -41,7 +41,6 @@ jobs:
           coverageLocations: ${{github.workspace}}/coverage/lcov.info:lcov
 
   build:
-    if: github.ref == 'refs/heads/master'
     needs: test
     runs-on: ubuntu-latest
     steps:
