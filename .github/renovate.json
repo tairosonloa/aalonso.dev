@@ -16,8 +16,9 @@
     ":enableVulnerabilityAlerts",
     "group:allNonMajor",
     "group:definitelyTyped",
-    ":timezone(Europe/Madrid)"
+    ":timezone(Europe/Madrid)",
+    ":label(dependencies)"
   ],
   "updateLockFiles": true,
-  "schedule": ["before 9am on saturday"]
+  "schedule": ["before 6am on saturday"]
 }
