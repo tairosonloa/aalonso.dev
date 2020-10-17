@@ -34,3 +34,6 @@ public/_redirects
 public/_headers
 public/robots.txt
 sitemap.xml
+
+# lighthouseci
+.lighthouseci
