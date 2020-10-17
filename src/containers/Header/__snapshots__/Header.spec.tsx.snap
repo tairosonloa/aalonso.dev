@@ -38,31 +38,31 @@ Object {
                 data-testid="About me"
                 href="#bio"
               >
-                <h4
+                <h2
                   class="common titleSmall"
                 >
                   About me
-                </h4>
+                </h2>
               </a>
               <a
                 data-testid="Skills"
                 href="#skills"
               >
-                <h4
+                <h2
                   class="common titleSmall"
                 >
                   Skills
-                </h4>
+                </h2>
               </a>
               <a
                 data-testid="Career"
                 href="#career"
               >
-                <h4
+                <h2
                   class="common titleSmall"
                 >
                   Career
-                </h4>
+                </h2>
               </a>
             </nav>
           </div>
@@ -102,31 +102,31 @@ Object {
               data-testid="About me"
               href="#bio"
             >
-              <h4
+              <h2
                 class="common titleSmall"
               >
                 About me
-              </h4>
+              </h2>
             </a>
             <a
               data-testid="Skills"
               href="#skills"
             >
-              <h4
+              <h2
                 class="common titleSmall"
               >
                 Skills
-              </h4>
+              </h2>
             </a>
             <a
               data-testid="Career"
               href="#career"
             >
-              <h4
+              <h2
                 class="common titleSmall"
               >
                 Career
-              </h4>
+              </h2>
             </a>
           </nav>
         </div>

@@ -1,6 +1,6 @@
 import { NextSeoProps } from 'next-seo/lib/types.d'
 
-export const { DOMAIN } = process.env
+export const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN
 
 const title = 'Full-Stack Software Developer Engineer'
 const titleTemplate = 'Aitor Alonso (aalonso.dev)'
@@ -8,7 +8,7 @@ const description =
   'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...'
 const author = 'Aitor Alonso'
 const keywords =
-  'Aitor, Alonso, aalonso, tairosonloa, full stack, fullstack, full-stack, backend, frontend, software, developer, engineer, react, node, js, javascript, typescript, python, SQL, noSQL, graphSQL, docker, git, github, gitlab, web, aws, linux, code, freelance'
+  'Aitor, Alonso, aalonso, tairosonloa, full stack, fullstack, full-stack, backend, frontend, software, developer, engineer, react, node, js, javascript, typescript, python, SQL, noSQL, graphQL, docker, git, github, gitlab, web, aws, linux, code, freelance'
 
 export const SiteMetadata = {
   socialMediaUrls: {

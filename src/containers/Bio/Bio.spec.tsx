@@ -14,10 +14,10 @@ describe('<Bio/>', () => {
   })
 
   it('should display the image', () => {
-    const imagePath = '/images/me.webp'
+    const imagePathPng = '/images/me.png'
 
     const renderResult = render(<Bio />)
-    expect(renderResult.getByAltText('')).toHaveAttribute('src', imagePath)
+    expect(renderResult.getByAltText('')).toHaveAttribute('src', imagePathPng)
   })
 
   it('should match the snapshot', () => {

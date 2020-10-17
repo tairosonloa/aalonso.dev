@@ -65,7 +65,7 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
           if (typeof href === 'string') {
             return (
               <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
-                <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h4">
+                <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h2">
                   {text}
                 </Typography>
               </a>
@@ -81,7 +81,7 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
               }}
               data-testid={text}
             >
-              <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h4">
+              <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h2">
                 {text}
               </Typography>
             </a>

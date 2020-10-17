@@ -31,47 +31,77 @@ Object {
           <li
             class="step"
           >
-            <img
-              alt=""
-              class="stepImage"
-              src="/images/acidtango.webp"
-            />
+            <picture>
+              <source
+                srcset="/images/acidtango.webp"
+                type="image/webp"
+              />
+              <img
+                alt=""
+                class="stepImage"
+                src="/images/acidtango.png"
+              />
+            </picture>
           </li>
           <li
             class="step"
           >
-            <img
-              alt=""
-              class="stepImage"
-              src="/images/uc3m.webp"
-            />
+            <picture>
+              <source
+                srcset="/images/uc3m.webp"
+                type="image/webp"
+              />
+              <img
+                alt=""
+                class="stepImage"
+                src="/images/uc3m.png"
+              />
+            </picture>
           </li>
           <li
             class="step"
           >
-            <img
-              alt=""
-              class="stepImage"
-              src="/images/uc3m.webp"
-            />
+            <picture>
+              <source
+                srcset="/images/uc3m.webp"
+                type="image/webp"
+              />
+              <img
+                alt=""
+                class="stepImage"
+                src="/images/uc3m.png"
+              />
+            </picture>
           </li>
           <li
             class="step"
           >
-            <img
-              alt=""
-              class="stepImage"
-              src="/images/techfest.webp"
-            />
+            <picture>
+              <source
+                srcset="/images/techfest.webp"
+                type="image/webp"
+              />
+              <img
+                alt=""
+                class="stepImage"
+                src="/images/techfest.png"
+              />
+            </picture>
           </li>
           <li
             class="step"
           >
-            <img
-              alt=""
-              class="stepImage"
-              src="/images/uc3m.webp"
-            />
+            <picture>
+              <source
+                srcset="/images/uc3m.webp"
+                type="image/webp"
+              />
+              <img
+                alt=""
+                class="stepImage"
+                src="/images/uc3m.png"
+              />
+            </picture>
           </li>
         </ul>
       </div>
@@ -104,47 +134,77 @@ Object {
         <li
           class="step"
         >
-          <img
-            alt=""
-            class="stepImage"
-            src="/images/acidtango.webp"
-          />
+          <picture>
+            <source
+              srcset="/images/acidtango.webp"
+              type="image/webp"
+            />
+            <img
+              alt=""
+              class="stepImage"
+              src="/images/acidtango.png"
+            />
+          </picture>
         </li>
         <li
           class="step"
         >
-          <img
-            alt=""
-            class="stepImage"
-            src="/images/uc3m.webp"
-          />
+          <picture>
+            <source
+              srcset="/images/uc3m.webp"
+              type="image/webp"
+            />
+            <img
+              alt=""
+              class="stepImage"
+              src="/images/uc3m.png"
+            />
+          </picture>
         </li>
         <li
           class="step"
         >
-          <img
-            alt=""
-            class="stepImage"
-            src="/images/uc3m.webp"
-          />
+          <picture>
+            <source
+              srcset="/images/uc3m.webp"
+              type="image/webp"
+            />
+            <img
+              alt=""
+              class="stepImage"
+              src="/images/uc3m.png"
+            />
+          </picture>
         </li>
         <li
           class="step"
         >
-          <img
-            alt=""
-            class="stepImage"
-            src="/images/techfest.webp"
-          />
+          <picture>
+            <source
+              srcset="/images/techfest.webp"
+              type="image/webp"
+            />
+            <img
+              alt=""
+              class="stepImage"
+              src="/images/techfest.png"
+            />
+          </picture>
         </li>
         <li
           class="step"
         >
-          <img
-            alt=""
-            class="stepImage"
-            src="/images/uc3m.webp"
-          />
+          <picture>
+            <source
+              srcset="/images/uc3m.webp"
+              type="image/webp"
+            />
+            <img
+              alt=""
+              class="stepImage"
+              src="/images/uc3m.png"
+            />
+          </picture>
         </li>
       </ul>
     </div>
