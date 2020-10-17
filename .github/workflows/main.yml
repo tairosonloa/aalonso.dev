@@ -67,20 +67,20 @@ jobs:
       - name: Prebuild
         run: yarn prebuild
         env:
-          DOMAIN: ${{ secrets.DOMAIN }}
-          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          NEXT_PUBLIC_DOMAIN: ${{ secrets.DOMAIN }}
+          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       
       - name: Build
         run: yarn build
         env:
-          DOMAIN: ${{ secrets.DOMAIN }}
-          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          NEXT_PUBLIC_DOMAIN: ${{ secrets.DOMAIN }}
+          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
       - name: Export
         run: yarn export
         env:
-          DOMAIN: ${{ secrets.DOMAIN }}
-          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          NEXT_PUBLIC_DOMAIN: ${{ secrets.DOMAIN }}
+          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
       - name: Upload production build artifact
         uses: actions/upload-artifact@main

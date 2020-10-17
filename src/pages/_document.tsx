@@ -62,7 +62,7 @@ export default class extends Document {
           {/* See: https://www.npmjs.com/package/@next/plugin-google-analytics */}
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
           />
           <script
             // eslint-disable-next-line react/no-danger
@@ -72,7 +72,7 @@ export default class extends Document {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '${process.env.GA_TRACKING_ID}', {
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}', {
               page_path: window.location.pathname,
             });
           `,
