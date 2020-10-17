@@ -14,6 +14,7 @@ export const PrivacyPolicy: FC = () => {
       <Typography
         typographyType={TypographyType.PARAGRAPH_LEAD}
         className={styles.lastModifiedDate}
+        htmlTag="h2"
       >
         Effective date: June 22, 2020
       </Typography>
@@ -26,7 +27,11 @@ export const PrivacyPolicy: FC = () => {
       <Typography typographyType={TypographyType.TITLE} className={styles.title}>
         Information Collection And Use
       </Typography>
-      <Typography typographyType={TypographyType.PARAGRAPH_LEAD} className={styles.title}>
+      <Typography
+        typographyType={TypographyType.PARAGRAPH_LEAD}
+        className={styles.title}
+        htmlTag="h3"
+      >
         Personal Data
       </Typography>
       <Typography>
@@ -56,7 +61,11 @@ export const PrivacyPolicy: FC = () => {
         that you visit, the time and date of your visit, the time spent on those pages, unique
         device identifiers and other diagnostic data.
       </Typography>
-      <Typography typographyType={TypographyType.PARAGRAPH_LEAD} className={styles.title}>
+      <Typography
+        typographyType={TypographyType.PARAGRAPH_LEAD}
+        className={styles.title}
+        htmlTag="h3"
+      >
         Tracking & Cookies Data
       </Typography>
       <Typography>
