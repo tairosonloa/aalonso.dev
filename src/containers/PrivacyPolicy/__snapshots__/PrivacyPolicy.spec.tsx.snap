@@ -13,11 +13,11 @@ Object {
         >
           Privacy Policy
         </h1>
-        <h4
+        <h2
           class="common paragraphLead lastModifiedDate"
         >
           Effective date: June 22, 2020
-        </h4>
+        </h2>
         <p
           class="common paragraph"
         >
@@ -28,11 +28,11 @@ Object {
         >
           Information Collection And Use
         </h2>
-        <h4
+        <h3
           class="common paragraphLead title"
         >
           Personal Data
-        </h4>
+        </h3>
         <p
           class="common paragraph"
         >
@@ -63,11 +63,11 @@ Object {
         >
           I may also collect information how the website is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of my website that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
         </p>
-        <h4
+        <h3
           class="common paragraphLead title"
         >
           Tracking & Cookies Data
-        </h4>
+        </h3>
         <p
           class="common paragraph"
         >
@@ -351,11 +351,11 @@ Object {
       >
         Privacy Policy
       </h1>
-      <h4
+      <h2
         class="common paragraphLead lastModifiedDate"
       >
         Effective date: June 22, 2020
-      </h4>
+      </h2>
       <p
         class="common paragraph"
       >
@@ -366,11 +366,11 @@ Object {
       >
         Information Collection And Use
       </h2>
-      <h4
+      <h3
         class="common paragraphLead title"
       >
         Personal Data
-      </h4>
+      </h3>
       <p
         class="common paragraph"
       >
@@ -401,11 +401,11 @@ Object {
       >
         I may also collect information how the website is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of my website that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
       </p>
-      <h4
+      <h3
         class="common paragraphLead title"
       >
         Tracking & Cookies Data
-      </h4>
+      </h3>
       <p
         class="common paragraph"
       >

@@ -28,11 +28,17 @@ Object {
         <div
           class="hidden"
         >
-          <img
-            alt=""
-            class="image"
-            src="/images/me.webp"
-          />
+          <picture>
+            <source
+              srcset="/images/me.webp"
+              type="image/webp"
+            />
+            <img
+              alt=""
+              class="image"
+              src="/images/me.png"
+            />
+          </picture>
           <p
             class="common paragraph bio"
           >
@@ -115,11 +121,17 @@ Object {
       <div
         class="hidden"
       >
-        <img
-          alt=""
-          class="image"
-          src="/images/me.webp"
-        />
+        <picture>
+          <source
+            srcset="/images/me.webp"
+            type="image/webp"
+          />
+          <img
+            alt=""
+            class="image"
+            src="/images/me.png"
+          />
+        </picture>
         <p
           class="common paragraph bio"
         >
