@@ -7,7 +7,7 @@
   grid-gap: grid_units(4);
   grid-template-columns: repeat(auto-fit, minmax(grid_units(45), 1fr));
   padding: grid_units(4);
-  background-color: $rich-black;
+  background-color: $raisin-black;
 
   & > * {
     display: flex;

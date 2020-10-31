@@ -2,9 +2,22 @@
 @import 'src/styles/palette.scss';
 
 .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: auto;
   max-width: grid_units(200);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+}
+
+.main {
+  display: flex;
+  margin-right: grid_units(5);
+  margin-left: grid_units(5);
+  padding-top: grid_units(5);
+  padding-bottom: grid_units(10);
+
+  @include screenIn(desktop) {
+    padding-top: grid_units(15);
+  padding-bottom: grid_units(20);
+  }
 }

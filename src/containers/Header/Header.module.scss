@@ -2,11 +2,12 @@
 @import 'src/styles/palette.scss';
 
 .container {
-  border-bottom: 1px $light-gray solid;
-
-  @include screenIn(smallTablet) {
-    margin-left: grid_units(3);
+  margin-left: grid_units(3);
     margin-right: grid_units(3);
+  border-bottom: 1px $charcoal solid;
+
+  @include screenIn(desktop) {
+    margin: 0;
   }
 }
 
@@ -21,12 +22,10 @@
 
 
 .title {
-  position: sticky;
-  margin-bottom: grid_units(2);
+  margin-bottom: grid_units(1);
 
   @include screenIn(smallTablet) {
     margin-top: grid_units(1);
-    margin-bottom: grid_units(1);
   }
 
   font-size: 2.25rem;
@@ -51,19 +50,4 @@
     border-color: $light-gray;
     color: $light-gray;
   }
-}
-
-.solid {
-  border-color: $black;
-  background-color: $white;
-  color: $black;
-
-  * {
-    border-color: $black;
-    color: $black;
-  }
-}
-
-.shadow {
-  box-shadow: 0 0 20px -10px $rich-black;
 }

@@ -33,7 +33,7 @@ export const Layout: FC<LayoutProps> = ({
       <NextSeo {...seo} />
       <div className={styles.container}>
         <Header links={headerLinks} router={router} />
-        <main>{children}</main>
+        <main className={styles.main}>{children}</main>
         {showFooter && <Footer router={router} />}
       </div>
     </>

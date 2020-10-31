@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 import { DOMAIN } from '../../site.metadata'
 import { Bio } from '../containers/Bio/Bio'
-import { HeaderLink, Layout, OverwriteDefaultSeo } from '../containers/Layout/Layout'
+import { Layout, OverwriteDefaultSeo } from '../containers/Layout/Layout'
 import { RouterClientNext } from '../services/router/RouterClientNext'
 
 const Index: FC = () => {
@@ -17,13 +17,8 @@ const Index: FC = () => {
     openGraph: { url },
   }
 
-  const headerLinks: HeaderLink[] = [
-    { href: '#hola', text: 'Hola test' },
-    { href: '#hola', text: 'Hola' },
-  ]
-
   return (
-    <Layout headerLinks={headerLinks} router={router} seo={seo}>
+    <Layout headerLinks={[]} router={router} seo={seo}>
       <Bio />
     </Layout>
   )

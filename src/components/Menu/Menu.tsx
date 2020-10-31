@@ -39,7 +39,7 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
     }
   }, [menuExpanded])
 
-  return (
+  return links.length > 0 ? (
     <div className={classNames(styles.container, className)}>
       <button
         type="button"
@@ -89,5 +89,5 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
         })}
       </nav>
     </div>
-  )
+  ) : null
 }

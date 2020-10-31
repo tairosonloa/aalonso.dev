@@ -27,11 +27,11 @@ export const Bio: FC = () => {
         </Typography>
         <Typography typographyType={TypographyType.PARAGRAPH_BIG} className={styles.bio}>
           I&apos;m a full-stack developer <Emoji emoji="👨‍💻" label="man with a computer" /> from
-          Spain <Emoji emoji="🇪🇸" label="spain flag" />, full-time working for{' '}
+          Spain, currently full-time working for{' '}
           <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">
             {employerInfo.name}
           </a>{' '}
-          <Emoji emoji="🍋" label="lemon" />, while studying for a Master&apos;s Degree in Computer
+          <Emoji emoji="🍋" label="lemon" /> while studying for a Master&apos;s Degree in Computer
           Science and Engineering <Emoji emoji="🎓" label="graduation cap" /> on weekends.
         </Typography>
         <Typography typographyType={TypographyType.PARAGRAPH_BIG} className={styles.bio}>
