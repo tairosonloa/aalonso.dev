@@ -1,6 +1,6 @@
 {
   "name": "aalonso.dev",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -71,6 +71,7 @@
       "^.+\\.module.scss$": "<rootDir>/__mocks__/styleMock.js",
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
+    
     "setupFilesAfterEnv": [
       "<rootDir>/test/setup.js"
     ],

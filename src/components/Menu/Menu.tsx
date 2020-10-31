@@ -64,7 +64,7 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
         {links.map(({ href, text }) => {
           if (typeof href === 'string') {
             return (
-              <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2">
+              <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" id={text}>
                 <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
                   {text}
                 </a>
@@ -72,7 +72,7 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
             )
           }
           return (
-            <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2">
+            <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" id={text}>
               <a
                 href={href.getPath()}
                 key={text}

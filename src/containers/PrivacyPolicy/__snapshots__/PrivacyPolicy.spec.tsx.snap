@@ -14,7 +14,7 @@ Object {
           Privacy Policy
         </h1>
         <h2
-          class="common paragraphLead lastModifiedDate"
+          class="common paragraph lastModifiedDate"
         >
           Effective date: June 22, 2020
         </h2>
@@ -29,7 +29,7 @@ Object {
           Information Collection And Use
         </h2>
         <h3
-          class="common paragraphLead title"
+          class="common paragraph title"
         >
           Personal Data
         </h3>
@@ -64,7 +64,7 @@ Object {
           I may also collect information how the website is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of my website that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
         </p>
         <h3
-          class="common paragraphLead title"
+          class="common paragraph title"
         >
           Tracking & Cookies Data
         </h3>
@@ -352,7 +352,7 @@ Object {
         Privacy Policy
       </h1>
       <h2
-        class="common paragraphLead lastModifiedDate"
+        class="common paragraph lastModifiedDate"
       >
         Effective date: June 22, 2020
       </h2>
@@ -367,7 +367,7 @@ Object {
         Information Collection And Use
       </h2>
       <h3
-        class="common paragraphLead title"
+        class="common paragraph title"
       >
         Personal Data
       </h3>
@@ -402,7 +402,7 @@ Object {
         I may also collect information how the website is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of my website that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
       </p>
       <h3
-        class="common paragraphLead title"
+        class="common paragraph title"
       >
         Tracking & Cookies Data
       </h3>
