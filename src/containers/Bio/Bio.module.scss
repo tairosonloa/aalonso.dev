@@ -2,9 +2,7 @@
 @import 'src/styles/palette.scss';
 
 .container {
-  margin: auto;
   min-height: 100vh;
-  max-width: grid_units(200);
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;

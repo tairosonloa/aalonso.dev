@@ -1,15 +1,11 @@
-import loadable from '@loadable/component'
 import classNames from 'classnames'
 import Image from 'next/image'
 import React, { FC } from 'react'
 import { SiteMetadata } from '../../../site.metadata'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
+import { Emoji } from '../../components/Emoji/Emoji'
+import { SocialMediaLinks } from '../../components/SocialMediaLinks/SocialMediaLinks'
 import styles from './Bio.module.scss'
-
-const Emoji = loadable(() => import('../../components/Emoji/Emoji'))
-const SocialMediaLinks = loadable(
-  () => import('../../components/SocialMediaLinks/SocialMediaLinks'),
-)
 
 export const Bio: FC = () => {
   const { employerInfo } = SiteMetadata

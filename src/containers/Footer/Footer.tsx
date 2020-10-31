@@ -1,14 +1,10 @@
-import loadable from '@loadable/component'
 import React, { FC } from 'react'
 import { Copyright } from '../../components/Copyright/Copyright'
+import { ScrollUpButton } from '../../components/ScrollUpButton/ScrollUpButton'
+import { SocialMediaLinks } from '../../components/SocialMediaLinks/SocialMediaLinks'
 import { Router } from '../../services/router/Router'
 import { Routes } from '../../services/router/Routes'
 import styles from './Footer.module.scss'
-
-const ScrollUpButton = loadable(() => import('../../components/ScrollUpButton/ScrollUpButton'))
-const SocialMediaLinks = loadable(
-  () => import('../../components/SocialMediaLinks/SocialMediaLinks'),
-)
 
 type FooterProps = {
   router: Router
