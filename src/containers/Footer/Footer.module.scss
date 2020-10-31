@@ -16,7 +16,7 @@
     color: $grey-light;
   }
 
-  @include screenIn(desktop) {
+  @include screenIn(smallDesktop) {
     & > :nth-child(2) {
       justify-content: flex-start;
     }

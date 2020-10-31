@@ -24,12 +24,12 @@ export const Bio: FC = () => {
       </div>
       <div>
         <Typography
-          typographyType={TypographyType.TITLE}
+          typographyType={TypographyType.TITLE_BIG}
           className={classNames(styles.bio, styles.bioTitle)}
         >
           Hi, I&apos;m Aitor <Emoji emoji="👋" label="waving hand" />
         </Typography>
-        <Typography className={styles.bio}>
+        <Typography typographyType={TypographyType.PARAGRAPH_BIG} className={styles.bio}>
           I&apos;m a full-stack developer <Emoji emoji="👨‍💻" label="man with a computer" /> from
           Spain <Emoji emoji="🇪🇸" label="spain flag" />, full-time working for{' '}
           <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">
@@ -38,7 +38,7 @@ export const Bio: FC = () => {
           <Emoji emoji="🍋" label="lemon" />, while studying for a Master&apos;s Degree in Computer
           Science and Engineering <Emoji emoji="🎓" label="graduation cap" /> on weekends.
         </Typography>
-        <Typography className={styles.bio}>
+        <Typography typographyType={TypographyType.PARAGRAPH_BIG} className={styles.bio}>
           Free software contributor <Emoji emoji="❤️" label="hearth" />, Linux fan{' '}
           <Emoji emoji="🐧" label="penguin" /> and DevOps <Emoji emoji="⚙️" label="gear" /> soul.
         </Typography>

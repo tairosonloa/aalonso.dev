@@ -15,22 +15,21 @@ export enum TypographyType {
   TITLE_BIG = 'titleBig',
   TITLE = 'title',
   TITLE_SMALL = 'titleSmall',
-  PARAGRAPH_LEAD = 'paragraphLead',
+  PARAGRAPH_BIG = 'paragraphBig',
   PARAGRAPH = 'paragraph',
   PARAGRAPH_SMALL = 'paragraphSmall',
   FOOTNOTE = 'footNote',
 }
 
-const TextTypeToHtmlTag: { [key in TypographyType]: keyof ReactHTML } = {
+const TextTypeToHtmlTag: Record<TypographyType, keyof ReactHTML> = {
   [TypographyType.TITLE_BIG]: 'h1',
   [TypographyType.TITLE]: 'h2',
   [TypographyType.TITLE_SMALL]: 'h3',
-  [TypographyType.PARAGRAPH_LEAD]: 'h4',
+  [TypographyType.PARAGRAPH_BIG]: 'p',
   [TypographyType.PARAGRAPH]: 'p',
   [TypographyType.PARAGRAPH_SMALL]: 'p',
   [TypographyType.FOOTNOTE]: 'p',
 }
-
 export const Typography: FC<TypographyProps> = ({
   children,
   typographyType = TypographyType.PARAGRAPH,

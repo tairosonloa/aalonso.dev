@@ -11,10 +11,12 @@
   align-items: center;
 
   & > div {
-    margin: grid_units(8) grid_units(5) 0;
+    margin-top: grid_units(8);
+    margin-right: grid_units(5);
+    margin-left: grid_units(5);
   }
 
-  @media screen and (min-width: 1000px) {
+  @include screenIn(desktop) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -48,14 +50,8 @@
 .bio {
   max-width: grid_units(130);
   text-align: center;
-  font-size: 1.4rem;
-}
 
-.bioTitle {
-  font-size: 2rem;
-  font-weight: bold;
-
-  @media screen and (min-width: 1000px) {
+  @include screenIn(desktop) {
     text-align: left;
   }
 }
