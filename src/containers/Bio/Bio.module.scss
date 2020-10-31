@@ -1,25 +1,61 @@
 @import 'src/styles/utils.scss';
 @import 'src/styles/palette.scss';
 
+.container {
+  margin: auto;
+  min-height: 100vh;
+  max-width: grid_units(200);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    margin: grid_units(8) grid_units(5) 0;
+  }
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.imageAndLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .image {
   width: grid_units(34);
   height: grid_units(34);
-  margin: grid_units(4);
-  border-radius: 50%;
+  
+  img {
+    border-radius: 50%;
+  }
 }
 
 .socialMediaLinks {
-  margin-top: grid_units(3);
-  margin-bottom: grid_units(6);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  i {
+    color: $light-gray;
+  }
 }
 
 .bio {
-  max-width: grid_units(140);
-  padding-right: grid_units(4);
-  padding-left: grid_units(4);
+  max-width: grid_units(130);
   text-align: center;
+  font-size: 1.4rem;
 }
 
-.hidden {
-  visibility: hidden;
+.bioTitle {
+  font-size: 2rem;
+  font-weight: bold;
+
+  @media screen and (min-width: 1000px) {
+    text-align: left;
+  }
 }

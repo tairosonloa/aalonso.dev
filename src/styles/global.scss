@@ -1,8 +1,13 @@
 @import 'src/styles/utils.scss';
 @import 'src/styles/palette.scss';
 
+:root {
+  background-color: $raisin-black;
+  color: $light-gray;
+}
+
 a {
-  color: $burgundy;
+  color: $miniom-yellow;
 }
 
 .cookiesBanner {

@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import styles from './Emoji.module.scss'
 
 type EmojiProps = {
   emoji: string
@@ -8,7 +7,7 @@ type EmojiProps = {
 
 export const Emoji: FC<EmojiProps> = ({ emoji, label }) => {
   return (
-    <span role="img" aria-label={label} className={styles.emoji}>
+    <span role="img" aria-label={label}>
       {emoji}
     </span>
   )

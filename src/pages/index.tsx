@@ -4,10 +4,7 @@ import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 import { DOMAIN } from '../../site.metadata'
 import { Bio } from '../containers/Bio/Bio'
-import { Career } from '../containers/Career/Career'
-import { Cover } from '../containers/Cover/Cover'
-import { Layout, OverwriteDefaultSeo } from '../containers/Layout/Layout'
-import { Skills } from '../containers/Skills/Skills'
+import { OverwriteDefaultSeo } from '../containers/Layout/Layout'
 import { RouterClientNext } from '../services/router/RouterClientNext'
 
 const Index: FC = () => {
@@ -27,12 +24,9 @@ const Index: FC = () => {
   }
 
   return (
-    <Layout headerLinks={headerLinks} router={router} seo={seo}>
-      <Cover />
-      <Bio />
-      <Skills />
-      <Career />
-    </Layout>
+    // <Layout headerLinks={headerLinks} router={router} seo={seo} fixedHeader>
+    <Bio />
+    // </Layout>
   )
 }
 

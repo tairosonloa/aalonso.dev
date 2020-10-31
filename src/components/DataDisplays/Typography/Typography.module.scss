@@ -2,27 +2,27 @@
 @import 'src/styles/palette';
 
 .common {
-  margin-bottom: grid_units(2);
-  color: $black;
+  margin-bottom: 1em;
+  color: $light-gray;
 }
 
 .titleBig {
   font-size: 3rem;
   font-weight: 300;
   letter-spacing: 5.5px;
-  line-height: 1.2;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
 .title {
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
 .titleSmall {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 3.5px;
   line-height: 1.5;
@@ -30,9 +30,8 @@
 }
 
 .paragraphLead {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 31.6px;
 
   strong {
     font-weight: bold;
@@ -40,9 +39,9 @@
 }
 
 .paragraph {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.5;
 
   strong {
     font-weight: bold;
@@ -50,9 +49,9 @@
 }
 
 .paragraphSmall {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.5;
 
   strong {
     font-weight: bold;
@@ -60,9 +59,9 @@
 }
 
 .footNote {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 1.5;
 
   strong {
     font-weight: bold;
