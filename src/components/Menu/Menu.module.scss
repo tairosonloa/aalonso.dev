@@ -62,35 +62,20 @@ $icon-font-size: 1.75rem;
     display: none;
   }
 
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+
   a {
     position: relative;
-    margin-right: grid_units(4);
     margin-left: grid_units(4);
     transition: $animate-link-border;
     text-decoration: none;
     cursor: pointer;
 
-    h4 {
-      margin: 0;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      right: 115%;
-      left: -4%;
-      transition: $animate-link-border;
-      border-top: 0.1em solid;
-      border-color: inherit;
-    }
-
     &:hover {
-      right: 0;
-      text-decoration: none;
-
-      &::after {
-        right: 0;
-      }
+      text-decoration: underline;
+      color: $burgundy;
     }
   }
 
@@ -106,18 +91,24 @@ $icon-font-size: 1.75rem;
     height: 100vh;
     overflow: hidden;
     border-color: $white;
-    background-color: $rich-black;
+    background-color: $raisin-black;
     color: $white;
 
     *,
-    a h4 {
-      margin-bottom: grid_units(5);
+    a h2 {
+      margin: 0;
+      margin-bottom: grid_units(4);
       color: $white;
       font-size: 1.5rem;
+
+      &:first-child {
+        margin-top: -100%;
+      }
     }
 
     a::after {
       border: none;
     }
   }
+  
 }

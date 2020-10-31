@@ -2,11 +2,12 @@
 @import 'src/styles/palette.scss';
 
 .container {
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  left: 0;
-  width: 100%;
+  border-bottom: 1px $light-gray solid;
+
+  @include screenIn(smallTablet) {
+    margin-left: grid_units(3);
+    margin-right: grid_units(3);
+  }
 }
 
 .contentContainer {
@@ -16,13 +17,8 @@
   margin-top: grid_units(2);
   margin-right: grid_units(3);
   margin-left: grid_units(3);
-  border-bottom: 1px white solid;
 }
 
-.titleContainer {
-  min-height: grid_units(11);
-  margin-left: grid_units(3);
-}
 
 .title {
   position: sticky;
@@ -43,16 +39,17 @@
   }
 }
 .menu {
-  border-color: $grey-light;
-  color: $grey-light;
+  border-color: $light-gray;
+  color: $light-gray;
+  z-index: 1;
 
   @include screenIn(smallTablet) {
     margin-top: grid_units(3);
   }
 
   * {
-    border-color: $grey-light;
-    color: $grey-light;
+    border-color: $light-gray;
+    color: $light-gray;
   }
 }
 

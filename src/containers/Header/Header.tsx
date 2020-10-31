@@ -1,8 +1,7 @@
 import classNames from 'classnames'
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
 import { Menu } from '../../components/Menu/Menu'
-import { useScrollPosition } from '../../hooks/useScrollPosition'
 import { Router } from '../../services/router/Router'
 import { Route } from '../../services/router/Routes'
 import styles from './Header.module.scss'
@@ -13,24 +12,12 @@ type HeaderProps = {
 }
 
 export const Header: FC<HeaderProps> = ({ links, router }) => {
-  const [shadow, setShadow] = useState<boolean>(false)
-  const HEADER_HEIGHT = 75
-
-  useScrollPosition(
-    ({ currentPosition }) => {
-      setShadow(currentPosition.y > HEADER_HEIGHT)
-    },
-    [shadow],
-  )
-
   return (
-    <header className={classNames(styles.container, shadow && styles.shadow)}>
+    <header className={classNames(styles.container)}>
       <div className={styles.contentContainer}>
-        <div className={styles.titleContainer}>
-          <Typography typographyType={TypographyType.TITLE_BIG} className={styles.title}>
-            aa<em>l</em>onso
-          </Typography>
-        </div>
+        <Typography typographyType={TypographyType.TITLE_BIG} className={styles.title}>
+          aa<em>l</em>onso
+        </Typography>
         <Menu links={links} router={router} className={styles.menu} />
       </div>
     </header>

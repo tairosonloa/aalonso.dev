@@ -64,27 +64,27 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
         {links.map(({ href, text }) => {
           if (typeof href === 'string') {
             return (
-              <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
-                <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h2">
+              <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2">
+                <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
                   {text}
-                </Typography>
-              </a>
+                </a>
+              </Typography>
             )
           }
           return (
-            <a
-              href={href.getPath()}
-              key={text}
-              onClick={(e) => {
-                e.preventDefault()
-                router.pushTo(href)
-              }}
-              data-testid={text}
-            >
-              <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h2">
+            <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2">
+              <a
+                href={href.getPath()}
+                key={text}
+                onClick={(e) => {
+                  e.preventDefault()
+                  router.pushTo(href)
+                }}
+                data-testid={text}
+              >
                 {text}
-              </Typography>
-            </a>
+              </a>
+            </Typography>
           )
         })}
       </nav>

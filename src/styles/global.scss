@@ -8,11 +8,11 @@
 
 ::selection {
   color: $white;
-  background: $medium-purple;
+  background: $burgundy;
 }
 
 a {
-  color: $medium-purple;
+  color: $burgundy;
 }
 
 .cookiesBanner {
@@ -22,11 +22,10 @@ a {
   opacity: 0.85;
   // The !important are needed due to react-cookie-consent class preferences
   background-color: $rich-black !important;
-  color: $grey-light !important;
+  color: $light-gray !important;
   line-height: 1.25em;
 
   a {
-    color: $grey-light;
     white-space: nowrap;
   }
 

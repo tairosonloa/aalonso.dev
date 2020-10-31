@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $grey-light;
+    color: $light-gray;
   }
 
   @include screenIn(smallDesktop) {
@@ -33,5 +33,5 @@
 
 .socialMediaLinks i,
 .link {
-  color: $grey-light;
+  color: $light-gray;
 }
