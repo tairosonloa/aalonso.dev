@@ -4,7 +4,6 @@
 .container {
   max-width: grid_units(200);
   margin: auto;
-  padding: grid_units(25) grid_units(4);
   text-align: justify;
 
   & li::before {
