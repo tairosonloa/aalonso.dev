@@ -19,7 +19,7 @@ const PrivacyPolicyPage: FC = () => {
   }
 
   return (
-    <Layout headerLinks={headerLinks} router={router} seo={seo}>
+    <Layout headerLinks={headerLinks} router={router} seo={seo} showFooter>
       <PrivacyPolicy />
     </Layout>
   )

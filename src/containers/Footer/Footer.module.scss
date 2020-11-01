@@ -6,7 +6,11 @@
   position: relative;
   grid-gap: grid_units(4);
   grid-template-columns: repeat(auto-fit, minmax(grid_units(45), 1fr));
+  margin-top: grid_units(5);
+  margin-right: grid_units(3);
+  margin-left: grid_units(3);
   padding: grid_units(4);
+  border-top: 1px $charcoal solid;
   background-color: $raisin-black;
 
   & > * {
@@ -14,6 +18,10 @@
     align-items: center;
     justify-content: center;
     color: $light-gray;
+  }
+
+  @include screenIn(desktop) {
+    margin: 0;
   }
 
   @include screenIn(smallDesktop) {
