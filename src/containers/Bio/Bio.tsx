@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React, { FC } from 'react'
 import { SiteMetadata } from '../../../site.metadata'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
@@ -12,9 +11,10 @@ export const Bio: FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageAndLinks}>
-        <div className={styles.image}>
-          <Image src="/images/me.webp" width={460} height={460} alt="" className={styles.image} />
-        </div>
+        <picture>
+          <source srcSet="/images/me.webp" type="image/webp" />
+          <img src="/images/me.png" alt="" width={460} height={460} className={styles.image} />
+        </picture>
         <SocialMediaLinks className={styles.socialMediaLinks} />
       </div>
       <div>

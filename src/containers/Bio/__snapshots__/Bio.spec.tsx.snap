@@ -11,26 +11,19 @@ Object {
         <div
           class="imageAndLinks"
         >
-          <div
-            class="image"
-          >
-            <div
-              style="max-width: 100%; width: 460px;"
-            >
-              <div
-                style="position: relative; padding-bottom: 100%;"
-              >
-                
-                <img
-                  alt=""
-                  class="image __lazy"
-                  data-src="/_next/image?url=%2Fimages%2Fme.webp&w=768&q=75"
-                  data-srcset="/_next/image?url=%2Fimages%2Fme.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fme.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fme.webp&w=768&q=75 768w"
-                  style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-                />
-              </div>
-            </div>
-          </div>
+          <picture>
+            <source
+              srcset="/images/me.webp"
+              type="image/webp"
+            />
+            <img
+              alt=""
+              class="image"
+              height="460"
+              src="/images/me.png"
+              width="460"
+            />
+          </picture>
           <ul
             class="container socialMediaLinks"
           >
@@ -193,26 +186,19 @@ Object {
       <div
         class="imageAndLinks"
       >
-        <div
-          class="image"
-        >
-          <div
-            style="max-width: 100%; width: 460px;"
-          >
-            <div
-              style="position: relative; padding-bottom: 100%;"
-            >
-              
-              <img
-                alt=""
-                class="image __lazy"
-                data-src="/_next/image?url=%2Fimages%2Fme.webp&w=768&q=75"
-                data-srcset="/_next/image?url=%2Fimages%2Fme.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fme.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fme.webp&w=768&q=75 768w"
-                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
-              />
-            </div>
-          </div>
-        </div>
+        <picture>
+          <source
+            srcset="/images/me.webp"
+            type="image/webp"
+          />
+          <img
+            alt=""
+            class="image"
+            height="460"
+            src="/images/me.png"
+            width="460"
+          />
+        </picture>
         <ul
           class="container socialMediaLinks"
         >
