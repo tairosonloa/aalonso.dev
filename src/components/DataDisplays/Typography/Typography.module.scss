@@ -2,69 +2,45 @@
 @import 'src/styles/palette';
 
 .common {
-  margin-bottom: grid_units(2);
-  color: $black;
+  margin-bottom: 1em;
+  color: $light-gray;
+  line-height: 1.5;
+
+  strong {
+    font-weight: bold;
+  }
 }
 
 .titleBig {
-  font-size: 3rem;
-  font-weight: 300;
-  letter-spacing: 5.5px;
-  line-height: 1.2;
+  font-size: 2.5rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .title {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 1.2;
+  font-size: 2rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .titleSmall {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 3.5px;
-  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.paragraphLead {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 31.6px;
-
-  strong {
-    font-weight: bold;
-  }
+.paragraphBig {
+  font-size: 1.4rem;
 }
 
 .paragraph {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
-
-  strong {
-    font-weight: bold;
-  }
+  font-size: 1rem;
 }
 
 .paragraphSmall {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-
-  strong {
-    font-weight: bold;
-  }
+  font-size: 0.85rem;
 }
 
 .footNote {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 19px;
-
-  strong {
-    font-weight: bold;
-  }
+  font-size: 0.7rem;
 }

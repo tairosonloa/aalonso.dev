@@ -31,4 +31,9 @@ describe('<Header/>', () => {
     })
     expect(pushSpy).toHaveBeenCalledWith(href.getPath())
   })
+
+  it('should return null if the links provided is an empty array', () => {
+    const renderResult = render(<Menu links={[]} router={routerSpy} />)
+    expect(renderResult.container.firstChild).toEqual(null)
+  })
 })

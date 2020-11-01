@@ -6,17 +6,25 @@
   position: relative;
   grid-gap: grid_units(4);
   grid-template-columns: repeat(auto-fit, minmax(grid_units(45), 1fr));
+  margin-top: grid_units(5);
+  margin-right: grid_units(3);
+  margin-left: grid_units(3);
   padding: grid_units(4);
-  background-color: $rich-black;
+  border-top: 1px $charcoal solid;
+  background-color: $raisin-black;
 
   & > * {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $grey-light;
+    color: $light-gray;
   }
 
   @include screenIn(desktop) {
+    margin: 0;
+  }
+
+  @include screenIn(smallDesktop) {
     & > :nth-child(2) {
       justify-content: flex-start;
     }
@@ -33,5 +41,5 @@
 
 .socialMediaLinks i,
 .link {
-  color: $grey-light;
+  color: $light-gray;
 }

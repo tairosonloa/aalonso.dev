@@ -1,22 +1,32 @@
 @import 'src/styles/utils.scss';
 @import 'src/styles/palette.scss';
 
+:root {
+  background-color: $raisin-black;
+  color: $light-gray;
+}
+
+::selection {
+  background: $burgundy;
+  color: $white;
+}
+
 a {
   color: $burgundy;
 }
 
 .cookiesBanner {
+  // The !important are needed due to react-cookie-consent classes preferences
   display: flex !important;
   align-items: center !important;
   min-height: grid_units(15);
+  border-top: 1px $charcoal solid;
   opacity: 0.85;
-  // The !important are needed due to react-cookie-consent class preferences
-  background-color: $rich-black !important;
-  color: $grey-light !important;
+  background-color: $raisin-black !important;
+  color: $light-gray !important;
   line-height: 1.25em;
 
   a {
-    color: $grey-light;
     white-space: nowrap;
   }
 

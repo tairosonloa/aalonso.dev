@@ -37,7 +37,7 @@ const App = ({
     <>
       <DefaultSeo {...seo} />
       <Component {...pageProps} />
-      <CookieConsent expires={365} buttonText="Accept" containerClasses="cookiesBanner">
+      <CookieConsent expires={365} buttonText="Got it" containerClasses="cookiesBanner">
         This site uses cookies to provide you with a great user experience, among others.{' '}
         <a href={Routes.privacyPolicy().getPath()}>Read the Privacy & Cookies Policy</a>.
       </CookieConsent>

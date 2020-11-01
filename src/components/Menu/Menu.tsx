@@ -39,7 +39,7 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
     }
   }, [menuExpanded])
 
-  return (
+  return links.length > 0 ? (
     <div className={classNames(styles.container, className)}>
       <button
         type="button"
@@ -62,32 +62,29 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
       </button>
       <nav className={classNames(styles.links, menuExpanded && styles.mobileLinks)}>
         {links.map(({ href, text }) => {
-          if (typeof href === 'string') {
-            return (
+          return typeof href === 'string' ? (
+            <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" key={text}>
               <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
-                <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h2">
-                  {text}
-                </Typography>
-              </a>
-            )
-          }
-          return (
-            <a
-              href={href.getPath()}
-              key={text}
-              onClick={(e) => {
-                e.preventDefault()
-                router.pushTo(href)
-              }}
-              data-testid={text}
-            >
-              <Typography typographyType={TypographyType.TITLE_SMALL} htmlTag="h2">
                 {text}
-              </Typography>
-            </a>
+              </a>
+            </Typography>
+          ) : (
+            <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" key={text}>
+              <a
+                href={href.getPath()}
+                key={text}
+                onClick={(e) => {
+                  e.preventDefault()
+                  router.pushTo(href)
+                }}
+                data-testid={text}
+              >
+                {text}
+              </a>
+            </Typography>
           )
         })}
       </nav>
     </div>
-  )
+  ) : null
 }

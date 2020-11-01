@@ -8,6 +8,10 @@
 
 @mixin screenIn($device) {
   @if $device == desktop {
+    @media screen and (min-width: 1000px) {
+      @content;
+    }
+  } @else if $device == smallDesktop {
     @media screen and (min-width: 769px) {
       @content;
     }

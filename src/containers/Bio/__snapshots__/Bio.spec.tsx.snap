@@ -6,44 +6,131 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="container dark"
-        id="bio"
+        class="container"
       >
         <div
-          class="container hidden"
+          class="imageAndLinks"
         >
-          <h2
-            class="common title"
-            data-testid="section-title"
+          <div
+            class="image"
           >
-            About me
-          </h2>
-          <h3
-            class="common titleSmall"
-            data-testid="section-subtitle"
+            <div
+              style="max-width: 100%; width: 460px;"
+            >
+              <div
+                style="position: relative; padding-bottom: 100%;"
+              >
+                
+                <img
+                  alt=""
+                  class="image __lazy"
+                  data-src="/_next/image?url=%2Fimages%2Fme.webp&w=768&q=75"
+                  data-srcset="/_next/image?url=%2Fimages%2Fme.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fme.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fme.webp&w=768&q=75 768w"
+                  style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                />
+              </div>
+            </div>
+          </div>
+          <ul
+            class="container socialMediaLinks"
           >
-            Let me introduce myself first.
-          </h3>
+            <li>
+              <a
+                data-testid="github-link"
+                href="https://github.com/tairosonloa"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="ri-github-fill icon"
+                  data-testid="github"
+                />
+                <span
+                  class="hiddenTextForAccessibility"
+                >
+                  github
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="linkedin-link"
+                href="https://www.linkedin.com/in/aitoralonsonunez/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="ri-linkedin-box-fill icon"
+                  data-testid="linkedin"
+                />
+                <span
+                  class="hiddenTextForAccessibility"
+                >
+                  linkedin
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="twitter-link"
+                href="https://twitter.com/tairosonloa"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="ri-twitter-fill icon"
+                  data-testid="twitter"
+                />
+                <span
+                  class="hiddenTextForAccessibility"
+                >
+                  twitter
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="email-link"
+                href="mailto:aitor@aalonso.dev"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="ri-mail-fill icon"
+                  data-testid="email"
+                />
+                <span
+                  class="hiddenTextForAccessibility"
+                >
+                  email
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div
-          class="hidden"
-        >
-          <picture>
-            <source
-              srcset="/images/me.webp"
-              type="image/webp"
-            />
-            <img
-              alt=""
-              class="image"
-              src="/images/me.png"
-            />
-          </picture>
+        <div>
+          <h1
+            class="common titleBig bio"
+          >
+            Hi, I'm Aitor 
+            <span
+              aria-label="waving hand"
+              role="img"
+            >
+              👋
+            </span>
+          </h1>
           <p
-            class="common paragraph bio"
+            class="common paragraphBig bio"
           >
             I'm a full-stack developer 
-             full-time working for
+            <span
+              aria-label="man with a computer"
+              role="img"
+            >
+              👨‍💻
+            </span>
+             from Spain, currently full-time working for
              
             <a
               href="https://acidtango.com/"
@@ -53,45 +140,47 @@ Object {
               Acid Tango
             </a>
              
-            , while studying for a Master's Degree in Computer Science and Engineering 
-             on weekends. Focused on TypeScript with Node.js and React 
-            , I mainly work with
-             
-            <a
-              href="https://nestjs.com/"
-              rel="noopener noreferrer"
-              target="_blank"
+            <span
+              aria-label="lemon"
+              role="img"
             >
-              NestJS
-            </a>
-             
-            for backend APIs and
-             
-            <a
-              href="https://nextjs.org/"
-              rel="noopener noreferrer"
-              target="_blank"
+              🍋
+            </span>
+             while studying for a Master's Degree in Computer Science and Engineering 
+            <span
+              aria-label="graduation cap"
+              role="img"
             >
-              Next.js
-            </a>
-             
-            for websites.
+              🎓
+            </span>
+             on weekends.
           </p>
           <p
-            class="common paragraph bio"
-          >
-            I'm proactive, enthusiastic and curious , so I never stop learning and doing new stuff. I've been playing around artificial intelligence and machine learning with python for a few years, specially around neural networks.
-          </p>
-          <p
-            class="common paragraph bio"
+            class="common paragraphBig bio"
           >
             Free software contributor 
+            <span
+              aria-label="hearth"
+              role="img"
+            >
+              ❤️
+            </span>
             , Linux fan
              
-             and DevOps soul 
-            . 
-            <br />
-            Swipe down to know my history! 
+            <span
+              aria-label="penguin"
+              role="img"
+            >
+              🐧
+            </span>
+             and DevOps 
+            <span
+              aria-label="gear"
+              role="img"
+            >
+              ⚙️
+            </span>
+             soul.
           </p>
         </div>
       </div>
@@ -99,44 +188,131 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="container dark"
-      id="bio"
+      class="container"
     >
       <div
-        class="container hidden"
+        class="imageAndLinks"
       >
-        <h2
-          class="common title"
-          data-testid="section-title"
+        <div
+          class="image"
         >
-          About me
-        </h2>
-        <h3
-          class="common titleSmall"
-          data-testid="section-subtitle"
+          <div
+            style="max-width: 100%; width: 460px;"
+          >
+            <div
+              style="position: relative; padding-bottom: 100%;"
+            >
+              
+              <img
+                alt=""
+                class="image __lazy"
+                data-src="/_next/image?url=%2Fimages%2Fme.webp&w=768&q=75"
+                data-srcset="/_next/image?url=%2Fimages%2Fme.webp&w=320&q=75 320w, /_next/image?url=%2Fimages%2Fme.webp&w=420&q=75 420w, /_next/image?url=%2Fimages%2Fme.webp&w=768&q=75 768w"
+                style="visibility: hidden; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+        <ul
+          class="container socialMediaLinks"
         >
-          Let me introduce myself first.
-        </h3>
+          <li>
+            <a
+              data-testid="github-link"
+              href="https://github.com/tairosonloa"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-github-fill icon"
+                data-testid="github"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                github
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="linkedin-link"
+              href="https://www.linkedin.com/in/aitoralonsonunez/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-linkedin-box-fill icon"
+                data-testid="linkedin"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                linkedin
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="twitter-link"
+              href="https://twitter.com/tairosonloa"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-twitter-fill icon"
+                data-testid="twitter"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                twitter
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="email-link"
+              href="mailto:aitor@aalonso.dev"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-mail-fill icon"
+                data-testid="email"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                email
+              </span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div
-        class="hidden"
-      >
-        <picture>
-          <source
-            srcset="/images/me.webp"
-            type="image/webp"
-          />
-          <img
-            alt=""
-            class="image"
-            src="/images/me.png"
-          />
-        </picture>
+      <div>
+        <h1
+          class="common titleBig bio"
+        >
+          Hi, I'm Aitor 
+          <span
+            aria-label="waving hand"
+            role="img"
+          >
+            👋
+          </span>
+        </h1>
         <p
-          class="common paragraph bio"
+          class="common paragraphBig bio"
         >
           I'm a full-stack developer 
-           full-time working for
+          <span
+            aria-label="man with a computer"
+            role="img"
+          >
+            👨‍💻
+          </span>
+           from Spain, currently full-time working for
            
           <a
             href="https://acidtango.com/"
@@ -146,45 +322,47 @@ Object {
             Acid Tango
           </a>
            
-          , while studying for a Master's Degree in Computer Science and Engineering 
-           on weekends. Focused on TypeScript with Node.js and React 
-          , I mainly work with
-           
-          <a
-            href="https://nestjs.com/"
-            rel="noopener noreferrer"
-            target="_blank"
+          <span
+            aria-label="lemon"
+            role="img"
           >
-            NestJS
-          </a>
-           
-          for backend APIs and
-           
-          <a
-            href="https://nextjs.org/"
-            rel="noopener noreferrer"
-            target="_blank"
+            🍋
+          </span>
+           while studying for a Master's Degree in Computer Science and Engineering 
+          <span
+            aria-label="graduation cap"
+            role="img"
           >
-            Next.js
-          </a>
-           
-          for websites.
+            🎓
+          </span>
+           on weekends.
         </p>
         <p
-          class="common paragraph bio"
-        >
-          I'm proactive, enthusiastic and curious , so I never stop learning and doing new stuff. I've been playing around artificial intelligence and machine learning with python for a few years, specially around neural networks.
-        </p>
-        <p
-          class="common paragraph bio"
+          class="common paragraphBig bio"
         >
           Free software contributor 
+          <span
+            aria-label="hearth"
+            role="img"
+          >
+            ❤️
+          </span>
           , Linux fan
            
-           and DevOps soul 
-          . 
-          <br />
-          Swipe down to know my history! 
+          <span
+            aria-label="penguin"
+            role="img"
+          >
+            🐧
+          </span>
+           and DevOps 
+          <span
+            aria-label="gear"
+            role="img"
+          >
+            ⚙️
+          </span>
+           soul.
         </p>
       </div>
     </div>

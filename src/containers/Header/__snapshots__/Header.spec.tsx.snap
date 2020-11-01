@@ -13,9 +13,15 @@ Object {
         <div
           class="contentContainer"
         >
-          <div
-            class="titleContainer"
-          />
+          <h1
+            class="common titleBig title"
+          >
+            aa
+            <em>
+              l
+            </em>
+            onso
+          </h1>
           <div
             class="container menu"
           >
@@ -34,36 +40,36 @@ Object {
             <nav
               class="links"
             >
-              <a
-                data-testid="About me"
-                href="#bio"
+              <h2
+                class="common paragraph"
               >
-                <h2
-                  class="common titleSmall"
+                <a
+                  data-testid="About me"
+                  href="#bio"
                 >
                   About me
-                </h2>
-              </a>
-              <a
-                data-testid="Skills"
-                href="#skills"
+                </a>
+              </h2>
+              <h2
+                class="common paragraph"
               >
-                <h2
-                  class="common titleSmall"
+                <a
+                  data-testid="Skills"
+                  href="#skills"
                 >
                   Skills
-                </h2>
-              </a>
-              <a
-                data-testid="Career"
-                href="#career"
+                </a>
+              </h2>
+              <h2
+                class="common paragraph"
               >
-                <h2
-                  class="common titleSmall"
+                <a
+                  data-testid="Career"
+                  href="#career"
                 >
                   Career
-                </h2>
-              </a>
+                </a>
+              </h2>
             </nav>
           </div>
         </div>
@@ -77,9 +83,15 @@ Object {
       <div
         class="contentContainer"
       >
-        <div
-          class="titleContainer"
-        />
+        <h1
+          class="common titleBig title"
+        >
+          aa
+          <em>
+            l
+          </em>
+          onso
+        </h1>
         <div
           class="container menu"
         >
@@ -98,36 +110,36 @@ Object {
           <nav
             class="links"
           >
-            <a
-              data-testid="About me"
-              href="#bio"
+            <h2
+              class="common paragraph"
             >
-              <h2
-                class="common titleSmall"
+              <a
+                data-testid="About me"
+                href="#bio"
               >
                 About me
-              </h2>
-            </a>
-            <a
-              data-testid="Skills"
-              href="#skills"
+              </a>
+            </h2>
+            <h2
+              class="common paragraph"
             >
-              <h2
-                class="common titleSmall"
+              <a
+                data-testid="Skills"
+                href="#skills"
               >
                 Skills
-              </h2>
-            </a>
-            <a
-              data-testid="Career"
-              href="#career"
+              </a>
+            </h2>
+            <h2
+              class="common paragraph"
             >
-              <h2
-                class="common titleSmall"
+              <a
+                data-testid="Career"
+                href="#career"
               >
                 Career
-              </h2>
-            </a>
+              </a>
+            </h2>
           </nav>
         </div>
       </div>

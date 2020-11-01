@@ -8,6 +8,16 @@ Object {
       <footer
         class="container"
       >
+        <button
+          aria-label="Scroll to top"
+          class="scrollTop"
+          data-testid="scrollUpButton"
+          type="button"
+        >
+          <i
+            class="ri-arrow-up-line icon"
+          />
+        </button>
         <p
           class="common paragraph copyright"
         >
@@ -16,6 +26,82 @@ Object {
            
           Aitor Alonso
         </p>
+        <ul
+          class="container socialMediaLinks"
+        >
+          <li>
+            <a
+              data-testid="github-link"
+              href="https://github.com/tairosonloa"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-github-fill icon"
+                data-testid="github"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                github
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="linkedin-link"
+              href="https://www.linkedin.com/in/aitoralonsonunez/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-linkedin-box-fill icon"
+                data-testid="linkedin"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                linkedin
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="twitter-link"
+              href="https://twitter.com/tairosonloa"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-twitter-fill icon"
+                data-testid="twitter"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                twitter
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="email-link"
+              href="mailto:aitor@aalonso.dev"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="ri-mail-fill icon"
+                data-testid="email"
+              />
+              <span
+                class="hiddenTextForAccessibility"
+              >
+                email
+              </span>
+            </a>
+          </li>
+        </ul>
         <div>
           <a
             class="link"
@@ -31,6 +117,16 @@ Object {
     <footer
       class="container"
     >
+      <button
+        aria-label="Scroll to top"
+        class="scrollTop"
+        data-testid="scrollUpButton"
+        type="button"
+      >
+        <i
+          class="ri-arrow-up-line icon"
+        />
+      </button>
       <p
         class="common paragraph copyright"
       >
@@ -39,6 +135,82 @@ Object {
          
         Aitor Alonso
       </p>
+      <ul
+        class="container socialMediaLinks"
+      >
+        <li>
+          <a
+            data-testid="github-link"
+            href="https://github.com/tairosonloa"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i
+              class="ri-github-fill icon"
+              data-testid="github"
+            />
+            <span
+              class="hiddenTextForAccessibility"
+            >
+              github
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            data-testid="linkedin-link"
+            href="https://www.linkedin.com/in/aitoralonsonunez/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i
+              class="ri-linkedin-box-fill icon"
+              data-testid="linkedin"
+            />
+            <span
+              class="hiddenTextForAccessibility"
+            >
+              linkedin
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            data-testid="twitter-link"
+            href="https://twitter.com/tairosonloa"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i
+              class="ri-twitter-fill icon"
+              data-testid="twitter"
+            />
+            <span
+              class="hiddenTextForAccessibility"
+            >
+              twitter
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            data-testid="email-link"
+            href="mailto:aitor@aalonso.dev"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i
+              class="ri-mail-fill icon"
+              data-testid="email"
+            />
+            <span
+              class="hiddenTextForAccessibility"
+            >
+              email
+            </span>
+          </a>
+        </li>
+      </ul>
       <div>
         <a
           class="link"
