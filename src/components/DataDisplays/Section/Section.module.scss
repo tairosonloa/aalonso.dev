@@ -2,9 +2,9 @@
 @import 'src/styles/palette.scss';
 
 .container {
-  margin: auto;
-  max-width: grid_units(200);
   align-items: center;
   justify-content: center;
+  max-width: grid_units(200);
+  margin: auto;
   text-align: center;
 }

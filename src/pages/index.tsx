@@ -1,5 +1,3 @@
-import 'animate.css/animate.min.css'
-import 'devicon/devicon.min.css'
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 import { DOMAIN } from '../../site.metadata'

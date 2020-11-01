@@ -7,8 +7,8 @@
 }
 
 ::selection {
-  color: $white;
   background: $burgundy;
+  color: $white;
 }
 
 a {
@@ -20,8 +20,8 @@ a {
   display: flex !important;
   align-items: center !important;
   min-height: grid_units(15);
-  opacity: 0.85;
   border-top: 1px $charcoal solid;
+  opacity: 0.85;
   background-color: $raisin-black !important;
   color: $light-gray !important;
   line-height: 1.25em;

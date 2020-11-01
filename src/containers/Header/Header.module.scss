@@ -2,8 +2,8 @@
 @import 'src/styles/palette.scss';
 
 .container {
+  margin-right: grid_units(3);
   margin-left: grid_units(3);
-    margin-right: grid_units(3);
   border-bottom: 1px $charcoal solid;
 
   @include screenIn(desktop) {
@@ -19,7 +19,6 @@
   margin-right: grid_units(3);
   margin-left: grid_units(3);
 }
-
 
 .title {
   margin-bottom: grid_units(1);
@@ -38,9 +37,9 @@
   }
 }
 .menu {
+  z-index: 1;
   border-color: $light-gray;
   color: $light-gray;
-  z-index: 1;
 
   @include screenIn(smallTablet) {
     margin-top: grid_units(3);

@@ -62,7 +62,12 @@ $icon-font-size: 1.75rem;
     display: none;
   }
 
-  h1,h2,h3,h4,h5,h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 0;
   }
 
@@ -74,8 +79,8 @@ $icon-font-size: 1.75rem;
     cursor: pointer;
 
     &:hover {
-      text-decoration: underline;
       color: $burgundy;
+      text-decoration: underline;
     }
   }
 
@@ -110,5 +115,4 @@ $icon-font-size: 1.75rem;
       border: none;
     }
   }
-  
 }

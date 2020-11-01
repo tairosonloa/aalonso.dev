@@ -3,10 +3,10 @@
 
 .container {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
   flex: 1;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
 
   & > div {
     margin-top: grid_units(8);
@@ -28,7 +28,7 @@
 .image {
   width: grid_units(34);
   height: grid_units(34);
-  
+
   img {
     border-radius: 50%;
   }
