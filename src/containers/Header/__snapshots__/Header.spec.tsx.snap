@@ -42,7 +42,6 @@ Object {
             >
               <h2
                 class="common paragraph"
-                id="About me"
               >
                 <a
                   data-testid="About me"
@@ -53,7 +52,6 @@ Object {
               </h2>
               <h2
                 class="common paragraph"
-                id="Skills"
               >
                 <a
                   data-testid="Skills"
@@ -64,7 +62,6 @@ Object {
               </h2>
               <h2
                 class="common paragraph"
-                id="Career"
               >
                 <a
                   data-testid="Career"
@@ -115,7 +112,6 @@ Object {
           >
             <h2
               class="common paragraph"
-              id="About me"
             >
               <a
                 data-testid="About me"
@@ -126,7 +122,6 @@ Object {
             </h2>
             <h2
               class="common paragraph"
-              id="Skills"
             >
               <a
                 data-testid="Skills"
@@ -137,7 +132,6 @@ Object {
             </h2>
             <h2
               class="common paragraph"
-              id="Career"
             >
               <a
                 data-testid="Career"

@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import Image from 'next/image'
 import React, { FC } from 'react'
 import { SiteMetadata } from '../../../site.metadata'
@@ -19,10 +18,7 @@ export const Bio: FC = () => {
         <SocialMediaLinks className={styles.socialMediaLinks} />
       </div>
       <div>
-        <Typography
-          typographyType={TypographyType.TITLE_BIG}
-          className={classNames(styles.bio, styles.bioTitle)}
-        >
+        <Typography typographyType={TypographyType.TITLE_BIG} className={styles.bio}>
           Hi, I&apos;m Aitor <Emoji emoji="👋" label="waving hand" />
         </Typography>
         <Typography typographyType={TypographyType.PARAGRAPH_BIG} className={styles.bio}>

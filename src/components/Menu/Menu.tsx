@@ -62,17 +62,14 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
       </button>
       <nav className={classNames(styles.links, menuExpanded && styles.mobileLinks)}>
         {links.map(({ href, text }) => {
-          if (typeof href === 'string') {
-            return (
-              <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" id={text}>
-                <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
-                  {text}
-                </a>
-              </Typography>
-            )
-          }
-          return (
-            <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" id={text}>
+          return typeof href === 'string' ? (
+            <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" key={text}>
+              <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
+                {text}
+              </a>
+            </Typography>
+          ) : (
+            <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" key={text}>
               <a
                 href={href.getPath()}
                 key={text}

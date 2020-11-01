@@ -9,7 +9,6 @@ type TypographyProps = {
   style?: CSSProperties
   htmlTag?: keyof ReactHTML
   innerHtml?: string
-  id?: string | number
 }
 
 export enum TypographyType {
@@ -38,12 +37,10 @@ export const Typography: FC<TypographyProps> = ({
   style,
   htmlTag,
   innerHtml,
-  id,
   ...props
 }) => {
   return React.createElement(htmlTag || TextTypeToHtmlTag[typographyType], {
     className: classNames(styles.common, styles[typographyType], className),
-    id,
     style,
     ...(innerHtml
       ? {

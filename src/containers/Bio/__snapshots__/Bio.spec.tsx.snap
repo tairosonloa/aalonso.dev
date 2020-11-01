@@ -110,7 +110,7 @@ Object {
         </div>
         <div>
           <h1
-            class="common titleBig bio bioTitle"
+            class="common titleBig bio"
           >
             Hi, I'm Aitor 
             <span
@@ -292,7 +292,7 @@ Object {
       </div>
       <div>
         <h1
-          class="common titleBig bio bioTitle"
+          class="common titleBig bio"
         >
           Hi, I'm Aitor 
           <span
