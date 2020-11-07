@@ -22,7 +22,7 @@
     "next": "10.0.1",
     "next-seo": "4.15.1",
     "react": "17.0.1",
-    "react-cookie-consent": "5.2.0",
+    "react-cookie-consent": "6.0.0",
     "react-dom": "17.0.1",
     "remixicon": "2.5.0",
     "sanitize-html": "2.1.2",
