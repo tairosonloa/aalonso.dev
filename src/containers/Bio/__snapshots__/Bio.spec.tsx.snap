@@ -84,7 +84,7 @@ Object {
             <li>
               <a
                 data-testid="email-link"
-                href="mailto:aitor@aalonso.dev"
+                href="#"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -259,7 +259,7 @@ Object {
           <li>
             <a
               data-testid="email-link"
-              href="mailto:aitor@aalonso.dev"
+              href="#"
               rel="noopener noreferrer"
               target="_blank"
             >

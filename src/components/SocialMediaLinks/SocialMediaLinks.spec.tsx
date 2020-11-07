@@ -10,7 +10,7 @@ describe('<SocialMediaLinks/>', () => {
     socialMedia   | icon                      | url
     ${'github'}   | ${'ri-github-fill'}       | ${socialMediaUrls.github}
     ${'linkedin'} | ${'ri-linkedin-box-fill'} | ${socialMediaUrls.linkedin}
-    ${'email'}    | ${'ri-mail-fill'}         | ${`mailto:${socialMediaUrls.emailAddress}`}
+    ${'email'}    | ${'ri-mail-fill'}         | ${'#'}
   `('should display the icon link to $socialMedia', ({ socialMedia, icon, url }) => {
     const renderResult = render(<SocialMediaLinks />)
 

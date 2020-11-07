@@ -116,12 +116,19 @@ Object {
           Consent can be withdrawn at any time. You have the right to access, request correction or erasure of your personal information, as well as the limitation or opposition of its treatment. You can exercise your rights by sending me an email to
            
           <a
-            href="mailto:aitor@aalonso.dev?subject=aalonso.dev Privacy"
+            href="#"
             rel="noopener noreferrer"
             target="_blank"
           >
-            aitor@aalonso.dev
+            <span
+              style="unicode-bidi: bidi-override; direction: rtl;"
+            >
+              ved.osnolaa@rotia
+            </span>
           </a>
+          <noscript>
+            Please enable Javascript to see the email address
+          </noscript>
           .
         </p>
         <h2
@@ -454,12 +461,19 @@ Object {
         Consent can be withdrawn at any time. You have the right to access, request correction or erasure of your personal information, as well as the limitation or opposition of its treatment. You can exercise your rights by sending me an email to
          
         <a
-          href="mailto:aitor@aalonso.dev?subject=aalonso.dev Privacy"
+          href="#"
           rel="noopener noreferrer"
           target="_blank"
         >
-          aitor@aalonso.dev
+          <span
+            style="unicode-bidi: bidi-override; direction: rtl;"
+          >
+            ved.osnolaa@rotia
+          </span>
         </a>
+        <noscript>
+          Please enable Javascript to see the email address
+        </noscript>
         .
       </p>
       <h2
