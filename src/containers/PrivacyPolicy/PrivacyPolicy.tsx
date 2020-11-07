@@ -1,10 +1,15 @@
 import React, { FC } from 'react'
 import { SiteMetadata } from '../../../site.metadata'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
+import mailtoLink from '../../utils/mailtoLink'
 import styles from './PrivacyPolicy.module.scss'
 
 export const PrivacyPolicy: FC = () => {
   const { socialMediaUrls } = SiteMetadata
+  const openMailtoLink = (e: React.MouseEvent | React.KeyboardEvent) => {
+    e.preventDefault()
+    window.open(mailtoLink({ subject: 'aalonso.dev Privacy' }), '_blank', 'noopener noreferrer')
+  }
 
   return (
     <div className={styles.container}>
@@ -96,14 +101,23 @@ export const PrivacyPolicy: FC = () => {
         Consent can be withdrawn at any time. You have the right to access, request correction or
         erasure of your personal information, as well as the limitation or opposition of its
         treatment. You can exercise your rights by sending me an email to{' '}
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a
-          href={`mailto:${socialMediaUrls.emailAddress}?subject=aalonso.dev Privacy`}
+          // eslint-disable-next-line no-script-url
+          href="#"
+          onClick={openMailtoLink}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {socialMediaUrls.emailAddress}
+          <span style={{ unicodeBidi: 'bidi-override', direction: 'rtl' }}>
+            {Buffer.from(socialMediaUrls.base64EncodedEmailAddress, 'base64')
+              .toString()
+              .split('')
+              .reverse()
+              .join('')}
+          </span>
         </a>
-        .
+        <noscript>Please enable Javascript to see the email address</noscript>.
       </Typography>
 
       <Typography typographyType={TypographyType.TITLE} className={styles.title}>
