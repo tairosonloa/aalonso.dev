@@ -11,6 +11,8 @@ describe('<ScrollUpButton/>', () => {
     await act(async () => {
       fireEvent.click(button)
     })
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     expect(scrollTo).toHaveBeenCalledWith({ top: 0, behavior: 'smooth' })
   })
 })
