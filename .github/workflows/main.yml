@@ -33,7 +33,7 @@ jobs:
         run: yarn lint:ts && yarn lint:css:ci
 
       - name: Run tests and publish code coverage
-        uses: paambaati/codeclimate-action@v2.7.4
+        uses: paambaati/codeclimate-action@v2.7.5
         env:
           CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
         with:
