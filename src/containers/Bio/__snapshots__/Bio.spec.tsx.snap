@@ -81,24 +81,6 @@ Object {
                 </span>
               </a>
             </li>
-            <li>
-              <a
-                data-testid="email-link"
-                href="#"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i
-                  class="ri-mail-fill icon"
-                  data-testid="email"
-                />
-                <span
-                  class="hiddenTextForAccessibility"
-                >
-                  email
-                </span>
-              </a>
-            </li>
           </ul>
         </div>
         <div>
@@ -253,24 +235,6 @@ Object {
                 class="hiddenTextForAccessibility"
               >
                 twitter
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              data-testid="email-link"
-              href="#"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i
-                class="ri-mail-fill icon"
-                data-testid="email"
-              />
-              <span
-                class="hiddenTextForAccessibility"
-              >
-                email
               </span>
             </a>
           </li>
