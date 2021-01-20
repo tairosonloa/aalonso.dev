@@ -1,7 +1,6 @@
 import classNames from 'classnames'
 import React, { FC } from 'react'
 import { SiteMetadata } from '../../../site.metadata'
-import mailtoLink from '../../utils/mailtoLink'
 import { IconName, RemixIcon } from '../Icons/RemixIcon/RemixIcon'
 import styles from './SocialMediaLinks.module.scss'
 
@@ -18,11 +17,6 @@ export const SocialMediaLinks: FC<SocialMediaLinksProps> = ({ className }) => {
     { href: socialMediaUrls.twitter, iconName: IconName.TWITTER, name: 'twitter' },
   ]
 
-  const openMailtoLink = (e: React.MouseEvent | React.KeyboardEvent) => {
-    e.preventDefault()
-    window.open(mailtoLink(), '_blank', 'noopener noreferrer')
-  }
-
   return (
     <ul className={classNames(styles.container, className)}>
       {allSocialMedia.map(({ href, iconName, name }) => (
@@ -33,20 +27,6 @@ export const SocialMediaLinks: FC<SocialMediaLinksProps> = ({ className }) => {
           </a>
         </li>
       ))}
-      <li key="email">
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a
-          // eslint-disable-next-line no-script-url
-          href="#"
-          onClick={openMailtoLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-testid="email-link"
-        >
-          <RemixIcon name={IconName.EMAIL} data-testid="email" />
-          <span className={styles.hiddenTextForAccessibility}>email</span>
-        </a>
-      </li>
     </ul>
   )
 }
