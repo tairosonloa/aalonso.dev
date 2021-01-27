@@ -8,13 +8,7 @@
 ## About this repository
 
 This is my personal website I made from scratch using React and TypeScript.
-I use the [Next.js](https://nextjs.org/) React framework to develop it.
-
-I started this development after graduating from University and started to
-work for [Acid Tango](https://acidtango.com/), where I acquired more
-professional skills and better programming and design practices. Before
-that, I had another site made with GatbsyJS I used during my student
-years, with a lot of technical debt because of my learning process. The old archive repo can be found [here](https://github.com/tairosonloa/aalonso.eu).
+I use the [Gatsby](https://www.gatsbyjs.com/) React framework to develop it.
 
 ## License
 

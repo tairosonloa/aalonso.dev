@@ -1,13 +1,14 @@
 {
   "name": "aalonso.dev",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "gatsby develop",
     "prebuild": "node scripts/prebuild.js",
-    "build": "next build",
-    "start": "next start",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
     "export": "next export",
+    "clean": "gatsby clean",
     "test": "jest",
     "typecheck": "tsc",
     "g:production-build": "npm run prebuild && next build && next export",
@@ -19,27 +20,23 @@
   },
   "dependencies": {
     "classnames": "2.2.6",
-    "next": "10.0.5",
-    "next-seo": "4.17.0",
+    "gatsby": "2.31.1",
+    "gatsby-plugin-sass": "^3.1.0",
+    "node-sass": "^5.0.0",
     "react": "17.0.1",
     "react-cookie-consent": "6.2.1",
     "react-dom": "17.0.1",
     "remixicon": "2.5.0",
     "sanitize-html": "2.3.1",
-    "sass": "1.32.5",
     "sitemap": "6.3.5",
-    "smoothscroll-polyfill": "0.4.4"
+    "smoothscroll-polyfill": "0.4.4",
+    "tsconfig-paths-webpack-plugin": "3.3.0"
   },
   "devDependencies": {
-    "@babel/core": "7.12.10",
-    "@babel/plugin-proposal-class-properties": "7.12.1",
-    "@babel/preset-typescript": "7.12.7",
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.3",
     "@types/classnames": "2.2.11",
     "@types/jest": "26.0.20",
-    "@types/lodash": "4.14.168",
-    "@types/next": "9.0.0",
     "@types/node": "14.14.22",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
@@ -47,8 +44,7 @@
     "@types/smoothscroll-polyfill": "0.3.1",
     "@typescript-eslint/eslint-plugin": "4.14.0",
     "@typescript-eslint/parser": "4.14.0",
-    "babel-loader": "8.2.2",
-    "babel-preset-react-app": "10.0.0",
+    "babel-plugin-root-import": "6.6.0",
     "eslint": "7.18.0",
     "eslint-config-airbnb-typescript-prettier": "4.1.0",
     "jest": "26.6.3",
@@ -69,7 +65,6 @@
       "^.+\\.module.scss$": "<rootDir>/__mocks__/styleMock.js",
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
-    
     "setupFilesAfterEnv": [
       "<rootDir>/test/setup.js"
     ],
@@ -77,7 +72,7 @@
     "coverageDirectory": "./coverage",
     "coverageThreshold": {
       "global": {
-        "branches": 60,
+        "branches": 80,
         "functions": 80,
         "lines": 80,
         "statements": 80

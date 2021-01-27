@@ -1,19 +1,17 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+node_modules
 
 # testing
-/coverage
+coverage
 
-# next.js
-/.next/
-/out/
+# gatsby
+public
+.cache
 
 # production
-/build
+build
 
 # misc
 .DS_Store
@@ -30,9 +28,9 @@ yarn-error.log*
 .env.production.local
 
 # generated on build time by prebuild.js
-public/_redirects
-public/_headers
-public/robots.txt
+_redirects
+_headers
+robots.txt
 sitemap.xml
 
 # lighthouseci

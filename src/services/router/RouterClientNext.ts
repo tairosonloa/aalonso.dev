@@ -1,11 +1,11 @@
-import { NextRouter } from 'next/router'
 import { Router } from './Router'
 import { Route } from './Routes'
 
 export class RouterClientNext implements Router {
-  private router: NextRouter
+  // TODO: review this class
+  private router: any
 
-  constructor(router: NextRouter) {
+  constructor(router: any) {
     this.router = router
   }
 
