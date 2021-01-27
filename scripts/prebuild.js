@@ -3,11 +3,11 @@ const { Readable } = require('stream')
 const path = require('path')
 const fs = require('fs')
 
-if (!process.env.NEXT_PUBLIC_DOMAIN) {
+if (!process.env.DOMAIN) {
   throw Error("ENV variable 'DOMAIN' must be set")
 }
 
-const robots = `Sitemap: https://${process.env.NEXT_PUBLIC_DOMAIN}/sitemap.xml
+const robots = `Sitemap: https://${process.env.DOMAIN}/sitemap.xml
 
 User-agent: *
 Allow: /*`
@@ -15,20 +15,20 @@ Allow: /*`
 const redirects = `# These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect http to https
-http://${process.env.NEXT_PUBLIC_DOMAIN}/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
-http://www.${process.env.NEXT_PUBLIC_DOMAIN}/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+http://${process.env.DOMAIN}/* https://${process.env.DOMAIN}/:splat 301!
+http://www.${process.env.DOMAIN}/* https://${process.env.DOMAIN}/:splat 301!
 
 # Redirect default Netlify subdomain to primary domain
-http://aalonso.netlify.app/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
-http://aalonso.netlify.com/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
-https://aalonso.netlify.app/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
-https://aalonso.netlify.com/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+http://aalonso.netlify.app/* https://${process.env.DOMAIN}/:splat 301!
+http://aalonso.netlify.com/* https://${process.env.DOMAIN}/:splat 301!
+https://aalonso.netlify.app/* https://${process.env.DOMAIN}/:splat 301!
+https://aalonso.netlify.com/* https://${process.env.DOMAIN}/:splat 301!
 
 # Redirect old domain to primary domain
-http://aalonso.eu/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
-http://www.aalonso.eu/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
-https://aalonso.eu/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
-https://www.aalonso.eu/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+http://aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
+http://www.aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
+https://aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
+https://www.aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
 `
 
 const headers = `# Cloudflare must cache Netlify assets for 7 days (604 800 seconds).
@@ -47,7 +47,7 @@ Cache-Control: public, s-max-age=604800
 
 const generateSitemap = async () => {
   const stream = new SitemapStream({
-    hostname: `https://${process.env.NEXT_PUBLIC_DOMAIN}`,
+    hostname: `https://${process.env.DOMAIN}`,
   })
   const links = [
     {

@@ -53,7 +53,6 @@ export const SEO: FC<SeoProps> = ({
   return (
     <Helmet htmlAttributes={{ lang: seo.lang }} title={seo.title} titleTemplate={titleTemplate}>
       {/* general tags */}
-      <meta charSet="utf-8" />
       <link rel="canonical" href={seo.url} />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
