@@ -24,7 +24,6 @@ export const SEO: FC<SeoProps> = ({
 }) => {
   const faviconSizes = [48, 96, 144, 192]
   const { pathname } = useLocation()
-  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   const { site } = useStaticQuery(query)
   const {
     defaultTitle,

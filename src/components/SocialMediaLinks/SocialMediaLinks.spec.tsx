@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react'
 import * as React from 'react'
-import { SiteMetadata } from '../../../site.metadata'
+import { siteMetadata } from '../../../gatsby-config'
 import { SocialMediaLinks } from './SocialMediaLinks'
 
 describe('<SocialMediaLinks/>', () => {
-  const { socialMediaUrls } = SiteMetadata
+  const { socialMediaUrls } = siteMetadata
 
   it.each`
     socialMedia   | icon                      | url

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// TODO: remove this eslint (temporal)
 import React, { FC } from 'react'
 import CookieConsent from 'react-cookie-consent'
 import { Route } from '../../services/router/Routes'

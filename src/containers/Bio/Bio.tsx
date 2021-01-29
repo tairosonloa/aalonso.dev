@@ -1,12 +1,12 @@
+import { graphql, useStaticQuery } from 'gatsby'
 import React, { FC } from 'react'
-import { SiteMetadata } from '../../../site.metadata'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
 import { Emoji } from '../../components/Emoji/Emoji'
 import { SocialMediaLinks } from '../../components/SocialMediaLinks/SocialMediaLinks'
 import styles from './Bio.module.scss'
 
 export const Bio: FC = () => {
-  const { employerInfo } = SiteMetadata
+  const { employerInfo } = useStaticQuery(query).site.siteMetadata
 
   return (
     <div className={styles.container}>
@@ -38,3 +38,16 @@ export const Bio: FC = () => {
     </div>
   )
 }
+
+const query = graphql`
+  query EmployerInfo {
+    site {
+      siteMetadata {
+        employerInfo {
+          name
+          website
+        }
+      }
+    }
+  }
+`
