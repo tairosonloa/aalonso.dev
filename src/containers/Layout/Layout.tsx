@@ -1,8 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-// TODO: remove this eslint (temporal)
+import { Link } from 'gatsby'
 import React, { FC } from 'react'
 import CookieConsent from 'react-cookie-consent'
-import { Route } from '../../services/router/Routes'
+import { Route, Routes } from '../../services/router/Routes'
 import { Footer } from '../Footer/Footer'
 import { Header } from '../Header/Header'
 import styles from './Layout.module.scss'
@@ -15,18 +14,16 @@ type LayoutProps = {
 }
 
 export const Layout: FC<LayoutProps> = ({ headerLinks = [], children, showFooter = false }) => {
-  // TODO: change cookies link
-  // TODO: check routers
   return (
     <>
       <div className={styles.container}>
-        <Header links={headerLinks} router={null as any} />
+        <Header links={headerLinks} />
         <main className={styles.main}>{children}</main>
-        {showFooter && <Footer router={null as any} />}
+        {showFooter && <Footer />}
       </div>
       <CookieConsent expires={365} buttonText="Got it" containerClasses="cookiesBanner">
         This site uses cookies to provide you with a great user experience, among others.{' '}
-        <a href="#">Read the Privacy & Cookies Policy</a>.
+        <Link to={Routes.privacyPolicy().getPath()}>Read the Privacy & Cookies Policy</Link>.
       </CookieConsent>
     </>
   )
