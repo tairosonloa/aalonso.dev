@@ -1,4 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import React, { FC } from 'react'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
 import mailtoLink from '../../utils/mailtoLink'
@@ -248,9 +249,13 @@ export const PrivacyPolicy: FC = () => {
       <Typography>
         <strong>Google Analytics</strong> - Google Analytics is a web traffic analysis tool. You can
         read the Privacy Policy for Google Analytics here:{' '}
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+        <OutboundLink
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           https://policies.google.com/privacy
-        </a>
+        </OutboundLink>
       </Typography>
 
       <Typography typographyType={TypographyType.TITLE} className={styles.title}>
