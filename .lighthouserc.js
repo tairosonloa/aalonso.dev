@@ -26,7 +26,7 @@ module.exports = {
       },
     },
     collect: {
-      staticDistDir: './out',
+      staticDistDir: './public',
     },
     // upload: {
     //   target: "filesystem"
