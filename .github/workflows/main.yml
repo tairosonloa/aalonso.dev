@@ -67,26 +67,20 @@ jobs:
       - name: Prebuild
         run: yarn prebuild
         env:
-          NEXT_PUBLIC_DOMAIN: ${{ secrets.DOMAIN }}
-          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          DOMAIN: ${{ secrets.DOMAIN }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
       
       - name: Build
         run: yarn build
         env:
-          NEXT_PUBLIC_DOMAIN: ${{ secrets.DOMAIN }}
-          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
-
-      - name: Export
-        run: yarn export
-        env:
-          NEXT_PUBLIC_DOMAIN: ${{ secrets.DOMAIN }}
-          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          DOMAIN: ${{ secrets.DOMAIN }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
       - name: Upload production build artifact
         uses: actions/upload-artifact@main
         with:
           name: production-build
-          path: out/
+          path: public/
 
   deploy:
     if: github.ref == 'refs/heads/master'
@@ -100,7 +94,7 @@ jobs:
         uses: actions/download-artifact@main
         with:
           name: production-build
-          path: out
+          path: public
 
       - name: Use Node.js 12.x
         uses: actions/setup-node@main
@@ -120,7 +114,7 @@ jobs:
         run: yarn --frozen-lockfile --cache-folder ~/.yarn
 
       - name: Deploy to netlify
-        run: npx netlify deploy --dir=out --message="$(git log -1 --pretty=format:'%s')" --prod
+        run: npx netlify deploy --dir=public --message="$(git log -1 --pretty=format:'%s')" --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

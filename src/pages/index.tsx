@@ -1,24 +1,16 @@
-import { useRouter } from 'next/router'
 import React, { FC } from 'react'
-import { DOMAIN } from '../../site.metadata'
+import { SEO } from '../components/Seo/Seo'
 import { Bio } from '../containers/Bio/Bio'
-import { Layout, OverwriteDefaultSeo } from '../containers/Layout/Layout'
-import { RouterClientNext } from '../services/router/RouterClientNext'
+import { Layout } from '../containers/Layout/Layout'
 
 const Index: FC = () => {
-  const nextRouter = useRouter()
-  const router = new RouterClientNext(nextRouter)
-
-  const url = `https://${DOMAIN}/`
-  const seo: OverwriteDefaultSeo = {
-    canonical: url,
-    openGraph: { url },
-  }
-
   return (
-    <Layout headerLinks={[]} router={router} seo={seo}>
-      <Bio />
-    </Layout>
+    <>
+      <SEO />
+      <Layout>
+        <Bio />
+      </Layout>
+    </>
   )
 }
 

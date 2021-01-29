@@ -1,11 +1,12 @@
+import { graphql, useStaticQuery } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import React, { FC } from 'react'
-import { SiteMetadata } from '../../../site.metadata'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
 import mailtoLink from '../../utils/mailtoLink'
 import styles from './PrivacyPolicy.module.scss'
 
 export const PrivacyPolicy: FC = () => {
-  const { socialMediaUrls } = SiteMetadata
+  const { base64EncodedEmailAddress } = useStaticQuery(query).site.siteMetadata.socialMediaUrls
   const openMailtoLink = (e: React.MouseEvent | React.KeyboardEvent) => {
     e.preventDefault()
     window.open(mailtoLink({ subject: 'aalonso.dev Privacy' }), '_blank', 'noopener noreferrer')
@@ -110,7 +111,7 @@ export const PrivacyPolicy: FC = () => {
           rel="noopener noreferrer"
         >
           <span style={{ unicodeBidi: 'bidi-override', direction: 'rtl' }}>
-            {Buffer.from(socialMediaUrls.base64EncodedEmailAddress, 'base64')
+            {Buffer.from(base64EncodedEmailAddress, 'base64')
               .toString()
               .split('')
               .reverse()
@@ -248,9 +249,13 @@ export const PrivacyPolicy: FC = () => {
       <Typography>
         <strong>Google Analytics</strong> - Google Analytics is a web traffic analysis tool. You can
         read the Privacy Policy for Google Analytics here:{' '}
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+        <OutboundLink
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           https://policies.google.com/privacy
-        </a>
+        </OutboundLink>
       </Typography>
 
       <Typography typographyType={TypographyType.TITLE} className={styles.title}>
@@ -299,3 +304,15 @@ export const PrivacyPolicy: FC = () => {
     </div>
   )
 }
+
+const query = graphql`
+  query EncodedEmailAddress {
+    site {
+      siteMetadata {
+        socialMediaUrls {
+          base64EncodedEmailAddress
+        }
+      }
+    }
+  }
+`

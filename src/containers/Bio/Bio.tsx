@@ -1,12 +1,13 @@
+import { graphql, useStaticQuery } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import React, { FC } from 'react'
-import { SiteMetadata } from '../../../site.metadata'
 import { Typography, TypographyType } from '../../components/DataDisplays/Typography/Typography'
 import { Emoji } from '../../components/Emoji/Emoji'
 import { SocialMediaLinks } from '../../components/SocialMediaLinks/SocialMediaLinks'
 import styles from './Bio.module.scss'
 
 export const Bio: FC = () => {
-  const { employerInfo } = SiteMetadata
+  const { employerInfo } = useStaticQuery(query).site.siteMetadata
 
   return (
     <div className={styles.container}>
@@ -24,9 +25,9 @@ export const Bio: FC = () => {
         <Typography typographyType={TypographyType.PARAGRAPH_BIG} className={styles.bio}>
           I&apos;m a full-stack developer <Emoji emoji="👨‍💻" label="man with a computer" /> from
           Spain, currently full-time working for{' '}
-          <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">
+          <OutboundLink href={employerInfo.website} target="_blank" rel="noopener noreferrer">
             {employerInfo.name}
-          </a>{' '}
+          </OutboundLink>{' '}
           <Emoji emoji="🍋" label="lemon" /> while studying for a Master&apos;s Degree in Computer
           Science and Engineering <Emoji emoji="🎓" label="graduation cap" /> on weekends.
         </Typography>
@@ -38,3 +39,16 @@ export const Bio: FC = () => {
     </div>
   )
 }
+
+const query = graphql`
+  query EmployerInfo {
+    site {
+      siteMetadata {
+        employerInfo {
+          name
+          website
+        }
+      }
+    }
+  }
+`

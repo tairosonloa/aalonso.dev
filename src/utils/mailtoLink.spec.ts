@@ -1,11 +1,11 @@
-import { SiteMetadata } from '../../site.metadata'
+import { siteMetadata } from '../../gatsby-config'
 import mailtoLink from './mailtoLink'
 
 const FAKE_MAILTO_LINK = 'mailto:hello@world.com'
 
 describe('mailtoLink', () => {
   beforeAll(() => {
-    SiteMetadata.socialMediaUrls.base64EncodedEmailAddress = 'aGVsbG9Ad29ybGQuY29t'
+    siteMetadata.socialMediaUrls.base64EncodedEmailAddress = 'aGVsbG9Ad29ybGQuY29t'
   })
 
   it('should return a mailto link for the decode address', () => {

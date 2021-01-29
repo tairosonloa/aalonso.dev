@@ -1,41 +1,30 @@
-import { NextSeo } from 'next-seo'
-import { NextSeoProps, OpenGraph } from 'next-seo/lib/types.d'
+import { Link } from 'gatsby'
 import React, { FC } from 'react'
-import { Router } from '../../services/router/Router'
-import { Route } from '../../services/router/Routes'
+import CookieConsent from 'react-cookie-consent'
+import { Route, Routes } from '../../services/router/Routes'
 import { Footer } from '../Footer/Footer'
 import { Header } from '../Header/Header'
 import styles from './Layout.module.scss'
 
-type AtLeast<T, K extends keyof T> = Partial<T> & Required<Pick<T, K>>
-export type OverwriteDefaultSeo = AtLeast<NextSeoProps, 'canonical' | 'openGraph'> & {
-  openGraph: AtLeast<OpenGraph, 'url'>
-}
-
 export type HeaderLink = { href: string | Route; text: string }
 
 type LayoutProps = {
-  headerLinks: HeaderLink[]
-  router: Router
-  seo: OverwriteDefaultSeo
+  headerLinks?: HeaderLink[]
   showFooter?: boolean
 }
 
-export const Layout: FC<LayoutProps> = ({
-  headerLinks,
-  router,
-  seo,
-  children,
-  showFooter = false,
-}) => {
+export const Layout: FC<LayoutProps> = ({ headerLinks = [], children, showFooter = false }) => {
   return (
     <>
-      <NextSeo {...seo} />
       <div className={styles.container}>
-        <Header links={headerLinks} router={router} />
+        <Header links={headerLinks} />
         <main className={styles.main}>{children}</main>
-        {showFooter && <Footer router={router} />}
+        {showFooter && <Footer />}
       </div>
+      <CookieConsent expires={365} buttonText="Got it" containerClasses="cookiesBanner">
+        This site uses cookies to provide you with a great user experience, among others.{' '}
+        <Link to={Routes.privacyPolicy().getPath()}>Read the Privacy & Cookies Policy</Link>.
+      </CookieConsent>
     </>
   )
 }

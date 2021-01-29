@@ -1,6 +1,6 @@
 import classNames from 'classnames'
+import { Link } from 'gatsby'
 import React, { FC, useEffect, useState } from 'react'
-import { Router } from '../../services/router/Router'
 import { Route } from '../../services/router/Routes'
 import { Typography, TypographyType } from '../DataDisplays/Typography/Typography'
 import { IconName, RemixIcon } from '../Icons/RemixIcon/RemixIcon'
@@ -8,11 +8,10 @@ import styles from './Menu.module.scss'
 
 type MenuProps = {
   links: { href: string | Route; text: string }[]
-  router: Router
   className?: string
 }
 
-export const Menu: FC<MenuProps> = ({ links, router, className }) => {
+export const Menu: FC<MenuProps> = ({ links, className }) => {
   const [menuExpanded, setMenuExpanded] = useState<boolean>(false)
 
   const smoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -64,23 +63,15 @@ export const Menu: FC<MenuProps> = ({ links, router, className }) => {
         {links.map(({ href, text }) => {
           return typeof href === 'string' ? (
             <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" key={text}>
-              <a href={href} key={text} onClick={smoothScroll} data-testid={text}>
+              <Link to={href} key={text} onClick={smoothScroll} data-testid={text}>
                 {text}
-              </a>
+              </Link>
             </Typography>
           ) : (
             <Typography typographyType={TypographyType.PARAGRAPH} htmlTag="h2" key={text}>
-              <a
-                href={href.getPath()}
-                key={text}
-                onClick={(e) => {
-                  e.preventDefault()
-                  router.pushTo(href)
-                }}
-                data-testid={text}
-              >
+              <Link to={href.getPath()} key={text} data-testid={text}>
                 {text}
-              </a>
+              </Link>
             </Typography>
           )
         })}
