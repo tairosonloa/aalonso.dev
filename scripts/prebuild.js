@@ -63,10 +63,10 @@ const generateSitemap = async () => {
   const xml = await streamToPromise(Readable.from(links).pipe(stream)).then((data) =>
     data.toString(),
   )
-  fs.writeFileSync(path.resolve(__dirname, '../public/sitemap.xml'), xml)
+  fs.writeFileSync(path.resolve(__dirname, '../static/sitemap.xml'), xml)
 }
 
-fs.writeFileSync(path.resolve(__dirname, '../public/robots.txt'), robots)
-fs.writeFileSync(path.resolve(__dirname, '../public/_redirects'), redirects)
-fs.writeFileSync(path.resolve(__dirname, '../public/_headers'), headers)
+fs.writeFileSync(path.resolve(__dirname, '../static/robots.txt'), robots)
+fs.writeFileSync(path.resolve(__dirname, '../static/_redirects'), redirects)
+fs.writeFileSync(path.resolve(__dirname, '../static/_headers'), headers)
 generateSitemap().then(() => process.exit(0))

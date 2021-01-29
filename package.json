@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "prebuild": "node scripts/prebuild.js",
+    "start": "npm run prebuild && npm run build && npm run serve",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
