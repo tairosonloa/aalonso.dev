@@ -1,5 +1,5 @@
-import { ScrollUp } from '@src/components/Icons/Icons'
 import React, { useEffect, useState } from 'react'
+import { ScrollUp } from '../components/Icons/Icons'
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false)

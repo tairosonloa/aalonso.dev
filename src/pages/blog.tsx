@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react'
+import { format, parseISO } from 'date-fns'
 import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import { parseISO, format } from 'date-fns'
-import { Props } from '../src/containers/Interfaces/Interface'
+import React, { useState } from 'react'
+import { Props } from '../containers/Interfaces/Interface'
 
 const Blog: NextPage<Props> = (props) => {
   const [searchValue, setSearchValue] = useState('')
@@ -113,7 +113,7 @@ const Blog: NextPage<Props> = (props) => {
 }
 
 const getPosts = async () => {
-  const res = await fetch('https://dev.to/api/articles?username=prnvbirajdar')
+  const res = await fetch('https://dev.to/api/articles?username=tairosonloa')
   const posts = await res.json()
 
   return posts

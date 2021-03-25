@@ -5,24 +5,8 @@ const Icons = () => {
   return (
     <div className="flex mb-4 space-x-2">
       <a
-        aria-label="Mail"
-        href="mailto:prnvbirajdar@gmail.com"
-        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800  "
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          className="flex-none w-5 h-5"
-          viewBox="0 0 16 16"
-        >
-          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
-        </svg>
-      </a>
-      <a
         aria-label="Github"
-        href="https://github.com/prnvbirajdar"
+        href="https://github.com/tairosonloa"
         target="_blank"
         rel="noopener noreferrer"
         className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800   "
@@ -40,7 +24,7 @@ const Icons = () => {
       </a>
       <a
         aria-label="Twitter"
-        href="https://twitter.com/prnvbirajdar"
+        href="https://twitter.com/tairosonloa"
         target="_blank"
         rel="noopener noreferrer"
         className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800  "
@@ -58,7 +42,7 @@ const Icons = () => {
       </a>
       <a
         aria-label="LinkedIn"
-        href="https://www.linkedin.com/in/prnvbirajdar/"
+        href="https://www.linkedin.com/in/aitoralonsonunez/"
         target="_blank"
         rel="noopener noreferrer"
         className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800  "

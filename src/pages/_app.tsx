@@ -3,11 +3,10 @@ import { GoogleFonts } from 'next-google-fonts'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
-import CallToAction from '../src/components/CallToAction'
-import Footer from '../src/components/Footer'
-import Nav from '../src/components/Nav'
-import ScrollToTop from '../src/containers/scrollToTop'
-import '../src/css/tailwind.css'
+import Footer from '../components/Footer'
+import Nav from '../components/Nav'
+import ScrollToTop from '../containers/scrollToTop'
+import '../css/tailwind.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -21,7 +20,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Nav />
       <Component {...pageProps} />
       <section className="w-full mt-8 bg-gradient-to-b from-black to-gray-900">
-        <CallToAction />
         <ScrollToTop />
         <Footer />
       </section>

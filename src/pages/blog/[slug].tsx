@@ -1,16 +1,14 @@
 /* eslint-disable react/no-danger */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { parseISO, format } from 'date-fns'
-
+import React from 'react'
 // import remark from 'remark'
 // import html from 'remark-html'
 // import prism from 'remark-prism'
-
-import { BlogPost } from '../../src/containers/Interfaces/Interface'
+import { BlogPost } from '../../containers/Interfaces/Interface'
 
 export interface AllBlogProps {
   hopeBlog: BlogPost
@@ -95,24 +93,10 @@ const BlogPage: NextPage<AllBlogProps> = ({
 }
 
 const getAllBlogs = async () => {
-  const res = await fetch('https://dev.to/api/articles?username=prnvbirajdar')
+  const res = await fetch('https://dev.to/api/articles?username=tairosonloa')
   const data = await res.json()
   return data
-
-  // const r = await fetch('https://dev.to/api/articles/me/published', {
-  //   headers: { 'api-key': '' || '' },
-  // })
-
-  // if (r.status < 200 || r.status >= 300) {
-  //   throw new Error(`Error fetching... Status code: ${r.status}, ${r.statusText}`)
-  // }
-  // return r.json()
 }
-
-// const markdownToHtml = async (markdown: string) => {
-//   const result = await remark().use(html).use(prism).process(markdown)
-//   return result.toString()
-// }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const devData: BlogPost[] = await getAllBlogs()
