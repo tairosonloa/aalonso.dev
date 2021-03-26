@@ -10,7 +10,7 @@ import '../css/tailwind.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <>
+    <div className="flex flex-col h-screen justify-between">
       <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,12 +18,12 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="Logo Icon" type="image/png" href="/fav.png" />
       </Head>
       <Nav />
-      <Component {...pageProps} />
+      <Component {...pageProps} className="mb-auto" />
       <section className="w-full mt-8 bg-gradient-to-b from-black to-gray-900">
         <ScrollToTop />
         <Footer />
       </section>
-    </>
+    </div>
   )
 }
 export default App
