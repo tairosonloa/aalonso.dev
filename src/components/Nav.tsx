@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 
-const Nav2 = () => {
+const Nav: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -64,7 +64,12 @@ const Nav2 = () => {
                     stroke="currentColor"
                     aria-hidden="true"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
                   </svg>
                 ) : (
                   <svg
@@ -75,7 +80,12 @@ const Nav2 = () => {
                     stroke="currentColor"
                     aria-hidden="true"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 )}
               </button>
@@ -126,4 +136,4 @@ const Nav2 = () => {
   )
 }
 
-export default Nav2
+export default Nav

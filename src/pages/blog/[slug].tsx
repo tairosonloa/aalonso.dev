@@ -8,7 +8,7 @@ import React from 'react'
 // import remark from 'remark'
 // import html from 'remark-html'
 // import prism from 'remark-prism'
-import { BlogPost } from '../../containers/Interfaces/Interface'
+import { BlogPost } from '../../containers/types/types'
 
 export interface AllBlogProps {
   hopeBlog: BlogPost
@@ -65,7 +65,9 @@ const BlogPage: NextPage<AllBlogProps> = ({
                 </div>
                 <div className="ml-2">
                   <p className=" font-semibold "> {hopeBlog.user.name}</p>
-                  <p className="text-sm text-gray-400">{format(parseISO(hopeBlog.published_at), 'MMMM dd, yyyy')}</p>
+                  <p className="text-sm text-gray-400">
+                    {format(parseISO(hopeBlog.published_at), 'MMMM dd, yyyy')}
+                  </p>
                 </div>
               </div>
               <div className="self-center">

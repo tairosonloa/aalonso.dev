@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import { ScrollUp } from '../components/Icons/Icons'
 
-export default function ScrollToTop() {
+const ScrollToTop: FC = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   // Set the top cordinate to 0
@@ -42,3 +42,5 @@ export default function ScrollToTop() {
     </>
   )
 }
+
+export default ScrollToTop

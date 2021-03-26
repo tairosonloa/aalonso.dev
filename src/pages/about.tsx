@@ -19,15 +19,19 @@ const About: NextPage = () => {
           </div>
           <div className="items-start space-y-2 lg:grid lg:grid-cols-3 lg:space-y-0 lg:pt-4">
             <div className="flex flex-col items-center pt-6 xl:pt-5">
-              <img src="/me.png" alt="avatar" className="w-48 h-48 rounded-xl" />
-              <h3 className="pt-4 text-2xl md:text-3xl font-bold leading-8 tracking-tight">Aitor Alonso</h3>
+              <img src="/images/me.png" alt="avatar" className="w-48 h-48 rounded-xl" />
+              <h3 className="pt-4 text-2xl md:text-3xl font-bold leading-8 tracking-tight">
+                Aitor Alonso
+              </h3>
               <div className="md:text-lg text-gray-400 mb-2 md:mt-1">Full-stack developer</div>
               <Icons />
             </div>
             <div className="lg:pt-4 pb-8 lg:col-span-2 text-base font-normal sm:w-9/12 md:w-10/12 mx-auto  lg:mx-0">
               <p className="mb-4">Hello! I&apos;m Aitor, a full-stack developer from Spain.</p>
               <p className="mb-4">Blah blah blah</p>
-              <p className="mb-4">Here are a few technologies I&apos;ve been working with recently:</p>
+              <p className="mb-4">
+                Here are a few technologies I&apos;ve been working with recently:
+              </p>
               <ul className="md:flex ">
                 <div>
                   <li className="mb-0.25">▸ React</li>

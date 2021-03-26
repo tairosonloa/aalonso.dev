@@ -1,8 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/accessible-emoji */
-import React from 'react'
 import { NextPage } from 'next'
 import Head from 'next/head'
+import React from 'react'
 
 const NotFound: NextPage = () => {
   return (
@@ -18,7 +16,9 @@ const NotFound: NextPage = () => {
               <h1 className="pb-3 lg:pb-1 text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
                 404
               </h1>
-              <div className="text-base font-medium text-gray-400 mb-2 md:mt-2">Sorry, page not found.</div>
+              <div className="text-base font-medium text-gray-400 mb-2 md:mt-2">
+                Sorry, page not found.
+              </div>
             </div>
           </div>
         </div>

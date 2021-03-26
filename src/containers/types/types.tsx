@@ -1,4 +1,4 @@
-export interface User {
+export type User = {
   github_username?: string
   name: string
   profile_image?: string
@@ -8,13 +8,13 @@ export interface User {
   website_url?: null | string
 }
 
-export interface FlareTag {
+export type FlareTag = {
   name?: string
   bg_color_hex?: string
   text_color_hex?: string
 }
 
-export interface BlogPost {
+export type BlogPost = {
   id: number
   title: string
   description: string
@@ -44,10 +44,10 @@ export interface BlogPost {
   body_html: string
 }
 
-export interface AllBlogProps {
+export type AllBlogProps = {
   hopeBlog: BlogPost
 }
 
-export interface Props {
+export type Props = {
   devData: BlogPost[]
 }

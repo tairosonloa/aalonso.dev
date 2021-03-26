@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import Bio from '../components/Landing/Bio'
 import LatestArticles from '../components/Landing/LatestArticles'
-import { Props } from '../containers/Interfaces/Interface'
+import { Props } from '../containers/types/types'
 
 const Home: NextPage<Props> = (props) => {
   const { devData } = props

@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { format, parseISO } from 'date-fns'
 import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { Props } from '../containers/Interfaces/Interface'
+import { Props } from '../containers/types/types'
 
 const Blog: NextPage<Props> = (props) => {
   const [searchValue, setSearchValue] = useState('')
@@ -30,8 +29,8 @@ const Blog: NextPage<Props> = (props) => {
               Blog
             </h1>
             <p className=" sm:w-9/12 md:w-10/12 lg:w-9/12 text-base md:text-lg font-normal ">
-              I love building new things. This blog is a way for me to write down and share new ideas and lessons with
-              everyone.
+              I love building new things. This blog is a way for me to write down and share new
+              ideas and lessons with everyone.
             </p>
           </div>
           <div className="divide-y divide-gray-800">
@@ -63,6 +62,7 @@ const Blog: NextPage<Props> = (props) => {
             <ul>
               {!filteredBlogPosts.length && 'No posts found.'}
               {filteredBlogPosts.map((data) => {
+                // eslint-disable-next-line @typescript-eslint/naming-convention
                 const { description, title, slug, published_at } = data
                 return (
                   <li key={slug} className="py-4 xl:py-6 ">

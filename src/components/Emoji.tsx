@@ -5,7 +5,7 @@ type EmojiProps = {
   label: string
 }
 
-export const Emoji: FC<EmojiProps> = ({ emoji, label }) => {
+const Emoji: FC<EmojiProps> = ({ emoji, label }) => {
   return (
     <span role="img" aria-label={label}>
       {emoji}
