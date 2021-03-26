@@ -1,60 +1,34 @@
-# tailwind-react-next.js-typescript-eslint-jest-starter
+![CI/CD pipeline](https://github.com/tairosonloa/aalonso.dev/workflows/CI/CD%20pipeline/badge.svg)
+![Code Scanning](https://github.com/tairosonloa/aalonso.dev/workflows/Code%20Scanning/badge.svg)
+![Lighthouse](https://github.com/tairosonloa/aalonso.dev/workflows/Lighthouse/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/508745bcc434a38f6161/maintainability)](https://codeclimate.com/github/tairosonloa/aalonso.dev/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/508745bcc434a38f6161/test_coverage)](https://codeclimate.com/github/tairosonloa/aalonso.dev/test_coverage)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f0a5323-37e0-4578-b642-61a3518cc574/deploy-status)](https://app.netlify.com/sites/aalonso/deploys)
 
-Starter template for building a project using React, Typescript, Next.js, Jest, TailwindCSS and ESLint.
+## About this repository
 
-## Setup Instructions
+This is my personal website I made from scratch using React and TypeScript.
+I use the [Next.js](https://nextjs.org/) React framework to develop it.
 
-1. Clone or download the project.
-2. `cd` in the project directory.
-3. If you cloned the project, make sure you remove the remote reference to this project by running `git remote rm origin`.
-4. Copy `.env.example` to `.env` as that file is used to load up all your environment variables.
-4. Run `yarn install` or `npm install` to install all dependencies.
+I started this development after graduating from University and started to
+work for [Acid Tango](https://acidtango.com/), where I acquired more
+professional skills and better programming and design practices. Before
+that, I had another site made with GatbsyJS I used during my student
+years, with a lot of technical debt because of my learning process. The old archive repo can be found [here](https://github.com/tairosonloa/aalonso.eu).
 
-## Commands
+## License
 
-- `yarn dev`: To start a local development server.
-- `yarn test`: To run the entire unit test suite using `jest`.
-- `yarn test:ci`: To run tests on CI.
-- `yarn lint`: To run the ESLint based linter to find out the issues in the project.
-- `yarn format`: To autoformat all the issues.
-- `yarn export`: Run this after running `yarn analyze` to export a build copy.
-- `yarn production`: To export a production build. Use `yarn start` to serve that.
+Copyright (C) 2020 Aitor Alonso
 
-- `yarn upgrade --latest`: To upgrade all packages to their latest versions (could include breaking changes).
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-## Code Structure
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
 
-All source code is located in the `src/` directory.
-
-1. All Next.js entrypoints are housed in the `src/pages` directory as a default.
-
-    - Currently has `_app.tsx` which bootstraps ChakraUI within this project.
-    - There's also a sample `index.tsx`.
-
-    **NOTE:** Feel free to move `pages` outside of `src/` if that's what you prefer. You'll just need to restart your local development server and everything should continue working as normal.
-
-2. `src/components` are all stateless reusable components.
-3. `src/containers` are more of stateful components for more main level components, like a whole page or screen for example.
-4. `src/css` folder is there just to house any CSS.
-
-    - Currently contains the TailwindCSS initialization CSS file.
-
-5. All env variables are available in `.env` files (`.env` file isn't committed). Whenever you update `.env`, please update `.env.example` and `.env.test` and `next.config.js` to proxy all environment variables properly.
-
-    - You can access these variables in the app source code anywhere using `process.env.<VAR_NAME>`.
-
-My personal preference is to have the bare minimum code in `./src/pages/` and group stateful logic components in `src/containers` directory. Helps keep everything in one place, neat and tidy. You can change this in any way you prefer.
-
-If you feel like changing the directory structure, please change the appropriate settings in the following files:
-
-- `.babelrc`
-- `jest.config.js`
-- `postcss.config.js`
-- `tsconfig.json`
-- The `lint` and the `format` scripts in `package.json`
-
-## Note
-
-1. This project removes the `x-powered-by` response header via `next.config.js` by marking the `poweredByHeader` property as `false`.
-
-2. If you wish to use `Enzyme` instead of `React Testing Library`, please refer to [this commit](https://github.com/abhishekbhardwaj/tailwind-react-next.js-typescript-eslint-jest-starter/commit/58bde782bef1050cc91a20fccecb7c6e4a6216aa). Enzyme was removed with that commit.
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see https://www.gnu.org/licenses/.

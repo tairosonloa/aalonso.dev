@@ -1,3 +1,6 @@
-node_modules
-out
-*.css
+.cache/*
+.next/*
+node_modules/*
+storybook-static/*
+.lighthouseci/*
+out/*
