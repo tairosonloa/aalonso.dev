@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export type User = {
   github_username?: string
   name: string
@@ -44,10 +45,6 @@ export type BlogPost = {
   body_html: string
 }
 
-export type AllBlogProps = {
-  hopeBlog: BlogPost
-}
-
-export type Props = {
+export type CommonBlogProps = {
   devData: BlogPost[]
 }

@@ -4,9 +4,9 @@ import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { Props } from '../containers/types/types'
+import { CommonBlogProps } from '../containers/types/types'
 
-const Blog: NextPage<Props> = (props) => {
+const Blog: NextPage<CommonBlogProps> = (props) => {
   const [searchValue, setSearchValue] = useState('')
 
   const { devData } = props

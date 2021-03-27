@@ -1,24 +1,17 @@
-/* eslint-disable react/no-danger */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React from 'react'
-// import remark from 'remark'
-// import html from 'remark-html'
-// import prism from 'remark-prism'
+import sanitize from 'sanitize-html'
+import Emoji from '../../components/Emoji'
 import { BlogPost } from '../../containers/types/types'
 
-export interface AllBlogProps {
+export type BlogPageProps = {
   hopeBlog: BlogPost
-  // remarkContent: string
 }
 
-const BlogPage: NextPage<AllBlogProps> = ({
-  // remarkContent,
-  hopeBlog,
-}) => {
+const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
   const router = useRouter()
 
   // If the page is not yet generated, this will be displayed
@@ -29,21 +22,22 @@ const BlogPage: NextPage<AllBlogProps> = ({
   return (
     <>
       <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="Description" content="Put your description here." />
-        <link href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css" rel="stylesheet" />
+        <link
+          href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css"
+          rel="stylesheet"
+          key="prismjs-css"
+        />
       </Head>
       {hopeBlog && (
         <article
-          className="text-gray-300 sm:px-4 py-16 mx-auto max-w-7xl pt-20 md:pt-28"
-          itemID="#"
+          className="text-gray-300 sm:px-4 py-16 pt-20 md:pt-28"
           itemScope
           itemType="http://schema.org/BlogPosting"
         >
           <div className="w-full mx-auto mb-8 text-left sm:w-11/12 md:w-3/4 lg:w-1/2">
             <img
               src={hopeBlog.cover_image}
-              className="object-fit  h-auto md:object-cover w-full md:max-h-64 bg-center rounded-lg"
+              className="object-fit h-auto md:object-cover w-full md:max-h-64 bg-center rounded-lg"
               alt="Blog Cover"
             />
             <h1
@@ -73,20 +67,15 @@ const BlogPage: NextPage<AllBlogProps> = ({
               <div className="self-center">
                 <p className="text-sm flex justify-end text-gray-400">
                   {hopeBlog.public_reactions_count}&nbsp;
-                  <span role="img" aria-label="Heart">
-                    💖
-                  </span>
+                  <Emoji emoji="❤️" label="likes" />
                 </p>
-                {/* <p className="text-gray-400 flex justify-end text-sm">{hopeBlog.page_views_count} views</p> */}
               </div>
             </div>
           </div>
-          {/* <div className=" prose md:prose 2xl:prose-lg px-4 sm:px-0 text-gray-300 w-full mx-auto  md:w-3/4 lg:w-1/2">
-            {hopeBlog.body_html}
-          </div> */}
           <div
-            className=" px-4 sm:px-0 text-gray-300 w-full mx-auto prose  md:prose 2xl:prose-lg  md:w-3/4 lg:w-1/2"
-            dangerouslySetInnerHTML={{ __html: hopeBlog.body_html }}
+            className="px-4 sm:px-0 text-gray-300 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: sanitize(hopeBlog.body_html) }}
           />
         </article>
       )}

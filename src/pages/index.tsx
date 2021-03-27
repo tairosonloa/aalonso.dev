@@ -2,9 +2,9 @@ import { GetStaticProps, NextPage } from 'next'
 import React from 'react'
 import Bio from '../components/Landing/Bio'
 import LatestArticles from '../components/Landing/LatestArticles'
-import { Props } from '../containers/types/types'
+import { CommonBlogProps } from '../containers/types/types'
 
-const Home: NextPage<Props> = (props) => {
+const Home: NextPage<CommonBlogProps> = (props) => {
   const { devData } = props
 
   return (

@@ -2,11 +2,11 @@
 import { format, parseISO } from 'date-fns'
 import Link from 'next/link'
 import React from 'react'
-import { Props } from '../../containers/types/types'
+import { CommonBlogProps } from '../../containers/types/types'
 import Emoji from '../Emoji'
 import { ClickArrow } from '../Icons/Icons'
 
-const LatestArticles: React.FC<Props> = ({ devData }) => {
+const LatestArticles: React.FC<CommonBlogProps> = ({ devData }) => {
   return (
     <section>
       <div className="text-left ">
