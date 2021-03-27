@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:production": "next build && next-sitemap",
+    "postbuild": "next-sitemap",
+    "build:production": "yarn build && yarn postbuild",
     "start": "next start",
     "typecheck": "tsc",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,scss}\" \"*.{js,json}\"",
