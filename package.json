@@ -13,7 +13,7 @@
     "g:production-build": "npm run prebuild && next build && next export",
     "lint:ts": "eslint --fix \"**/*.{ts,tsx}\" --no-error-on-unmatched-pattern",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,scss}\" \"*.{js,json}\"",
-    "precommit": "npm run typecheck && npm run format && npm run lint:ts && npm run test"
+    "precommit": "npm run typecheck && npm run format && npm run lint:ts"
   },
   "dependencies": {
     "@headlessui/react": "^0.3.1",
