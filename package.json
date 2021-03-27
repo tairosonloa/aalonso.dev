@@ -2,6 +2,7 @@
   "name": "aalonso.dev",
   "version": "2.0.0",
   "private": true,
+  "author": "Aitor Alonso (@tairosonloa)",
   "scripts": {
     "dev": "next dev",
     "prebuild": "node scripts/prebuild.js",
