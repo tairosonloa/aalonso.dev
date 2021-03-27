@@ -16,16 +16,20 @@ export type BlogPageProps = {
 const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
   const router = useRouter()
   let seo: typeof SiteMetadata.seo = {}
-  useEffect(() => {
-    if (hopeBlog) {
-      const url = `https://${DOMAIN}/blog/${hopeBlog.slug}`
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      seo = {
-        title: hopeBlog.title,
-        canonical: url,
-        openGraph: { url },
-      }
+  const updateSeo = () => {
+    const url = `https://${DOMAIN}/blog/${hopeBlog.slug}`
+    seo = {
+      title: hopeBlog.title,
+      canonical: url,
+      openGraph: { url },
     }
+  }
+  if (hopeBlog) {
+    updateSeo()
+  }
+  useEffect(() => {
+    updateSeo()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hopeBlog])
 
   // If the page is not yet generated, this will be displayed
