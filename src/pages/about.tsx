@@ -1,16 +1,21 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import React from 'react'
+import { DOMAIN, SiteMetadata } from '../../site.metadata'
 import Icons from '../components/Icons/Icons'
 
 const About: NextPage = () => {
+  const url = `https://${DOMAIN}/about`
+  const seo: typeof SiteMetadata.seo = {
+    canonical: url,
+    openGraph: { url },
+  }
+  const { employerInfo } = SiteMetadata
+
   return (
     <>
-      <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="Description" content="Put your description here." />
-      </Head>
-      <section className="w-11/12 px-4 md:px-0 pt-24 md:pt-28 lg:pt-32 mx-auto md:w-3/4 lg:w-10/12 text-gray-300">
+      <NextSeo {...seo} />
+      <main className="w-11/12 px-4 md:px-0 pt-24 md:pt-28 lg:pt-32 mx-auto md:w-3/4 lg:w-10/12 text-gray-300">
         <div className="divide-y divide-gray-800">
           <div className=" space-y-2 md:space-y-5">
             <h1 className="pb-3 lg:pb-1 lg:mb-5 text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
@@ -28,27 +33,46 @@ const About: NextPage = () => {
             </div>
             <div className="lg:pt-4 pb-8 lg:col-span-2 text-base font-normal sm:w-9/12 md:w-10/12 mx-auto  lg:mx-0">
               <p className="mb-4">Hello! I&apos;m Aitor, a full-stack developer from Spain.</p>
-              <p className="mb-4">Blah blah blah</p>
+              <p className="mb-4">
+                I&apos;m currently full-time working for{' '}
+                <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">
+                  {employerInfo.name}
+                </a>{' '}
+                while studying for a Master&apos;s Degree in Computer Science and Engineering on
+                weekends.
+              </p>
+              <p className="mb-4">
+                I consider myself a proactive and vocational developer, so I&apos;m always searching
+                for new technologies and projects. I also am a free software contributor and Linux
+                fan.
+              </p>
               <p className="mb-4">
                 Here are a few technologies I&apos;ve been working with recently:
               </p>
               <ul className="md:flex ">
                 <div>
-                  <li className="mb-0.25">▸ React</li>
                   <li className="mb-0.25">▸ TypeScript</li>
-                  <li className="mb-0.25">▸ JavaScript</li>
+                  <li className="mb-0.25">▸ Node.js</li>
+                  <li className="mb-0.25">▸ Nest.js</li>
+                  <li className="mb-0.25">▸ Docker</li>
                 </div>
-
                 <div className="md:ml-20">
-                  <li className="mb-0.25">▸ Firebase</li>
-                  <li className="mb-0.25">▸ Semantic HTML</li>
-                  <li className="mb-0.25">▸ (S)CSS</li>
+                  <li className="mb-0.25">▸ React</li>
+                  <li className="mb-0.25">▸ Next.js</li>
+                  <li className="mb-0.25">▸ React Native</li>
+                  <li className="mb-0.25">▸ Expo</li>
+                </div>
+                <div className="md:ml-20">
+                  <li className="mb-0.25">▸ AWS</li>
+                  <li className="mb-0.25">▸ Jenkins</li>
+                  <li className="mb-0.25">▸ GitHub Actions</li>
+                  <li className="mb-0.25">▸ Gitlab CI</li>
                 </div>
               </ul>
             </div>
           </div>
         </div>
-      </section>
+      </main>
     </>
   )
 }
