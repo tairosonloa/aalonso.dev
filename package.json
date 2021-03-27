@@ -5,16 +5,13 @@
   "author": "Aitor Alonso (@tairosonloa)",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/prebuild.js",
     "build": "next build",
     "build:production": "next build && next-sitemap",
     "start": "next start",
-    "export": "next export",
-    "test": "jest",
     "typecheck": "tsc",
-    "lint:ts": "eslint --fix \"**/*.{ts,tsx}\" --no-error-on-unmatched-pattern",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,scss}\" \"*.{js,json}\"",
-    "precommit": "npm run typecheck && npm run format && npm run lint:ts"
+    "lint:ts": "eslint --fix \"**/*.{ts,tsx}\" --no-error-on-unmatched-pattern",
+    "precommit": "yarn typecheck && yarn format && yarn lint:ts"
   },
   "dependencies": {
     "@headlessui/react": "^0.3.1",

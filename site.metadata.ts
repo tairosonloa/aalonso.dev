@@ -1,6 +1,6 @@
 import { NextSeoProps } from 'next-seo/lib/types.d'
 
-export const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN
+export const DOMAIN = process.env.NEXT_PUBLIC_VERCEL_URL
 
 const title = 'Full-Stack Software Developer Engineer'
 const titleTemplate = 'Aitor Alonso (aalonso.dev)'
