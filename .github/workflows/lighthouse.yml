@@ -1,0 +1,28 @@
+name: Lighthouse
+
+on: 
+  pull_request:
+
+jobs:
+  lhci:
+    name: Lighthouse
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@main
+        with:
+          node-version: 12.x
+      - name: Install dependencies and build
+        run: |
+          yarn
+          yarn prebuild
+          yarn build
+          yarn export
+        env:
+          NEXT_PUBLIC_DOMAIN: localhost
+          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli
+          lhci autorun --maxAutodiscoverUrls=0 --includePassedAssertions
