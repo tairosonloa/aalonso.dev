@@ -1,12 +1,13 @@
+/* eslint-disable camelcase */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { format, parseISO } from 'date-fns'
 import Link from 'next/link'
-import React from 'react'
+import React, { FC } from 'react'
 import { CommonBlogProps } from '../../containers/types/types'
 import Emoji from '../Emoji'
 import { ClickArrow } from '../Icons/Icons'
 
-const LatestArticles: React.FC<CommonBlogProps> = ({ devData }) => {
+const LatestArticles: FC<CommonBlogProps> = ({ devData }) => {
   return (
     <section>
       <div className="text-left ">

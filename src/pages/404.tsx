@@ -1,15 +1,19 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import React from 'react'
+import { DOMAIN, SiteMetadata } from '../../site.metadata'
 
 const NotFound: NextPage = () => {
+  const url = `https://${DOMAIN}/about`
+  const seo: typeof SiteMetadata.seo = {
+    title: '404 Not Found',
+    canonical: url,
+    openGraph: { url },
+  }
   return (
     <>
-      <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="Description" content="Put your description here." />
-      </Head>
-      <section className="w-11/12 px-4 md:px-0 pt-44 md:pt-52 lg:pt-52 mx-auto md:w-3/4 lg:w-10/12 text-gray-300">
+      <NextSeo {...seo} />
+      <main className="w-11/12 px-4 md:px-0 pt-44 md:pt-52 lg:pt-52 mx-auto md:w-3/4 lg:w-10/12 text-gray-300">
         <div className="divide-y divide-gray-800">
           <div className="items-start space-y-2 h-72 lg:pt-4">
             <div className="flex flex-col items-center pt-6 xl:pt-5">
@@ -22,7 +26,7 @@ const NotFound: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </main>
     </>
   )
 }

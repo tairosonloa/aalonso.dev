@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { format, parseISO } from 'date-fns'
 import { GetStaticProps, NextPage } from 'next'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { DOMAIN, SiteMetadata } from '../../site.metadata'
 import { CommonBlogProps } from '../containers/types/types'
 
 const Blog: NextPage<CommonBlogProps> = (props) => {
@@ -15,22 +16,24 @@ const Blog: NextPage<CommonBlogProps> = (props) => {
     const searchContent = data.title + data.description
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
+  const url = `https://${DOMAIN}/about`
+  const seo: typeof SiteMetadata.seo = {
+    title: 'Blog',
+    canonical: url,
+    openGraph: { url },
+  }
 
   return (
     <>
-      <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="Description" content="Put your description here." />
-      </Head>
-      <section className="w-11/12 px-4 md:px-0 pt-24 md:pt-28 lg:pt-32 mx-auto md:w-3/4 lg:w-10/12 text-gray-300">
+      <NextSeo {...seo} />
+      <main className="w-11/12 px-4 md:px-0 pt-24 md:pt-28 lg:pt-32 mx-auto md:w-3/4 lg:w-10/12 text-gray-300">
         <div>
           <div className=" space-y-2 md:space-y-5">
             <h1 className="mb-3 lg:mb-5 text-4xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
               Blog
             </h1>
             <p className=" sm:w-9/12 md:w-10/12 lg:w-9/12 text-base md:text-lg font-normal ">
-              I love building new things. This blog is a way for me to write down and share new
-              ideas and lessons with everyone.
+              Here is where I write down and share my new ideas and self-lessons with everyone.
             </p>
           </div>
           <div className="divide-y divide-gray-800">
@@ -62,7 +65,7 @@ const Blog: NextPage<CommonBlogProps> = (props) => {
             <ul>
               {!filteredBlogPosts.length && 'No posts found.'}
               {filteredBlogPosts.map((data) => {
-                // eslint-disable-next-line @typescript-eslint/naming-convention
+                // eslint-disable-next-line camelcase
                 const { description, title, slug, published_at } = data
                 return (
                   <li key={slug} className="py-4 xl:py-6 ">
@@ -107,7 +110,7 @@ const Blog: NextPage<CommonBlogProps> = (props) => {
             </ul>
           </div>
         </div>
-      </section>
+      </main>
     </>
   )
 }

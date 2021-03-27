@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Emoji from '../Emoji'
 
-const Bio = () => {
+const Bio: FC = () => {
   return (
     <div className="flex flex-col space-y-12 divide-y divide-gray-200 mb-24 ">
       <div>

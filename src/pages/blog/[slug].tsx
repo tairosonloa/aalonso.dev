@@ -1,9 +1,11 @@
 import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React from 'react'
 import sanitize from 'sanitize-html'
+import { DOMAIN, SiteMetadata } from '../../../site.metadata'
 import Emoji from '../../components/Emoji'
 import { BlogPost } from '../../containers/types/types'
 
@@ -13,6 +15,12 @@ export type BlogPageProps = {
 
 const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
   const router = useRouter()
+  const url = `https://${DOMAIN}/about`
+  const seo: typeof SiteMetadata.seo = {
+    title: hopeBlog.title,
+    canonical: url,
+    openGraph: { url },
+  }
 
   // If the page is not yet generated, this will be displayed
   // initially until getStaticProps() finishes running
@@ -28,6 +36,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
           key="prismjs-css"
         />
       </Head>
+      <NextSeo {...seo} />
       {hopeBlog && (
         <article
           className="text-gray-300 sm:px-4 py-16 pt-20 md:pt-28"

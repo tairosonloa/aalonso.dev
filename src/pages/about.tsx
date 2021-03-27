@@ -7,6 +7,7 @@ import Icons from '../components/Icons/Icons'
 const About: NextPage = () => {
   const url = `https://${DOMAIN}/about`
   const seo: typeof SiteMetadata.seo = {
+    title: 'About',
     canonical: url,
     openGraph: { url },
   }
