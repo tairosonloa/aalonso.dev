@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useEffect } from 'react'
 import sanitize from 'sanitize-html'
 import { DOMAIN, SiteMetadata } from '../../../site.metadata'
 import Emoji from '../../components/Emoji'
@@ -15,12 +15,18 @@ export type BlogPageProps = {
 
 const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
   const router = useRouter()
-  const url = `https://${DOMAIN}/about`
-  const seo: typeof SiteMetadata.seo = {
-    title: hopeBlog.title,
-    canonical: url,
-    openGraph: { url },
-  }
+  let seo: typeof SiteMetadata.seo = {}
+  useEffect(() => {
+    if (hopeBlog) {
+      const url = `https://${DOMAIN}/blog/${hopeBlog.slug}`
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      seo = {
+        title: hopeBlog.title,
+        canonical: url,
+        openGraph: { url },
+      }
+    }
+  }, [hopeBlog])
 
   // If the page is not yet generated, this will be displayed
   // initially until getStaticProps() finishes running

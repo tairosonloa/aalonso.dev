@@ -1,14 +1,11 @@
 import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import React from 'react'
-import { DOMAIN, SiteMetadata } from '../../site.metadata'
+import { SiteMetadata } from '../../site.metadata'
 
 const NotFound: NextPage = () => {
-  const url = `https://${DOMAIN}/about`
   const seo: typeof SiteMetadata.seo = {
     title: '404 Not Found',
-    canonical: url,
-    openGraph: { url },
   }
   return (
     <>

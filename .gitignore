@@ -1,27 +1,39 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # dependencies
 /node_modules
-.next
-.vscode
+/.pnp
+.pnp.js
 
 # testing
 /coverage
 
-# production
-/dist
-/build
-/out
+# next.js
+/.next/
+/out/
 
-#cache
-/.cache
+# production
+/build
 
 # misc
 .DS_Store
-.Spotlight-V100
-Thumbs.db
 
-# Package
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment Variables
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# generated on build time by prebuild.js
+public/_redirects
+public/_headers
+public/robots.txt
+sitemap.xml
+
+# lighthouseci
+.lighthouseci

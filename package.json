@@ -38,9 +38,11 @@
     "cssnano": "^4.1.10",
     "eslint": "^7.20.0",
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
+    "node-fetch": "^2.6.1",
     "postcss": "^8.2.6",
     "postcss-import": "^14.0.0",
     "prettier": "^2.2.1",
+    "sitemap": "^6.4.0",
     "typescript": "^4.2.2"
   }
 }

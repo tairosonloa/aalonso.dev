@@ -16,7 +16,7 @@ const Blog: NextPage<CommonBlogProps> = (props) => {
     const searchContent = data.title + data.description
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
-  const url = `https://${DOMAIN}/about`
+  const url = `https://${DOMAIN}/blog`
   const seo: typeof SiteMetadata.seo = {
     title: 'Blog',
     canonical: url,

@@ -1,4 +1,5 @@
 const { EnumChangefreq, SitemapStream, streamToPromise } = require('sitemap')
+const fetch = require('node-fetch');
 const { Readable } = require('stream')
 const path = require('path')
 const fs = require('fs')
@@ -64,10 +65,11 @@ const generateSitemap = async () => {
       changefreq: EnumChangefreq.YEARLY,
     },
   ]
-  const posts = await fetch('https://dev.to/api/articles?username=tairosonloa').json()
+  const res = await fetch('https://dev.to/api/articles?username=tairosonloa')
+  const posts = await res.json()
   posts.forEach((post) =>
     links.push({
-      url: `/blog/${slug}`,
+      url: `/blog/${post.slug}`,
       changefreq: EnumChangefreq.YEARLY,
     }),
   )
