@@ -7,10 +7,10 @@ module.exports = {
         'categories:accessibility': ['error', { minScore: 0.95 }],
         'categories:best-practices': ['error', { minScore: 1 }],
         'categories:seo': ['error', { minScore: 1 }],
-        'first-contentful-paint': ['error', { maxNumericValue: 2000 }],
-        'largest-contentful-paint': ['error', { maxNumericValue: 3000 }],
+        'first-contentful-paint': ['error', { maxNumericValue: 2500 }],
+        'largest-contentful-paint': ['error', { maxNumericValue: 5000 }],
         interactive: ['error', { maxNumericValue: 5000 }],
-        'resource-summary:document:size': ['error', { maxNumericValue: 50000 }],
+        'resource-summary:document:size': ['error', { maxNumericValue: 14000 }],
         'resource-summary:font:count': ['error', { maxNumericValue: 3 }],
         'resource-summary:third-party:count': ['error', { maxNumericValue: 3 }],
         'dom-size': ['error', { maxNumericValue: 3000 }],
@@ -26,7 +26,7 @@ module.exports = {
       },
     },
     collect: {
-      staticDistDir: './public',
+      staticDistDir: './out',
     },
     // upload: {
     //   target: "filesystem"

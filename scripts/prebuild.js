@@ -1,13 +1,14 @@
 const { EnumChangefreq, SitemapStream, streamToPromise } = require('sitemap')
+const fetch = require('node-fetch');
 const { Readable } = require('stream')
 const path = require('path')
 const fs = require('fs')
 
-if (!process.env.DOMAIN) {
+if (!process.env.NEXT_PUBLIC_DOMAIN) {
   throw Error("ENV variable 'DOMAIN' must be set")
 }
 
-const robots = `Sitemap: https://${process.env.DOMAIN}/sitemap.xml
+const robots = `Sitemap: https://${process.env.NEXT_PUBLIC_DOMAIN}/sitemap.xml
 
 User-agent: *
 Allow: /*`
@@ -15,20 +16,20 @@ Allow: /*`
 const redirects = `# These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect http to https
-http://${process.env.DOMAIN}/* https://${process.env.DOMAIN}/:splat 301!
-http://www.${process.env.DOMAIN}/* https://${process.env.DOMAIN}/:splat 301!
+http://${process.env.NEXT_PUBLIC_DOMAIN}/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+http://www.${process.env.NEXT_PUBLIC_DOMAIN}/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
 
 # Redirect default Netlify subdomain to primary domain
-http://aalonso.netlify.app/* https://${process.env.DOMAIN}/:splat 301!
-http://aalonso.netlify.com/* https://${process.env.DOMAIN}/:splat 301!
-https://aalonso.netlify.app/* https://${process.env.DOMAIN}/:splat 301!
-https://aalonso.netlify.com/* https://${process.env.DOMAIN}/:splat 301!
+http://aalonso.netlify.app/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+http://aalonso.netlify.com/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+https://aalonso.netlify.app/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+https://aalonso.netlify.com/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
 
 # Redirect old domain to primary domain
-http://aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
-http://www.aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
-https://aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
-https://www.aalonso.eu/* https://${process.env.DOMAIN}/:splat 301!
+http://aalonso.eu/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+http://www.aalonso.eu/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+https://aalonso.eu/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
+https://www.aalonso.eu/* https://${process.env.NEXT_PUBLIC_DOMAIN}/:splat 301!
 `
 
 const headers = `# Cloudflare must cache Netlify assets for 7 days (604 800 seconds).
@@ -47,7 +48,7 @@ Cache-Control: public, s-max-age=604800
 
 const generateSitemap = async () => {
   const stream = new SitemapStream({
-    hostname: `https://${process.env.DOMAIN}`,
+    hostname: `https://${process.env.NEXT_PUBLIC_DOMAIN}`,
   })
   const links = [
     {
@@ -56,17 +57,29 @@ const generateSitemap = async () => {
       priority: 1,
     },
     {
-      url: '/privacy-policy',
+      url: '/blog',
+      changefreq: EnumChangefreq.WEEKLY,
+    },
+    {
+      url: '/about',
       changefreq: EnumChangefreq.YEARLY,
     },
   ]
+  const res = await fetch('https://dev.to/api/articles?username=tairosonloa')
+  const posts = await res.json()
+  posts.forEach((post) =>
+    links.push({
+      url: `/blog/${post.slug}`,
+      changefreq: EnumChangefreq.YEARLY,
+    }),
+  )
   const xml = await streamToPromise(Readable.from(links).pipe(stream)).then((data) =>
     data.toString(),
   )
-  fs.writeFileSync(path.resolve(__dirname, '../static/sitemap.xml'), xml)
+  fs.writeFileSync(path.resolve(__dirname, '../public/sitemap.xml'), xml)
 }
 
-fs.writeFileSync(path.resolve(__dirname, '../static/robots.txt'), robots)
-fs.writeFileSync(path.resolve(__dirname, '../static/_redirects'), redirects)
-fs.writeFileSync(path.resolve(__dirname, '../static/_headers'), headers)
+fs.writeFileSync(path.resolve(__dirname, '../public/robots.txt'), robots)
+fs.writeFileSync(path.resolve(__dirname, '../public/_redirects'), redirects)
+fs.writeFileSync(path.resolve(__dirname, '../public/_headers'), headers)
 generateSitemap().then(() => process.exit(0))

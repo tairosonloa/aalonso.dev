@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body {
+  min-height: 100vh;
+  @apply bg-black;
+  @apply text-gray-100;
+}
