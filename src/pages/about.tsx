@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import React from 'react'
 import { DOMAIN, SiteMetadata } from '../../site.metadata'
-import Icons from '../components/Icons/Icons'
+import SocialMediaLinks from '../components/Icons/Icons'
 
 const About: NextPage = () => {
   const url = `https://${DOMAIN}/about`
@@ -30,7 +30,7 @@ const About: NextPage = () => {
                 Aitor Alonso
               </h3>
               <div className="md:text-lg text-gray-400 mb-2 md:mt-1">Full-stack developer</div>
-              <Icons />
+              <SocialMediaLinks />
             </div>
             <div className="lg:pt-4 pb-8 lg:col-span-2 text-base font-normal sm:w-9/12 md:w-10/12 mx-auto  lg:mx-0">
               <p className="mb-4">Hello! I&apos;m Aitor, a full-stack developer from Spain.</p>
