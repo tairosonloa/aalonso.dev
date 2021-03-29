@@ -36,11 +36,26 @@ const About: NextPage = () => {
               <p className="mb-4">Hello! I&apos;m Aitor, a full-stack developer from Spain.</p>
               <p className="mb-4">
                 I&apos;m currently full-time working for{' '}
-                <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="cursor-pointer text-blue-500 hover:underline"
+                  href={employerInfo.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {employerInfo.name}
+                </a>
+                , where I mostly develop back-end APIs using Domain Driven Design and Clean
+                Architectures. At the same time, I&apos;m studying for a Master&apos;s Degree in
+                Computer Science and Engineering at{' '}
+                <a
+                  className="cursor-pointer text-blue-500 hover:underline"
+                  href="https://www.uc3m.es/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  UC3M
                 </a>{' '}
-                while studying for a Master&apos;s Degree in Computer Science and Engineering on
-                weekends.
+                university.
               </p>
               <p className="mb-4">
                 I consider myself a proactive and vocational developer, so I&apos;m always searching
