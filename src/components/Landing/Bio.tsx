@@ -9,8 +9,8 @@ const Bio: FC = () => {
           Hi, I&apos;m Aitor <Emoji emoji="👋" label="Waving hand" />
         </h1>
         <p className="mt-3 mb-6 md:mb-7 sm:w-9/12 text-gray-300 md:w-10/12 lg:w-full text-base md:text-lg font-medium ">
-          I&apos;m a full-stack developer <Emoji emoji="👨🏻‍💻" label="Man with a computer" /> who uses
-          Domain Driven Design and Clean Architectures to build fast{' '}
+          I&apos;m a full-stack software engineer <Emoji emoji="👨🏻‍💻" label="Man with a computer" />{' '}
+          who uses Domain Driven Design and Clean Architectures to build fast{' '}
           <Emoji emoji="⚡" label="Lightning" />, efficient and reliable back-end APIs.
         </p>
       </div>
