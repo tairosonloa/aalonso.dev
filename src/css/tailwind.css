@@ -2,9 +2,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-html,
-body {
+html, body {
   min-height: 100vh;
+  background-color: #0D1219;
+  @apply text-gray-100;
+}
+
+html, body, header {
   background-color: #0D1219;
   @apply text-gray-100;
 }
