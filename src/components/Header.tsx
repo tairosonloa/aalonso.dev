@@ -3,7 +3,7 @@ import { Transition } from '@headlessui/react'
 import Link from 'next/link'
 import React, { FC, useState } from 'react'
 
-const Nav: FC = () => {
+const Header: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -136,4 +136,4 @@ const Nav: FC = () => {
   )
 }
 
-export default Nav
+export default Header
