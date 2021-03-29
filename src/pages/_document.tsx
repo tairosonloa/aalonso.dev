@@ -1,5 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import React from 'react'
+import { ANALYTICS_ID } from '../../site.metadata'
 
 export default class extends Document {
   render(): JSX.Element {
@@ -57,6 +58,12 @@ export default class extends Document {
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" key="preconnect-gf" />
           <link rel="dns-prefetch" href="https://fonts.googleapis.com" key="dns-prefetch-gf" />
+          {/* Cloudflare Web Analytics */}
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={`{"token": "${ANALYTICS_ID}}`}
+          />
         </Head>
         <body>
           <Main />
