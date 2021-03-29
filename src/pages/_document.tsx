@@ -64,6 +64,8 @@ export default class extends Document {
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon={`{"token": "${ANALYTICS_ID}}`}
           />
+          {/* Webmentions hidden link */}
+          <link href="https://github.com/tairosonloa" rel="me" />
         </Head>
         <body>
           <Main />

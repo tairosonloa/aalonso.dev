@@ -15,6 +15,7 @@ export type BlogPageProps = {
 
 const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
   const router = useRouter()
+  const { socialMediaUrls } = SiteMetadata
   let seo: typeof SiteMetadata.seo = {}
   const updateSeo = () => {
     const url = `https://${DOMAIN}/blog/${hopeBlog.slug}`
@@ -96,6 +97,21 @@ const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: sanitize(hopeBlog.body_html) }}
           />
+          <p className="mt-4 px-4 sm:px-0 text-gray-300 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
+            --
+            <br />
+            (You can find comments to this article in{' '}
+            <a
+              aria-label="Twitter"
+              href={`${socialMediaUrls.devto}/${hopeBlog.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer text-blue-500 hover:underline"
+            >
+              dev.to
+            </a>
+            )
+          </p>
         </article>
       )}
     </>

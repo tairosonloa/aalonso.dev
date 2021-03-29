@@ -3,7 +3,7 @@ import { NextSeoProps } from 'next-seo/lib/types.d'
 export const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN
 export const ANALYTICS_ID = process.env.NEXT_PUBLIC_ANALYTICS_ID
 
-const title = 'Full-Stack Software Developer Engineer'
+const title = 'Full-Stack Software Engineer'
 const titleTemplate = 'Aitor Alonso (aalonso.dev)'
 const description =
   'Software Engineer for React, Node.js, GraphQL and TypeScript. Based in Madrid, Spanish/English speaking. Consulting/Freelancing for Web Development projects: Code Audits/Reviews, Workshops, JavaScript Training, Implementation ...'
@@ -14,7 +14,7 @@ const keywords =
 export const SiteMetadata = {
   socialMediaUrls: {
     github: 'https://github.com/tairosonloa',
-    linkedin: 'https://www.linkedin.com/in/aitoralonsonunez/',
+    linkedin: 'https://www.linkedin.com/in/aitoralonsonunez',
     twitter: 'https://twitter.com/tairosonloa',
     devto: 'https://dev.to/tairosonloa',
     base64EncodedEmailAddress: 'YWl0b3JAYWFsb25zby5kZXY=',
