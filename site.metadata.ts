@@ -15,6 +15,7 @@ export const SiteMetadata = {
     github: 'https://github.com/tairosonloa',
     linkedin: 'https://www.linkedin.com/in/aitoralonsonunez/',
     twitter: 'https://twitter.com/tairosonloa',
+    devto: 'https://dev.to/tairosonloa',
     base64EncodedEmailAddress: 'YWl0b3JAYWFsb25zby5kZXY=',
   },
   employerInfo: {

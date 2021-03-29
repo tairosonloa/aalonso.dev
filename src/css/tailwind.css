@@ -5,6 +5,11 @@
 html,
 body {
   min-height: 100vh;
-  @apply bg-black;
+  background-color: #0D1219;
   @apply text-gray-100;
+}
+
+::selection {
+  color: #0D1219;
+  background: #F3F4F6;
 }

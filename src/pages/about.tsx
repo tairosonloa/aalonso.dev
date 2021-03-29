@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import React from 'react'
 import { DOMAIN, SiteMetadata } from '../../site.metadata'
-import Icons from '../components/Icons/Icons'
+import SocialMediaLinks from '../components/Icons/Icons'
 
 const About: NextPage = () => {
   const url = `https://${DOMAIN}/about`
@@ -30,17 +30,32 @@ const About: NextPage = () => {
                 Aitor Alonso
               </h3>
               <div className="md:text-lg text-gray-400 mb-2 md:mt-1">Full-stack developer</div>
-              <Icons />
+              <SocialMediaLinks />
             </div>
             <div className="lg:pt-4 pb-8 lg:col-span-2 text-base font-normal sm:w-9/12 md:w-10/12 mx-auto  lg:mx-0">
               <p className="mb-4">Hello! I&apos;m Aitor, a full-stack developer from Spain.</p>
               <p className="mb-4">
                 I&apos;m currently full-time working for{' '}
-                <a href={employerInfo.website} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="cursor-pointer text-blue-500 hover:underline"
+                  href={employerInfo.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {employerInfo.name}
+                </a>
+                , where I mostly develop back-end APIs using Domain Driven Design and Clean
+                Architectures. At the same time, I&apos;m studying for a Master&apos;s Degree in
+                Computer Science and Engineering at{' '}
+                <a
+                  className="cursor-pointer text-blue-500 hover:underline"
+                  href="https://www.uc3m.es/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  UC3M
                 </a>{' '}
-                while studying for a Master&apos;s Degree in Computer Science and Engineering on
-                weekends.
+                university.
               </p>
               <p className="mb-4">
                 I consider myself a proactive and vocational developer, so I&apos;m always searching

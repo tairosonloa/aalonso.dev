@@ -1,15 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { FC } from 'react'
+import React, { FC } from 'react';
+import { SiteMetadata } from '../../../site.metadata';
 
-const Icons: FC = (): JSX.Element => {
+const SocialMediaLinks: FC = (): JSX.Element => {
+  const { socialMediaUrls} = SiteMetadata
+  
   return (
     <div className="flex mb-4 space-x-2">
       <a
         aria-label="Github"
-        href="https://github.com/tairosonloa"
+        href={socialMediaUrls.github}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800   "
+        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -24,10 +27,10 @@ const Icons: FC = (): JSX.Element => {
       </a>
       <a
         aria-label="Twitter"
-        href="https://twitter.com/tairosonloa"
+        href={socialMediaUrls.twitter}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800  "
+        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +45,10 @@ const Icons: FC = (): JSX.Element => {
       </a>
       <a
         aria-label="LinkedIn"
-        href="https://www.linkedin.com/in/aitoralonsonunez/"
+        href={socialMediaUrls.linkedin}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800  "
+        className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +60,26 @@ const Icons: FC = (): JSX.Element => {
         >
           <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
         </svg>
+      </a>
+      <a
+        aria-label="DevTo"
+        href={socialMediaUrls.devto}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800"
+      >
+        <svg
+          className="flex-none w-5 h-5"
+          viewBox="0 32 447.99999999999994 448"
+          xmlns="http://www.w3.org/2000/svg"
+          width="2500"
+          height="2321"
+      >
+        <path
+          d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.47h17.45c3.88 0 7.77-1.45 11.65-4.35s5.82-7.25 5.82-13.06v-69.65c-.01-5.8-1.96-10.16-5.83-13.06zM404.1 32H43.9C19.7 32 .06 51.59 0 75.8v360.4C.06 460.41 19.7 480 43.9 480h360.2c24.21 0 43.84-19.59 43.9-43.8V75.8c-.06-24.21-19.7-43.8-43.9-43.8zM154.2 291.19c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28zm100.68-88.66H201.6v38.42h32.57v29.57H201.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58z"
+          fill="currentColor"
+        />
+      </svg>
       </a>
     </div>
   )
@@ -100,7 +123,7 @@ const Sun: FC = (): JSX.Element => {
 
 const Github: FC = (): JSX.Element => {
   return (
-    <div className="rounded text-gray-300 hover:text-gray-100 ">
+    <div className="rounded text-gray-300 hover:text-gray-100">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -119,7 +142,7 @@ const ClickArrow: FC = (): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="self-center ml-1 h-4 w-4 "
+      className="self-center ml-1 h-4 w-4"
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -153,6 +176,6 @@ const ScrollUp: FC = (): JSX.Element => {
   )
 }
 
-export { Moon, Sun, Github, ScrollUp, ClickArrow }
+export { Moon, Sun, Github, ScrollUp, ClickArrow };
 
-export default Icons
+export default SocialMediaLinks

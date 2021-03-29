@@ -7,7 +7,7 @@ const Nav: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 w-full bg-black z-20">
+    <header className="fixed top-0 w-full z-20">
       <nav className="border-b border-gray-800">
         <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className=" flex items-center justify-between h-16">
@@ -28,17 +28,17 @@ const Nav: FC = () => {
               <div className=" hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link href="/">
-                    <a className=" hover:bg-gray-900 transition focus:bg-gray-900 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className=" hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       Home
                     </a>
                   </Link>
                   <Link href="/blog">
-                    <a className=" hover:bg-gray-900 transition focus:bg-gray-900 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className=" hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       Blog
                     </a>
                   </Link>
                   <Link href="/about">
-                    <a className=" hover:bg-gray-900 transition focus:bg-gray-900 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className=" hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       About
                     </a>
                   </Link>
@@ -50,7 +50,7 @@ const Nav: FC = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -108,21 +108,21 @@ const Nav: FC = () => {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <div onClick={() => setIsOpen(!isOpen)} aria-hidden="true">
                   <Link href="/">
-                    <a className="hover:bg-gray-900 transition focus:bg-gray-900 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
+                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
                       Home
                     </a>
                   </Link>
                 </div>
                 <div onClick={() => setIsOpen(!isOpen)} aria-hidden="true">
                   <Link href="/blog">
-                    <a className="hover:bg-gray-900 transition focus:bg-gray-900 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
+                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
                       Blog
                     </a>
                   </Link>
                 </div>
                 <div onClick={() => setIsOpen(!isOpen)} aria-hidden="true">
                   <Link href="/about">
-                    <a className="hover:bg-gray-900 transition focus:bg-gray-900 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
+                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
                       About
                     </a>
                   </Link>
