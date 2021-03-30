@@ -62,7 +62,7 @@ export default class extends Document {
           <script
             defer
             src="https://static.cloudflareinsights.com/beacon.min.js"
-            data-cf-beacon={`{"token": "${ANALYTICS_ID}}`}
+            data-cf-beacon={`{"token": "${ANALYTICS_ID}"}`}
           />
           {/* Webmentions hidden link */}
           <link href="https://github.com/tairosonloa" rel="me" />
