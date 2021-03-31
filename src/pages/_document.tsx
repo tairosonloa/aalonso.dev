@@ -1,6 +1,11 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import React from 'react'
-import { CLOUDFLARE_ANALYTICS_ID, DOMAIN, UMAMI_ANALYTICS_ID } from '../../site.metadata'
+import {
+  CLOUDFLARE_ANALYTICS_ID,
+  DOMAIN,
+  SOCIAL_MEDIA_URLS,
+  UMAMI_ANALYTICS_ID,
+} from '../constants'
 
 export default class extends Document {
   render(): JSX.Element {
@@ -65,7 +70,8 @@ export default class extends Document {
             data-cf-beacon={`{"token": "${CLOUDFLARE_ANALYTICS_ID}"}`}
           />
           {/* Webmentions hidden link */}
-          <link href="https://github.com/tairosonloa" rel="me" />
+          <link href={SOCIAL_MEDIA_URLS.github} rel="me" />
+          {/* Umami Web Analytics */}
           <script
             async
             defer

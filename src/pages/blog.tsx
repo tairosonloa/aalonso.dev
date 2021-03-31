@@ -2,9 +2,10 @@
 import { format, parseISO } from 'date-fns'
 import { GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import { NextSeoProps } from 'next-seo/lib/types.d'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { DOMAIN, SiteMetadata } from '../../site.metadata'
+import { DOMAIN } from '../constants'
 import { CommonBlogProps } from '../containers/types/types'
 
 const Blog: NextPage<CommonBlogProps> = (props) => {
@@ -17,7 +18,7 @@ const Blog: NextPage<CommonBlogProps> = (props) => {
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
   const url = `https://${DOMAIN}/blog`
-  const seo: typeof SiteMetadata.seo = {
+  const seo: NextSeoProps = {
     title: 'Blog',
     canonical: url,
     openGraph: { url },

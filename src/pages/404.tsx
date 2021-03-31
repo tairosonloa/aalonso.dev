@@ -1,10 +1,10 @@
 import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import { NextSeoProps } from 'next-seo/lib/types.d'
 import React from 'react'
-import { SiteMetadata } from '../../site.metadata'
 
 const NotFound: NextPage = () => {
-  const seo: typeof SiteMetadata.seo = {
+  const seo: NextSeoProps = {
     title: '404 Not Found',
   }
   return (

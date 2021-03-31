@@ -1,12 +1,13 @@
 import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import { NextSeoProps } from 'next-seo/lib/types.d'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import sanitize from 'sanitize-html'
-import { DOMAIN, SiteMetadata } from '../../../site.metadata'
 import Emoji from '../../components/Emoji'
+import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
 import { BlogPost } from '../../containers/types/types'
 
 export type BlogPageProps = {
@@ -15,8 +16,7 @@ export type BlogPageProps = {
 
 const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
   const router = useRouter()
-  const { socialMediaUrls } = SiteMetadata
-  let seo: typeof SiteMetadata.seo = {}
+  let seo: NextSeoProps = {}
   const updateSeo = () => {
     const url = `https://${DOMAIN}/blog/${hopeBlog.slug}`
     seo = {
@@ -103,7 +103,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
             (You can find comments to this article in{' '}
             <a
               aria-label="Twitter"
-              href={`${socialMediaUrls.devto}/${hopeBlog.slug}`}
+              href={`${SOCIAL_MEDIA_URLS.devto}/${hopeBlog.slug}`}
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer text-blue-500 hover:underline"
