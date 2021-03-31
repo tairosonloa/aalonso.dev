@@ -4,8 +4,6 @@ import { ScrollUp } from '../components/Icons/Icons'
 const ScrollToTop: FC = () => {
   const [isVisible, setIsVisible] = useState(false)
 
-  // Set the top cordinate to 0
-  // make scrolling smooth
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

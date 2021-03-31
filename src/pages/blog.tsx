@@ -6,12 +6,12 @@ import { NextSeoProps } from 'next-seo/lib/types.d'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { DOMAIN } from '../constants'
-import { CommonBlogProps } from '../containers/types/types'
+import { AllBlogPosts } from '../containers/types/types'
 
-const Blog: NextPage<CommonBlogProps> = (props) => {
+const Blog: NextPage<AllBlogPosts> = (props) => {
   const [searchValue, setSearchValue] = useState('')
 
-  const { devData } = props
+  const { devtoBlogPosts: devData } = props
 
   const filteredBlogPosts = devData.filter((data) => {
     const searchContent = data.title + data.description
@@ -133,7 +133,7 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 
   return {
-    props: { devData }, // will be passed to the page component as props
+    props: { devData },
     revalidate: 1,
   }
 }

@@ -3,11 +3,11 @@
 import { format, parseISO } from 'date-fns'
 import Link from 'next/link'
 import React, { FC } from 'react'
-import { CommonBlogProps } from '../../containers/types/types'
+import { AllBlogPosts } from '../../containers/types/types'
 import Emoji from '../Emoji'
 import { ClickArrow } from '../Icons/Icons'
 
-const LatestArticles: FC<CommonBlogProps> = ({ devData }) => {
+const LatestArticles: FC<AllBlogPosts> = ({ devtoBlogPosts: devData }) => {
   return (
     <section>
       <div className="text-left ">
