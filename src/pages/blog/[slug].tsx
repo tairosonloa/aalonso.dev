@@ -69,8 +69,8 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
             </h1>
 
             <div className="flex justify-between px-4 sm:px-0">
-              <div className="flex items-center ">
-                <div className="avatar ">
+              <div className="flex items-center">
+                <div className="avatar">
                   <img
                     className="rounded-full w-14 h-14"
                     src={blogPost.user.profile_image_90}
@@ -78,7 +78,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
                   />
                 </div>
                 <div className="ml-2">
-                  <p className=" font-semibold "> {blogPost.user.name}</p>
+                  <p className="font-semibold"> {blogPost.user.name}</p>
                   <p className="text-sm text-gray-400">
                     {format(parseISO(blogPost.published_at), 'MMMM dd, yyyy')}
                   </p>
