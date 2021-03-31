@@ -9,8 +9,8 @@ const Header: FC = () => {
   return (
     <header className="fixed top-0 w-full z-20">
       <nav className="border-b border-gray-800">
-        <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className=" flex items-center justify-between h-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
             <div className="flex items-center justify-between w-full">
               <div
                 className="flex-shrink-0 cursor-pointer"
@@ -25,20 +25,20 @@ const Header: FC = () => {
                   </a>
                 </Link>
               </div>
-              <div className=" hidden md:block">
+              <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link href="/">
-                    <a className=" hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       Home
                     </a>
                   </Link>
                   <Link href="/blog">
-                    <a className=" hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       Blog
                     </a>
                   </Link>
                   <Link href="/about">
-                    <a className=" hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       About
                     </a>
                   </Link>
