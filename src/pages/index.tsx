@@ -5,12 +5,12 @@ import LatestArticles from '../components/Landing/LatestArticles'
 import { AllBlogPosts } from '../containers/types/types'
 
 const Home: NextPage<AllBlogPosts> = (props) => {
-  const { devtoBlogPosts: devData } = props
+  const { devtoBlogPosts } = props
 
   return (
     <main className="w-11/12 px-4 md:px-0 pt-40 md:pt-44 lg:pt-52 mx-auto md:w-3/4 lg:w-2/4 mt-0 ">
       <Bio />
-      <LatestArticles devtoBlogPosts={devData} />
+      <LatestArticles devtoBlogPosts={devtoBlogPosts} />
     </main>
   )
 }
@@ -23,16 +23,16 @@ const getPosts = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const devData = await getPosts()
+  const devtoBlogPosts = await getPosts()
 
-  if (!devData) {
+  if (!devtoBlogPosts) {
     return {
       notFound: true,
     }
   }
 
   return {
-    props: { devData },
+    props: { devtoBlogPosts },
     revalidate: 1,
   }
 }

@@ -11,9 +11,9 @@ import { AllBlogPosts } from '../containers/types/types'
 const Blog: NextPage<AllBlogPosts> = (props) => {
   const [searchValue, setSearchValue] = useState('')
 
-  const { devtoBlogPosts: devData } = props
+  const { devtoBlogPosts } = props
 
-  const filteredBlogPosts = devData.filter((data) => {
+  const filteredBlogPosts = devtoBlogPosts.filter((data) => {
     const searchContent = data.title + data.description
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
@@ -124,16 +124,16 @@ const getPosts = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const devData = await getPosts()
+  const devtoBlogPosts = await getPosts()
 
-  if (!devData) {
+  if (!devtoBlogPosts) {
     return {
       notFound: true,
     }
   }
 
   return {
-    props: { devData },
+    props: { devtoBlogPosts },
     revalidate: 1,
   }
 }

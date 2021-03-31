@@ -7,15 +7,15 @@ import { AllBlogPosts } from '../../containers/types/types'
 import Emoji from '../Emoji'
 import { ClickArrow } from '../Icons/Icons'
 
-const LatestArticles: FC<AllBlogPosts> = ({ devtoBlogPosts: devData }) => {
+const LatestArticles: FC<AllBlogPosts> = ({ devtoBlogPosts }) => {
   return (
     <section>
       <div className="text-left ">
         <h2 className="text-3xl md:text-4xl font-bold ">Latest Articles</h2>
       </div>
       <div className="flex flex-col">
-        {devData &&
-          devData
+        {devtoBlogPosts &&
+          devtoBlogPosts
             .slice(0, 3)
             .map(({ description, title, slug, positive_reactions_count, published_at }) => (
               <Link key={slug} href={`/blog/${slug}`}>

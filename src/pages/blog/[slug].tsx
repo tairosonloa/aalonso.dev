@@ -125,9 +125,9 @@ const getAllBlogs = async () => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const devData: DevtoBlogPost[] = await getAllBlogs()
+  const devtoBlogPosts: DevtoBlogPost[] = await getAllBlogs()
 
-  const paths = devData.map((data) => ({
+  const paths = devtoBlogPosts.map((data) => ({
     params: { slug: data?.slug },
   }))
 
@@ -138,14 +138,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const devData: DevtoBlogPost[] = await getAllBlogs()
+  const devtoBlogPosts: DevtoBlogPost[] = await getAllBlogs()
 
-  const selectedBlog = devData.filter((data) => data?.slug === params?.slug)
+  const selectedBlog = devtoBlogPosts.filter((data) => data?.slug === params?.slug)
 
   const res = await fetch(`https://dev.to/api/articles/${selectedBlog[0]?.id}`)
   const blogPost = await res.json()
 
-  if (!devData) {
+  if (!devtoBlogPosts) {
     return {
       notFound: true,
     }
