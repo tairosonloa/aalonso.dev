@@ -27,7 +27,7 @@ const Blog: NextPage<AllBlogPosts> = (props) => {
   return (
     <>
       <NextSeo {...seo} />
-      <main className="w-11/12 px-4 md:px-0 pt-24 md:pt-28 lg:pt-32 mx-auto md:w-3/4 lg:w-10/12 text-gray-300">
+      <main className="w-11/12 px-4 md:px-0 pt-24 md:pt-28 lg:pt-32 mx-auto md:w-3/4 lg:w-10/12 text-gray-300 max-w-screen-2xl">
         <div>
           <div className=" space-y-2 md:space-y-5">
             <h1 className="mb-3 lg:mb-5 text-4xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
