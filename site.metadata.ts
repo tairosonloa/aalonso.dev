@@ -1,7 +1,8 @@
 import { NextSeoProps } from 'next-seo/lib/types.d'
 
 export const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN
-export const ANALYTICS_ID = process.env.NEXT_PUBLIC_ANALYTICS_ID
+export const UMAMI_ANALYTICS_ID = process.env.NEXT_PUBLIC_UMAMI_ANALYTICS_ID
+export const CLOUDFLARE_ANALYTICS_ID = process.env.NEXT_PUBLIC_CLOUDFLARE_ANALYTICS_ID
 
 const title = 'Full-Stack Software Engineer'
 const titleTemplate = 'Aitor Alonso (aalonso.dev)'
