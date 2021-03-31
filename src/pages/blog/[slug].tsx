@@ -54,7 +54,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
           itemScope
           itemType="http://schema.org/BlogPosting"
         >
-          <div className="max-w-screen-2xl w-full mx-auto mb-8 text-left sm:w-11/12 md:w-3/4 lg:w-1/2">
+          <div className="max-w-3xl w-full mx-auto mb-8 text-left sm:w-11/12 md:w-3/4 lg:w-1/2">
             <img
               src={blogPost.cover_image}
               className="object-fit h-auto md:object-cover w-full md:max-h-64 bg-center rounded-lg"

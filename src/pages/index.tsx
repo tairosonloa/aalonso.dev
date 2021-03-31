@@ -8,7 +8,7 @@ const Home: NextPage<AllBlogPosts> = (props) => {
   const { devtoBlogPosts } = props
 
   return (
-    <main className="w-11/12 px-4 md:px-0 pt-40 md:pt-44 lg:pt-52 mx-auto md:w-3/4 lg:w-2/4 mt-0 max-w-screen-2xl">
+    <main className="w-11/12 px-4 md:px-0 pt-40 md:pt-44 lg:pt-52 mx-auto md:w-3/4 xl:w-2/4 mt-0 max-w-screen-lg">
       <Bio />
       <LatestArticles devtoBlogPosts={devtoBlogPosts} />
     </main>
