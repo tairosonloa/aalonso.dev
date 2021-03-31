@@ -1,15 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { FC } from 'react'
-import { SiteMetadata } from '../../../site.metadata'
+import { SOCIAL_MEDIA_URLS } from '../../constants'
 
 const SocialMediaLinks: FC = (): JSX.Element => {
-  const { socialMediaUrls } = SiteMetadata
-
   return (
     <div className="flex mb-4 space-x-2">
       <a
         aria-label="Github"
-        href={socialMediaUrls.github}
+        href={SOCIAL_MEDIA_URLS.github}
         target="_blank"
         rel="noopener noreferrer"
         className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800"
@@ -27,7 +25,7 @@ const SocialMediaLinks: FC = (): JSX.Element => {
       </a>
       <a
         aria-label="Twitter"
-        href={socialMediaUrls.twitter}
+        href={SOCIAL_MEDIA_URLS.twitter}
         target="_blank"
         rel="noopener noreferrer"
         className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800"
@@ -45,7 +43,7 @@ const SocialMediaLinks: FC = (): JSX.Element => {
       </a>
       <a
         aria-label="LinkedIn"
-        href={socialMediaUrls.linkedin}
+        href={SOCIAL_MEDIA_URLS.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800"
@@ -63,7 +61,7 @@ const SocialMediaLinks: FC = (): JSX.Element => {
       </a>
       <a
         aria-label="DevTo"
-        href={socialMediaUrls.devto}
+        href={SOCIAL_MEDIA_URLS.devto}
         target="_blank"
         rel="noopener noreferrer"
         className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800"

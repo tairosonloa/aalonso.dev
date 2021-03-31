@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-export type User = {
+export type DevtoUser = {
   github_username?: string
   name: string
   profile_image?: string
@@ -9,13 +9,13 @@ export type User = {
   website_url?: null | string
 }
 
-export type FlareTag = {
+export type DevtoFlareTag = {
   name?: string
   bg_color_hex?: string
   text_color_hex?: string
 }
 
-export type BlogPost = {
+export type DevtoBlogPost = {
   id: number
   title: string
   description: string
@@ -33,8 +33,8 @@ export type BlogPost = {
   published_at: string
   published_timestamp: string
   url: string
-  user: User
-  flare_tag?: FlareTag
+  user: DevtoUser
+  flare_tag?: DevtoFlareTag
   readable_publish_date: string
   collection_id: null | number
   social_image: string
@@ -45,6 +45,6 @@ export type BlogPost = {
   body_html: string
 }
 
-export type CommonBlogProps = {
-  devData: BlogPost[]
+export type AllBlogPosts = {
+  devtoBlogPosts: DevtoBlogPost[]
 }

@@ -1,17 +1,17 @@
 import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import { NextSeoProps } from 'next-seo/lib/types.d'
 import React from 'react'
-import { DOMAIN, SiteMetadata } from '../../site.metadata'
 import SocialMediaLinks from '../components/Icons/Icons'
+import { DOMAIN } from '../constants'
 
 const About: NextPage = () => {
   const url = `https://${DOMAIN}/about`
-  const seo: typeof SiteMetadata.seo = {
+  const seo: NextSeoProps = {
     title: 'About',
     canonical: url,
     openGraph: { url },
   }
-  const { employerInfo } = SiteMetadata
 
   return (
     <>
@@ -40,11 +40,11 @@ const About: NextPage = () => {
                 I&apos;m currently full-time working for{' '}
                 <a
                   className="cursor-pointer text-blue-500 hover:underline"
-                  href={employerInfo.website}
+                  href="https://acidtango.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {employerInfo.name}
+                  Acid Tango
                 </a>
                 , where I mostly develop back-end APIs using Domain Driven Design and Clean
                 Architectures. At the same time, I&apos;m studying for a Master&apos;s Degree in

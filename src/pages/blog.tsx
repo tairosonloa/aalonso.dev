@@ -2,22 +2,23 @@
 import { format, parseISO } from 'date-fns'
 import { GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import { NextSeoProps } from 'next-seo/lib/types.d'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { DOMAIN, SiteMetadata } from '../../site.metadata'
-import { CommonBlogProps } from '../containers/types/types'
+import { DOMAIN } from '../constants'
+import { AllBlogPosts } from '../containers/types/types'
 
-const Blog: NextPage<CommonBlogProps> = (props) => {
+const Blog: NextPage<AllBlogPosts> = (props) => {
   const [searchValue, setSearchValue] = useState('')
 
-  const { devData } = props
+  const { devtoBlogPosts } = props
 
-  const filteredBlogPosts = devData.filter((data) => {
+  const filteredBlogPosts = devtoBlogPosts.filter((data) => {
     const searchContent = data.title + data.description
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
   const url = `https://${DOMAIN}/blog`
-  const seo: typeof SiteMetadata.seo = {
+  const seo: NextSeoProps = {
     title: 'Blog',
     canonical: url,
     openGraph: { url },
@@ -123,16 +124,16 @@ const getPosts = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const devData = await getPosts()
+  const devtoBlogPosts = await getPosts()
 
-  if (!devData) {
+  if (!devtoBlogPosts) {
     return {
       notFound: true,
     }
   }
 
   return {
-    props: { devData }, // will be passed to the page component as props
+    props: { devtoBlogPosts },
     revalidate: 1,
   }
 }

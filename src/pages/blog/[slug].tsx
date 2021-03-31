@@ -1,37 +1,37 @@
 import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
+import { NextSeoProps } from 'next-seo/lib/types.d'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import sanitize from 'sanitize-html'
-import { DOMAIN, SiteMetadata } from '../../../site.metadata'
 import Emoji from '../../components/Emoji'
-import { BlogPost } from '../../containers/types/types'
+import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
+import { DevtoBlogPost } from '../../containers/types/types'
 
 export type BlogPageProps = {
-  hopeBlog: BlogPost
+  blogPost: DevtoBlogPost
 }
 
-const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
+const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
   const router = useRouter()
-  const { socialMediaUrls } = SiteMetadata
-  let seo: typeof SiteMetadata.seo = {}
+  let seo: NextSeoProps = {}
   const updateSeo = () => {
-    const url = `https://${DOMAIN}/blog/${hopeBlog.slug}`
+    const url = `https://${DOMAIN}/blog/${blogPost.slug}`
     seo = {
-      title: hopeBlog.title,
+      title: blogPost.title,
       canonical: url,
       openGraph: { url },
     }
   }
-  if (hopeBlog) {
+  if (blogPost) {
     updateSeo()
   }
   useEffect(() => {
     updateSeo()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hopeBlog])
+  }, [blogPost])
 
   // If the page is not yet generated, this will be displayed
   // initially until getStaticProps() finishes running
@@ -48,7 +48,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
         />
       </Head>
       <NextSeo {...seo} />
-      {hopeBlog && (
+      {blogPost && (
         <article
           className="text-gray-300 sm:px-4 py-16 pt-20 md:pt-28"
           itemScope
@@ -56,16 +56,16 @@ const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
         >
           <div className="w-full mx-auto mb-8 text-left sm:w-11/12 md:w-3/4 lg:w-1/2">
             <img
-              src={hopeBlog.cover_image}
+              src={blogPost.cover_image}
               className="object-fit h-auto md:object-cover w-full md:max-h-64 bg-center rounded-lg"
               alt="Blog Cover"
             />
             <h1
               className="px-4 sm:px-0 mt-6 mb-6 text-3xl font-bold leading-tight text-white md:text-4xl"
               itemProp="headline"
-              title={hopeBlog.title}
+              title={blogPost.title}
             >
-              {hopeBlog.title}
+              {blogPost.title}
             </h1>
 
             <div className="flex justify-between px-4 sm:px-0">
@@ -73,20 +73,20 @@ const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
                 <div className="avatar ">
                   <img
                     className="rounded-full w-14 h-14"
-                    src={hopeBlog.user.profile_image_90}
-                    alt={hopeBlog.user.name}
+                    src={blogPost.user.profile_image_90}
+                    alt={blogPost.user.name}
                   />
                 </div>
                 <div className="ml-2">
-                  <p className=" font-semibold "> {hopeBlog.user.name}</p>
+                  <p className=" font-semibold "> {blogPost.user.name}</p>
                   <p className="text-sm text-gray-400">
-                    {format(parseISO(hopeBlog.published_at), 'MMMM dd, yyyy')}
+                    {format(parseISO(blogPost.published_at), 'MMMM dd, yyyy')}
                   </p>
                 </div>
               </div>
               <div className="self-center">
                 <p className="text-sm flex justify-end text-gray-400">
-                  {hopeBlog.public_reactions_count}&nbsp;
+                  {blogPost.public_reactions_count}&nbsp;
                   <Emoji emoji="❤️" label="likes" />
                 </p>
               </div>
@@ -95,7 +95,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
           <div
             className="px-4 sm:px-0 text-gray-300 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2"
             // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: sanitize(hopeBlog.body_html) }}
+            dangerouslySetInnerHTML={{ __html: sanitize(blogPost.body_html) }}
           />
           <p className="mt-4 px-4 sm:px-0 text-gray-300 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
             --
@@ -103,7 +103,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ hopeBlog }) => {
             (You can find comments to this article in{' '}
             <a
               aria-label="Twitter"
-              href={`${socialMediaUrls.devto}/${hopeBlog.slug}`}
+              href={`${SOCIAL_MEDIA_URLS.devto}/${blogPost.slug}`}
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer text-blue-500 hover:underline"
@@ -125,9 +125,9 @@ const getAllBlogs = async () => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const devData: BlogPost[] = await getAllBlogs()
+  const devtoBlogPosts: DevtoBlogPost[] = await getAllBlogs()
 
-  const paths = devData.map((data) => ({
+  const paths = devtoBlogPosts.map((data) => ({
     params: { slug: data?.slug },
   }))
 
@@ -138,28 +138,21 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const devData: BlogPost[] = await getAllBlogs()
+  const devtoBlogPosts: DevtoBlogPost[] = await getAllBlogs()
 
-  const selectedBlog = devData.filter((data) => data?.slug === params?.slug)
-
-  // const blogObj = selectedBlog[0]
+  const selectedBlog = devtoBlogPosts.filter((data) => data?.slug === params?.slug)
 
   const res = await fetch(`https://dev.to/api/articles/${selectedBlog[0]?.id}`)
-  const blogObj = await res.json()
+  const blogPost = await res.json()
 
-  // const remarkContent = await markdownToHtml(blogObj.body_markdown)
-
-  if (!devData) {
+  if (!devtoBlogPosts) {
     return {
       notFound: true,
     }
   }
 
   return {
-    props: {
-      // remarkContent,
-      hopeBlog: blogObj,
-    }, // will be passed to the page component as props
+    props: { blogPost },
     revalidate: 1,
   }
 }
