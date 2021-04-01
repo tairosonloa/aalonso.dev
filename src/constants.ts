@@ -1,4 +1,4 @@
-import { NextSeoProps } from 'next-seo/lib/types.d'
+import { NextSeoProps } from 'next-seo'
 
 export const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN
 export const UMAMI_ANALYTICS_ID = process.env.NEXT_PUBLIC_UMAMI_ANALYTICS_ID

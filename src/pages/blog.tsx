@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { format, parseISO } from 'date-fns'
 import { GetStaticProps, NextPage } from 'next'
-import { NextSeo } from 'next-seo'
-import { NextSeoProps } from 'next-seo/lib/types.d'
+import { NextSeo, NextSeoProps } from 'next-seo'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { DOMAIN } from '../constants'

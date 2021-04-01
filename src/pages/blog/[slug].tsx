@@ -1,7 +1,6 @@
 import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
-import { NextSeo } from 'next-seo'
-import { NextSeoProps } from 'next-seo/lib/types.d'
+import { NextSeo, NextSeoProps } from 'next-seo'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
