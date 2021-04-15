@@ -73,13 +73,13 @@ const About: NextPage = () => {
                   <li className="mb-0.25">▸ Nest.js</li>
                   <li className="mb-0.25">▸ Docker</li>
                 </div>
-                <div className="md:ml-20">
+                <div className="lg:ml-16 md:ml-auto">
                   <li className="mb-0.25">▸ React</li>
                   <li className="mb-0.25">▸ Next.js</li>
                   <li className="mb-0.25">▸ React Native</li>
                   <li className="mb-0.25">▸ Expo</li>
                 </div>
-                <div className="md:ml-20">
+                <div className="lg:ml-16 md:ml-auto">
                   <li className="mb-0.25">▸ AWS</li>
                   <li className="mb-0.25">▸ Jenkins</li>
                   <li className="mb-0.25">▸ GitHub Actions</li>
