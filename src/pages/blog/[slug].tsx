@@ -102,7 +102,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
             (You can find comments to this article in{' '}
             <a
               aria-label="Twitter"
-              href={`${SOCIAL_MEDIA_URLS.devto}/${blogPost.slug}`}
+              href={`${SOCIAL_MEDIA_URLS.devto}/${blogPost.slug}#comments`}
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer text-blue-500 hover:underline"

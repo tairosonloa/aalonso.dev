@@ -10,7 +10,7 @@ const SocialMediaLinks: FC = (): JSX.Element => {
         href={SOCIAL_MEDIA_URLS.github}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800"
+        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800 umami--click--github-profile"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const SocialMediaLinks: FC = (): JSX.Element => {
         href={SOCIAL_MEDIA_URLS.twitter}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800"
+        className="p-1.5 rounded text-gray-300 hover:text-gray-100 hover:bg-gray-800 focus:bg-gray-800 umami--click--twitter-profile"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const SocialMediaLinks: FC = (): JSX.Element => {
         href={SOCIAL_MEDIA_URLS.linkedin}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800"
+        className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800 umami--click--linkedin-profile"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const SocialMediaLinks: FC = (): JSX.Element => {
         href={SOCIAL_MEDIA_URLS.devto}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800"
+        className="p-1.5 rounded text-gray-300 hover:text-white hover:bg-gray-800 focus:bg-gray-800umami--click--devto-profile"
       >
         <svg
           className="flex-none w-5 h-5"
