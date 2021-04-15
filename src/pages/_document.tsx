@@ -1,10 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import React from 'react'
-import {
-  DOMAIN,
-  SOCIAL_MEDIA_URLS,
-  UMAMI_ANALYTICS_ID
-} from '../constants'
+import { DOMAIN, SOCIAL_MEDIA_URLS, UMAMI_ANALYTICS_ID } from '../constants'
 
 export default class extends Document {
   render(): JSX.Element {
@@ -70,6 +66,7 @@ export default class extends Document {
             defer
             data-website-id={UMAMI_ANALYTICS_ID}
             src={`https://analytics.${DOMAIN}/umami.js`}
+            data-domains={`${DOMAIN}`}
           />
         </Head>
         <body>
