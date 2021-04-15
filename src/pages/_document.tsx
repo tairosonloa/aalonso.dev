@@ -1,10 +1,9 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import React from 'react'
 import {
-  CLOUDFLARE_ANALYTICS_ID,
   DOMAIN,
   SOCIAL_MEDIA_URLS,
-  UMAMI_ANALYTICS_ID,
+  UMAMI_ANALYTICS_ID
 } from '../constants'
 
 export default class extends Document {
@@ -63,12 +62,6 @@ export default class extends Document {
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" key="preconnect-gf" />
           <link rel="dns-prefetch" href="https://fonts.googleapis.com" key="dns-prefetch-gf" />
-          {/* Cloudflare Web Analytics */}
-          <script
-            defer
-            src="https://static.cloudflareinsights.com/beacon.min.js"
-            data-cf-beacon={`{"token": "${CLOUDFLARE_ANALYTICS_ID}"}`}
-          />
           {/* Webmentions hidden link */}
           <link href={SOCIAL_MEDIA_URLS.github} rel="me" />
           {/* Umami Web Analytics */}
