@@ -96,16 +96,15 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: sanitize(blogPost.body_html) }}
           />
-          <p className="mt-4 px-4 sm:px-0 text-gray-300 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
+          <p className="mt-4 px-4 sm:px-0 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
             --
             <br />
             (You can find comments to this article in{' '}
             <a
-              aria-label="Twitter"
+              aria-label="Comments"
               href={`${SOCIAL_MEDIA_URLS.devto}/${blogPost.slug}#comments`}
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer text-blue-500 hover:underline"
             >
               dev.to
             </a>

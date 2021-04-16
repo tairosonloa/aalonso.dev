@@ -68,7 +68,7 @@ const Blog: NextPage<AllBlogPosts> = (props) => {
                 // eslint-disable-next-line camelcase
                 const { description, title, slug, published_at } = data
                 return (
-                  <li key={slug} className="py-4 xl:py-6">
+                  <li key={slug} className="pt-4 xl:py-5">
                     <article className="space-y-2 xl:grid xl:grid-cols-5 xl:space-y-0 xl:items-baseline">
                       <dl>
                         <dt className="sr-only">Published on</dt>
@@ -85,7 +85,7 @@ const Blog: NextPage<AllBlogPosts> = (props) => {
                         <div className="text-sm md:text-base text-gray-400">
                           {description}
                           <Link href={`/blog/${slug}`}>
-                            <a className="cursor-pointer ml-2 text-blue-500 hover:text-blue-700 inline-flex items-center">
+                            <a className="cursor-pointer ml-2 text-indigo-400 hover:text-indigo-500 inline-flex items-center">
                               Learn More
                               <svg
                                 className="w-4 h-4 ml-2"

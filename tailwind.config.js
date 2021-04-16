@@ -23,7 +23,7 @@ module.exports = {
           css: {
             color: 'rgba(209, 213, 219)',
             a: {
-              color: 'rgba(59, 130, 246)',
+              color: 'rgba(129, 140, 248)',
               textDecoration: 'none',
               '&:hover': {
                 textDecoration: 'underline',

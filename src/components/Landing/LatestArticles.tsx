@@ -19,7 +19,7 @@ const LatestArticles: FC<AllBlogPosts> = ({ devtoBlogPosts }) => {
             .slice(0, 3)
             .map(({ description, title, slug, positive_reactions_count, published_at }) => (
               <Link key={slug} href={`/blog/${slug}`}>
-                <a className="p-4 cursor-pointer border border-gray-600 hover:border-gray-400 transition rounded-lg mt-5">
+                <a className="p-4 cursor-pointer border border-gray-600 hover:border-gray-400 rounded-lg mt-5">
                   <div className="flex justify-between">
                     <h3 className="mb-1 text-xl font-semibold tracking-normal">{title}</h3>
                   </div>

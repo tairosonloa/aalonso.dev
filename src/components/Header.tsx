@@ -28,17 +28,17 @@ const Header: FC = () => {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link href="/">
-                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       Home
                     </a>
                   </Link>
                   <Link href="/blog">
-                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       Blog
                     </a>
                   </Link>
                   <Link href="/about">
-                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
                       About
                     </a>
                   </Link>
@@ -95,10 +95,10 @@ const Header: FC = () => {
 
         <Transition
           show={isOpen}
-          enter="transition ease-out duration-200 transform"
+          enter="ease-out duration-100 transform"
           enterFrom="opacity-0 scale-95"
           enterTo="opacity-100 scale-100"
-          leave="transition ease-in-out duration-200 transform"
+          leave="ease-in-out duration-100 transform"
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
@@ -108,21 +108,21 @@ const Header: FC = () => {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <div onClick={() => setIsOpen(!isOpen)} aria-hidden="true">
                   <Link href="/">
-                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
+                    <a className="hover:bg-gray-800 focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
                       Home
                     </a>
                   </Link>
                 </div>
                 <div onClick={() => setIsOpen(!isOpen)} aria-hidden="true">
                   <Link href="/blog">
-                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
+                    <a className="hover:bg-gray-800 focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
                       Blog
                     </a>
                   </Link>
                 </div>
                 <div onClick={() => setIsOpen(!isOpen)} aria-hidden="true">
                   <Link href="/about">
-                    <a className="hover:bg-gray-800 transition focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
+                    <a className="hover:bg-gray-800 focus:bg-gray-800 block px-3 py-2 rounded-md text-sm md:text-base font-medium">
                       About
                     </a>
                   </Link>
