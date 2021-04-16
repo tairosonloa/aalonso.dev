@@ -6,7 +6,7 @@ const SocialMediaLinks: FC = (): JSX.Element => {
   return (
     <div className="flex mb-4 space-x-2">
       <a
-        aria-label="Github"
+        aria-label="GitHub"
         href={SOCIAL_MEDIA_URLS.github}
         target="_blank"
         rel="noopener noreferrer"
