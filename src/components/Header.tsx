@@ -28,17 +28,26 @@ const Header: FC = () => {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link href="/">
-                    <a className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a
+                      className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium"
+                      aria-label="Home"
+                    >
                       Home
                     </a>
                   </Link>
                   <Link href="/blog">
-                    <a className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a
+                      className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium"
+                      aria-label="Blog"
+                    >
                       Blog
                     </a>
                   </Link>
                   <Link href="/about">
-                    <a className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium">
+                    <a
+                      className="hover:bg-gray-800 focus:bg-gray-800 px-3 py-2 rounded-md text-sm lg:text-base font-medium"
+                      aria-label="About"
+                    >
                       About
                     </a>
                   </Link>

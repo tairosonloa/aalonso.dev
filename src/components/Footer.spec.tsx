@@ -4,16 +4,16 @@ import { SOCIAL_MEDIA_URLS } from '../constants'
 import Footer from './Footer'
 
 describe('<Footer/>', () => {
-  it('should display the social media links', () => {
+  it.each`
+    label         | link
+    ${'GitHub'}   | ${SOCIAL_MEDIA_URLS.github}
+    ${'Twitter'}  | ${SOCIAL_MEDIA_URLS.twitter}
+    ${'LinkedIn'} | ${SOCIAL_MEDIA_URLS.linkedin}
+    ${'DevTo'}    | ${SOCIAL_MEDIA_URLS.devto}
+  `('should display the link to $label social media', ({ label, link }) => {
     const renderResult = render(<Footer />)
 
-    expect(renderResult.getByLabelText('GitHub')).toHaveProperty('href', SOCIAL_MEDIA_URLS.github)
-    expect(renderResult.getByLabelText('Twitter')).toHaveProperty('href', SOCIAL_MEDIA_URLS.twitter)
-    expect(renderResult.getByLabelText('DevTo')).toHaveProperty('href', SOCIAL_MEDIA_URLS.devto)
-    expect(renderResult.getByLabelText('LinkedIn')).toHaveProperty(
-      'href',
-      SOCIAL_MEDIA_URLS.linkedin,
-    )
+    expect(renderResult.getByLabelText(label)).toHaveProperty('href', link)
   })
 
   it('should display the copyright', () => {
