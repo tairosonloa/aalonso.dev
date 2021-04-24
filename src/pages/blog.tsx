@@ -4,6 +4,7 @@ import { GetStaticProps, NextPage } from 'next'
 import { NextSeo, NextSeoProps } from 'next-seo'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import urlcat from 'urlcat'
 import { DOMAIN } from '../constants'
 import { AllBlogPosts } from '../containers/types/types'
 
@@ -16,7 +17,7 @@ const Blog: NextPage<AllBlogPosts> = (props) => {
     const searchContent = data.title + data.description
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
-  const url = `https://${DOMAIN}/blog`
+  const url = urlcat(`https://${DOMAIN}`, '/blog')
   const seo: NextSeoProps = {
     title: 'Blog',
     canonical: url,

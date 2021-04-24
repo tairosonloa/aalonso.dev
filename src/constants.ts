@@ -1,4 +1,5 @@
 import { NextSeoProps } from 'next-seo'
+import urlcat from 'urlcat'
 
 export const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN
 export const UMAMI_ANALYTICS_ID = process.env.NEXT_PUBLIC_UMAMI_ANALYTICS_ID
@@ -25,7 +26,7 @@ export const SEO: NextSeoProps = {
     locale: 'en_US',
     title: `${title} | ${titleTemplate}`,
     description,
-    images: [{ url: `https://${DOMAIN}/images/me.png` }],
+    images: [{ url: urlcat(`https://${DOMAIN}`, '/images/me.png') }],
     site_name: 'aalonso.dev',
   },
   additionalMetaTags: [
