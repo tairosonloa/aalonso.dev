@@ -1,11 +1,12 @@
 import { NextPage } from 'next'
 import { NextSeo, NextSeoProps } from 'next-seo'
 import React from 'react'
+import urlcat from 'urlcat'
 import SocialMediaLinks from '../components/Icons/Icons'
 import { DOMAIN } from '../constants'
 
 const About: NextPage = () => {
-  const url = `https://${DOMAIN}/about`
+  const url = urlcat(`https://${DOMAIN}`, '/about')
   const seo: NextSeoProps = {
     title: 'About',
     canonical: url,

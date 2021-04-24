@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import sanitize from 'sanitize-html'
+import urlcat from 'urlcat'
 import Emoji from '../../components/Emoji'
 import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
 import { DevtoBlogPost } from '../../containers/types/types'
@@ -17,7 +18,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
   const router = useRouter()
   let seo: NextSeoProps = {}
   const updateSeo = () => {
-    const url = `https://${DOMAIN}/blog/${blogPost.slug}`
+    const url = urlcat(`https://${DOMAIN}`, `/blog/${blogPost.slug}`)
     seo = {
       title: blogPost.title,
       canonical: url,

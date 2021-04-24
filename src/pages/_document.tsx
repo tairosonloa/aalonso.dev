@@ -1,5 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import React from 'react'
+import urlcat from 'urlcat'
 import { DOMAIN, SOCIAL_MEDIA_URLS, UMAMI_ANALYTICS_ID } from '../constants'
 
 export default class extends Document {
@@ -65,7 +66,7 @@ export default class extends Document {
             async
             defer
             data-website-id={UMAMI_ANALYTICS_ID}
-            src={`https://analytics.${DOMAIN}/umami.js`}
+            src={urlcat(`https://analytics.${DOMAIN}`, '/umami.js')}
             data-domains={`${DOMAIN}`}
           />
         </Head>
