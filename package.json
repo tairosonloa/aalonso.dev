@@ -14,7 +14,7 @@
     "precommit": "yarn typecheck && yarn format && yarn lint:ts"
   },
   "dependencies": {
-    "@headlessui/react": "0.3.2",
+    "@headlessui/react": "1.0.0",
     "@tailwindcss/typography": "0.4.0",
     "date-fns": "2.21.1",
     "next": "10.1.3",
