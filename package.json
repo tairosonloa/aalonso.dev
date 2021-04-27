@@ -5,6 +5,7 @@
   "author": "Aitor Alonso (@tairosonloa)",
   "scripts": {
     "dev": "next dev",
+    "start": "next start",
     "build": "next build",
     "postbuild": "next-sitemap",
     "build:production": "yarn build && yarn postbuild",
