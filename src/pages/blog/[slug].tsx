@@ -35,9 +35,8 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
 
   // If the page is not yet generated, this will be displayed
   // initially until getStaticProps() finishes running
-  if (router.isFallback) {
-    return <div>Loading...</div>
-  }
+  if (router.isFallback) return <div>Loading...</div>
+
   return (
     <>
       <Head>
@@ -132,7 +131,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 
@@ -143,12 +142,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const res = await fetch(`https://dev.to/api/articles/${selectedBlog[0]?.id}`)
   const blogPost = await res.json()
-
-  if (!devtoBlogPosts) {
-    return {
-      notFound: true,
-    }
-  }
 
   return {
     props: { blogPost },
