@@ -43,7 +43,7 @@
     "postcss": "8.2.15",
     "postcss-import": "14.0.2",
     "prettier": "2.3.0",
-    "sitemap": "6.4.0",
+    "sitemap": "7.0.0",
     "typescript": "4.2.4"
   }
 }
