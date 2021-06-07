@@ -32,6 +32,9 @@ module.exports = {
             strong: {
               color: 'rgba(209, 213, 219)',
             },
+            h2: {
+              color: 'rgba(209, 213, 219)',
+            },
             h3: {
               color: 'rgba(209, 213, 219)',
             },

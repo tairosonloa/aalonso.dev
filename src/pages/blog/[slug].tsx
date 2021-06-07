@@ -93,11 +93,15 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
             </div>
           </div>
           <div
-            className="px-4 sm:px-0 text-gray-300 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2"
+            className="px-4 sm:px-0 w-full mx-auto prose 2xl:prose-lg md:w-3/4 lg:w-1/2 text-gray-300"
             // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: sanitize(blogPost.body_html) }}
+            dangerouslySetInnerHTML={{
+              __html: sanitize(blogPost.body_html, {
+                allowedTags: sanitize.defaults.allowedTags.concat(['img']),
+              }),
+            }}
           />
-          <p className="mt-4 px-4 sm:px-0 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
+          <p className="mt-4 px-4 sm:px-0 w-full mx-auto prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
             --
             <br />
             (You can find comments to this article in{' '}

@@ -4,7 +4,7 @@ import { DEV_TO_API_KEY } from '../constants'
 import { DevtoBlogPost } from '../containers/types/types'
 
 const cache = setupCache({
-  maxAge: 5 * 1000,
+  maxAge: 1000,
 })
 
 const devToApi = axios.create({
