@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo, NextSeoProps } from 'next-seo'
@@ -10,7 +9,7 @@ import urlcat from 'urlcat'
 import Emoji from '../../components/Emoji'
 import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
 import { DevtoBlogPost } from '../../containers/types/types'
-import { getPosts } from '../../utils/blog-utils'
+import { getPost, getPosts } from '../../utils/blog-utils'
 
 export type BlogPageProps = {
   blogPost: DevtoBlogPost
@@ -134,9 +133,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const devtoBlogPosts: DevtoBlogPost[] = await getPosts()
 
-  const selectedBlog = devtoBlogPosts.filter((data) => data?.slug === params?.slug)
+  const selectedBlog = devtoBlogPosts.find((data) => data?.slug === params?.slug)
+  if (!selectedBlog) throw Error('Blog post not found')
 
-  const blogPost = (await axios.get(`https://dev.to/api/articles/${selectedBlog[0]?.id}`)).data
+  const blogPost = await getPost(selectedBlog.id)
 
   return {
     props: { blogPost },

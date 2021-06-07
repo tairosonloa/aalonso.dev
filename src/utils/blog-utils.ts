@@ -19,3 +19,12 @@ export const getPosts = async (): Promise<DevtoBlogPost[]> => {
   ).data
   return posts
 }
+
+export const getPost = async (id: string | number): Promise<DevtoBlogPost> => {
+  const posts = (
+    await devToApi(`https://dev.to/api/articles/${id}`, {
+      headers: { 'api-key': DEV_TO_API_KEY },
+    })
+  ).data
+  return posts
+}
