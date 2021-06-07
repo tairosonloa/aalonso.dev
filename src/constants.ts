@@ -1,10 +1,9 @@
-/* eslint-disable prefer-destructuring */
 import { NextSeoProps } from 'next-seo'
 import urlcat from 'urlcat'
 
 export const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN
 export const UMAMI_ANALYTICS_ID = process.env.NEXT_PUBLIC_UMAMI_ANALYTICS_ID
-export const DEV_TO_API_KEY = process.env.DEV_TO_API_KEY
+export const CLOUDFLARE_ANALYTICS_ID = process.env.NEXT_PUBLIC_CLOUDFLARE_ANALYTICS_ID
 
 const title = 'Full-Stack Software Engineer'
 const titleTemplate = 'Aitor Alonso (aalonso.dev)'
