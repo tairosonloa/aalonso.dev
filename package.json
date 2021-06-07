@@ -17,6 +17,7 @@
   "dependencies": {
     "@headlessui/react": "1.2.0",
     "@tailwindcss/typography": "0.4.1",
+    "axios": "^0.21.1",
     "date-fns": "2.22.1",
     "next": "10.2.3",
     "next-google-fonts": "2.2.0",
