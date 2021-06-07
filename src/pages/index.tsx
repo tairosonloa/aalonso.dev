@@ -5,6 +5,7 @@ import Bio from '../components/Landing/Bio'
 import LatestArticles from '../components/Landing/LatestArticles'
 import { DOMAIN } from '../constants'
 import { AllBlogPosts } from '../containers/types/types'
+import { getPosts } from '../utils/blog-utils'
 
 const Home: NextPage<AllBlogPosts> = (props) => {
   const { devtoBlogPosts } = props
@@ -23,13 +24,6 @@ const Home: NextPage<AllBlogPosts> = (props) => {
       </main>
     </>
   )
-}
-
-const getPosts = async () => {
-  const res = await fetch('https://dev.to/api/articles?username=tairosonloa')
-  const posts = await res.json()
-
-  return posts
 }
 
 export const getStaticProps: GetStaticProps = async () => {

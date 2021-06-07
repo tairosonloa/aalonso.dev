@@ -7,6 +7,7 @@ import React, { useState } from 'react'
 import urlcat from 'urlcat'
 import { DOMAIN } from '../constants'
 import { AllBlogPosts } from '../containers/types/types'
+import { getPosts } from '../utils/blog-utils'
 
 const Blog: NextPage<AllBlogPosts> = (props) => {
   const [searchValue, setSearchValue] = useState('')
@@ -114,13 +115,6 @@ const Blog: NextPage<AllBlogPosts> = (props) => {
       </main>
     </>
   )
-}
-
-const getPosts = async () => {
-  const res = await fetch('https://dev.to/api/articles?username=tairosonloa')
-  const posts = await res.json()
-
-  return posts
 }
 
 export const getStaticProps: GetStaticProps = async () => {
