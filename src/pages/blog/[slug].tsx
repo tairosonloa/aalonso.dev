@@ -118,7 +118,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const devtoBlogPosts: DevtoBlogPost[] = await getPosts()
+  const devtoBlogPosts = await getPosts()
 
   const paths = devtoBlogPosts.map((data) => ({
     params: { slug: data?.slug },
@@ -131,7 +131,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const devtoBlogPosts: DevtoBlogPost[] = await getPosts()
+  const devtoBlogPosts = await getPosts()
 
   const selectedBlog = devtoBlogPosts.find((data) => data?.slug === params?.slug)
   if (!selectedBlog) throw Error('Blog post not found')
