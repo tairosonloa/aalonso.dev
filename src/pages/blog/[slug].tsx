@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo, NextSeoProps } from 'next-seo'
@@ -10,7 +9,7 @@ import urlcat from 'urlcat'
 import Emoji from '../../components/Emoji'
 import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
 import { DevtoBlogPost } from '../../containers/types/types'
-import { getPosts } from '../../utils/blog-utils'
+import { getPost, getPosts } from '../../utils/blog-utils'
 
 export type BlogPageProps = {
   blogPost: DevtoBlogPost
@@ -94,11 +93,15 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
             </div>
           </div>
           <div
-            className="px-4 sm:px-0 text-gray-300 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2"
+            className="px-4 sm:px-0 w-full mx-auto prose 2xl:prose-lg md:w-3/4 lg:w-1/2 text-gray-300"
             // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: sanitize(blogPost.body_html) }}
+            dangerouslySetInnerHTML={{
+              __html: sanitize(blogPost.body_html, {
+                allowedTags: sanitize.defaults.allowedTags.concat(['img']),
+              }),
+            }}
           />
-          <p className="mt-4 px-4 sm:px-0 w-full mx-auto prose md:prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
+          <p className="mt-4 px-4 sm:px-0 w-full mx-auto prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
             --
             <br />
             (You can find comments to this article in{' '}
@@ -119,7 +122,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const devtoBlogPosts: DevtoBlogPost[] = await getPosts()
+  const devtoBlogPosts = await getPosts()
 
   const paths = devtoBlogPosts.map((data) => ({
     params: { slug: data?.slug },
@@ -132,11 +135,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const devtoBlogPosts: DevtoBlogPost[] = await getPosts()
+  const devtoBlogPosts = await getPosts()
 
-  const selectedBlog = devtoBlogPosts.filter((data) => data?.slug === params?.slug)
+  const selectedBlog = devtoBlogPosts.find((data) => data?.slug === params?.slug)
+  if (!selectedBlog) throw Error('Blog post not found')
 
-  const blogPost = (await axios.get(`https://dev.to/api/articles/${selectedBlog[0]?.id}`)).data
+  const blogPost = await getPost(selectedBlog.id)
 
   return {
     props: { blogPost },
