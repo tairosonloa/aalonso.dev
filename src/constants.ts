@@ -4,7 +4,6 @@ import urlcat from 'urlcat'
 
 export const DOMAIN = process.env.NEXT_PUBLIC_DOMAIN
 export const UMAMI_ANALYTICS_ID = process.env.NEXT_PUBLIC_UMAMI_ANALYTICS_ID
-export const CLOUDFLARE_ANALYTICS_ID = process.env.NEXT_PUBLIC_CLOUDFLARE_ANALYTICS_ID
 export const DEV_TO_API_KEY = process.env.DEV_TO_API_KEY
 
 const title = 'Full-Stack Software Engineer'
