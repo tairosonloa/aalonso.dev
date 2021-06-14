@@ -30,7 +30,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
     updateSeo()
   }
   useEffect(() => {
-    updateSeo()
+    if (blogPost) updateSeo()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blogPost])
 
