@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 import urlcat from 'urlcat'
 import { DOMAIN } from '../constants'
 import { AllBlogPosts } from '../containers/types/types'
-import { getPosts } from '../utils/blog-utils'
+import { getAllPosts } from '../utils/blog-utils'
 
 const Blog: NextPage<AllBlogPosts> = (props) => {
   const [searchValue, setSearchValue] = useState('')
@@ -118,7 +118,7 @@ const Blog: NextPage<AllBlogPosts> = (props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const devtoBlogPosts = await getPosts()
+  const devtoBlogPosts = await getAllPosts()
 
   if (!devtoBlogPosts) {
     return {
@@ -128,7 +128,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: { devtoBlogPosts },
-    revalidate: 30,
+    revalidate: 1,
   }
 }
 

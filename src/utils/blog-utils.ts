@@ -15,10 +15,10 @@ const fetchDevToApi = async <T>(url: string): Promise<T> => {
   return (await devToApi(url, { headers: { 'api-key': DEV_TO_API_KEY } })).data
 }
 
-export const getPosts = async (): Promise<DevtoBlogPost[]> => {
-  return fetchDevToApi<DevtoBlogPost[]>('https://dev.to/api/articles/me')
+export const getAllPosts = async (): Promise<DevtoBlogPost[]> => {
+  return fetchDevToApi<DevtoBlogPost[]>('https://dev.to/api/articles/me/published')
 }
 
-export const getPost = async (id: string | number): Promise<DevtoBlogPost> => {
+export const getPostById = async (id: string | number): Promise<DevtoBlogPost> => {
   return fetchDevToApi<DevtoBlogPost>(`https://dev.to/api/articles/${id}`)
 }
