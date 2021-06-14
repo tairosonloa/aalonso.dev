@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 import urlcat from 'urlcat'
 import { DOMAIN } from '../constants'
 import { AllBlogPosts } from '../containers/types/types'
-import { getAllPosts } from '../utils/blog-utils'
+import { getAllPosts } from '../libs/dev-to-api'
 
 const Blog: NextPage<AllBlogPosts> = (props) => {
   const [searchValue, setSearchValue] = useState('')

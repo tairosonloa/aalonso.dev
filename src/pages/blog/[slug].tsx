@@ -9,7 +9,7 @@ import urlcat from 'urlcat'
 import Emoji from '../../components/Emoji'
 import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
 import { DevtoBlogPost } from '../../containers/types/types'
-import { getAllPosts, getPostById } from '../../utils/blog-utils'
+import { getAllPosts, getPostById } from '../../libs/dev-to-api'
 
 export type BlogPageProps = {
   blogPost: DevtoBlogPost
