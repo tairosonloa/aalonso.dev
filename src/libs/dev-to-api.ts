@@ -11,7 +11,7 @@ const fetchDevToApi = async <T>(url: string): Promise<T> => {
 export const getAllPosts = async (): Promise<DevtoBlogPost[]> => {
   return getCached(
     'dev.to.articles',
-    async () => fetchDevToApi<DevtoBlogPost[]>('https://dev.to/api/articles/me'),
+    async () => fetchDevToApi<DevtoBlogPost[]>('https://dev.to/api/articles/me/published'),
     ONE_MINUTE,
   )
 }
