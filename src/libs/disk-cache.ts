@@ -1,4 +1,7 @@
+import os from 'os'
+import path from 'path'
 import sha from 'sha1'
+import { DOMAIN } from '../constants'
 import sleep from '../utils/sleep'
 import { readJsonFile, writeJsonFile } from './fs-read-write'
 
@@ -14,19 +17,19 @@ type CacheEntry<V> =
     }
 
 const getCacheEntry = async <V>(key: string): Promise<CacheEntry<V> | undefined> =>
-  readJsonFile(`./.cache-${sha(key)}.json`)
+  readJsonFile(path.join(os.tmpdir(), `./.cache-${DOMAIN}-${sha(key)}.json`))
 
 const revalidateCache = async <V>(
   key: string,
   fetchFn: () => Promise<V>,
   cacheDurationMs: number,
 ): Promise<V> => {
-  await writeJsonFile(`./.cache-${sha(key)}.json`, {
+  await writeJsonFile(path.join(os.tmpdir(), `./.cache-${DOMAIN}-${sha(key)}.json`), {
     status: 'pending',
     expiresAt: new Date().getTime() + 10000,
   })
   const value = await fetchFn()
-  await writeJsonFile(`./.cache-${sha(key)}.json`, {
+  await writeJsonFile(path.join(os.tmpdir(), `./.cache-${DOMAIN}-${sha(key)}.json`), {
     status: 'done',
     expiresAt: new Date().getTime() + cacheDurationMs,
     value,
