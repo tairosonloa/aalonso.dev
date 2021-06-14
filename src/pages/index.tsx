@@ -5,7 +5,7 @@ import Bio from '../components/Landing/Bio'
 import LatestArticles from '../components/Landing/LatestArticles'
 import { DOMAIN } from '../constants'
 import { AllBlogPosts } from '../containers/types/types'
-import { getPosts } from '../utils/blog-utils'
+import { getAllPosts } from '../libs/dev-to-api'
 
 const Home: NextPage<AllBlogPosts> = (props) => {
   const { devtoBlogPosts } = props
@@ -27,7 +27,7 @@ const Home: NextPage<AllBlogPosts> = (props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const devtoBlogPosts = await getPosts()
+  const devtoBlogPosts = await getAllPosts()
 
   if (!devtoBlogPosts) {
     return {
@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: { devtoBlogPosts },
-    revalidate: 30,
+    revalidate: 1,
   }
 }
 

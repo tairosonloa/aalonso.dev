@@ -9,7 +9,7 @@ import urlcat from 'urlcat'
 import Emoji from '../../components/Emoji'
 import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
 import { DevtoBlogPost } from '../../containers/types/types'
-import { getPost, getPosts } from '../../utils/blog-utils'
+import { getAllPosts, getPostById } from '../../libs/dev-to-api'
 
 export type BlogPageProps = {
   blogPost: DevtoBlogPost
@@ -30,7 +30,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
     updateSeo()
   }
   useEffect(() => {
-    updateSeo()
+    if (blogPost) updateSeo()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blogPost])
 
@@ -122,7 +122,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const devtoBlogPosts = await getPosts()
+  const devtoBlogPosts = await getAllPosts()
 
   const paths = devtoBlogPosts.map((data) => ({
     params: { slug: data?.slug },
@@ -130,21 +130,22 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   }
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const devtoBlogPosts = await getPosts()
+  const devtoBlogPosts = await getAllPosts()
 
   const selectedBlog = devtoBlogPosts.find((data) => data?.slug === params?.slug)
-  if (!selectedBlog) throw Error('Blog post not found')
+  if (!selectedBlog) return { notFound: true }
 
-  const blogPost = await getPost(selectedBlog.id)
+  const blogPost = await getPostById(selectedBlog.id)
+  if (!blogPost) return { notFound: true }
 
   return {
     props: { blogPost },
-    revalidate: 30,
+    revalidate: 1,
   }
 }
 
