@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 import React from 'react'
 import urlcat from 'urlcat'
 import { DOMAIN, SOCIAL_MEDIA_URLS, UMAMI_ANALYTICS_ID } from '../constants'
@@ -60,11 +61,10 @@ export default class extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" key="preconnect-gf" />
           <link rel="dns-prefetch" href="https://fonts.googleapis.com" key="dns-prefetch-gf" />
           {/* Webmentions hidden link */}
-          <link href={SOCIAL_MEDIA_URLS.github} rel="me" />
+          <link rel="me" href={SOCIAL_MEDIA_URLS.github} />
           {/* Umami Web Analytics */}
-          <script
-            async
-            defer
+          <Script
+            strategy="afterInteractive"
             data-website-id={UMAMI_ANALYTICS_ID}
             src={urlcat(`https://analytics.${DOMAIN}`, '/umami.js')}
             data-domains={`${DOMAIN}`}

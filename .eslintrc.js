@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ['plugin:prettier/recommended', 'next', 'next/core-web-vitals'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'next',
+    'next/core-web-vitals',
+  ],
   rules: {
     'prettier/prettier': 'warn',
     'import/prefer-default-export': 0,
@@ -10,6 +15,7 @@ module.exports = {
     // After updating to eslint 4.0.0. See: https://github.com/typescript-eslint/typescript-eslint/issues/2561
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
+    'import/no-anonymous-default-export': 'off',
   },
   env: {
     jest: true,
