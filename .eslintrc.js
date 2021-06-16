@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb-typescript-prettier'],
+  extends: ['plugin:prettier/recommended', 'next', 'next/core-web-vitals'],
   rules: {
     'prettier/prettier': 'warn',
     'import/prefer-default-export': 0,
