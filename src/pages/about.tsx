@@ -33,7 +33,7 @@ const About: NextPage = () => {
                   width="460"
                   height="460"
                   layout="responsive"
-                  priority
+                  loading="eager"
                   className="rounded-xl"
                 />
               </div>

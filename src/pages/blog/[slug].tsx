@@ -62,7 +62,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
                 width="1000"
                 height="420"
                 layout="responsive"
-                priority
+                loading="eager"
                 alt="Blog Cover"
                 className="rounded-lg"
               />
@@ -83,7 +83,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
                     width="56"
                     height="56"
                     layout="responsive"
-                    priority
+                    loading="eager"
                     alt={blogPost.user.name}
                     className="rounded-full"
                   />
