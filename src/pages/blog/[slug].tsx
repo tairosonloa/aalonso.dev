@@ -2,6 +2,7 @@ import { format, parseISO } from 'date-fns'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo, NextSeoProps } from 'next-seo'
 import Head from 'next/head'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import sanitize from 'sanitize-html'
@@ -55,11 +56,17 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
           itemType="http://schema.org/BlogPosting"
         >
           <div className="max-w-3xl w-full mx-auto mb-8 text-left sm:w-11/12 md:w-3/4 lg:w-1/2">
-            <img
-              src={blogPost.cover_image}
-              className="object-fit h-auto md:object-cover w-full md:max-h-64 bg-center rounded-lg"
-              alt="Blog Cover"
-            />
+            <div className="h-auto w-full ">
+              <Image
+                src={blogPost.cover_image}
+                width="1000"
+                height="420"
+                layout="responsive"
+                priority
+                alt="Blog Cover"
+                className="rounded-lg"
+              />
+            </div>
             <h1
               className="px-4 sm:px-0 mt-6 mb-6 text-3xl font-bold leading-tight text-white md:text-4xl"
               itemProp="headline"
@@ -70,11 +77,15 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
 
             <div className="flex justify-between px-4 sm:px-0">
               <div className="flex items-center">
-                <div className="avatar">
-                  <img
-                    className="rounded-full w-14 h-14"
-                    src={blogPost.user.profile_image_90}
+                <div className="avatar w-14 h-14">
+                  <Image
+                    src={blogPost.user.profile_image_90 || '/images/me.png'}
+                    width="56"
+                    height="56"
+                    layout="responsive"
+                    priority
                     alt={blogPost.user.name}
+                    className="rounded-full"
                   />
                 </div>
                 <div className="ml-2">
