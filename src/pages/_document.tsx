@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 import React from 'react'
 import urlcat from 'urlcat'
 import { DOMAIN, SOCIAL_MEDIA_URLS, UMAMI_ANALYTICS_ID } from '../constants'
@@ -63,8 +62,9 @@ export default class extends Document {
           {/* Webmentions hidden link */}
           <link rel="me" href={SOCIAL_MEDIA_URLS.github} />
           {/* Umami Web Analytics */}
-          <Script
-            strategy="afterInteractive"
+          <script
+            async
+            defer
             data-website-id={UMAMI_ANALYTICS_ID}
             src={urlcat(`https://analytics.${DOMAIN}`, '/umami.js')}
             data-domains={`${DOMAIN}`}
