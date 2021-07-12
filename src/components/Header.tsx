@@ -2,6 +2,7 @@
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
 import React, { FC, useState } from 'react'
+import ProgressBar from './ProgressBar'
 
 const Header: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -107,6 +108,9 @@ const Header: FC = () => {
           )}
         </Transition>
       </nav>
+      <ProgressBar
+        enabled={typeof window !== typeof undefined && window.location.pathname.includes('/blog/')}
+      />
     </header>
   )
 }
