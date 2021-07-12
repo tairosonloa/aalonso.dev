@@ -21,7 +21,7 @@ const ProgressBar: FC<ProgressBarProps> = ({ enabled = false }) => {
       window.addEventListener('scroll', updateProgressBar)
       return () => window.removeEventListener('scroll', updateProgressBar)
     }
-  })
+  }, [enabled])
 
   return (
     <div className="w-full h-0.5 bg-transparent">
