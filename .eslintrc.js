@@ -17,6 +17,7 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     'import/no-anonymous-default-export': 'off',
+    '@next/next/no-img-element': 'off',
   },
   env: {
     jest: true,

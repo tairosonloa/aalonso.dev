@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 import { NextSeo, NextSeoProps } from 'next-seo'
-import Image from 'next/image'
 import React from 'react'
 import urlcat from 'urlcat'
 import SocialMediaLinks from '../components/Icons/Icons'
@@ -26,17 +25,7 @@ const About: NextPage = () => {
           </div>
           <div className="items-start space-y-2 lg:grid lg:grid-cols-3 lg:space-y-0 lg:pt-4">
             <div className="flex flex-col items-center pt-6 xl:pt-5">
-              <div className="w-48 h-48">
-                <Image
-                  src="/images/me.png"
-                  alt="avatar"
-                  width="460"
-                  height="460"
-                  layout="responsive"
-                  loading="eager"
-                  className="rounded-xl"
-                />
-              </div>
+              <img src="/images/me.png" alt="avatar" className="w-48 h-48 rounded-xl" />
               <h3 className="pt-4 text-2xl md:text-3xl font-bold leading-8 tracking-tight">
                 Aitor Alonso
               </h3>
