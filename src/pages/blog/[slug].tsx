@@ -5,7 +5,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
-import sanitize from 'sanitize-html'
+import ReactMarkdown from 'react-markdown'
+import gfm from 'remark-gfm'
 import urlcat from 'urlcat'
 import Emoji from '../../components/Emoji'
 import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
@@ -103,15 +104,13 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
               </div>
             </div>
           </div>
-          <div
+          <ReactMarkdown
             className="px-4 sm:px-0 w-full mx-auto prose 2xl:prose-lg md:w-3/4 lg:w-1/2 text-gray-300"
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{
-              __html: sanitize(blogPost.body_html, {
-                allowedTags: sanitize.defaults.allowedTags.concat(['img']),
-              }),
-            }}
-          />
+            remarkPlugins={[gfm]}
+          >
+            {blogPost.body_markdown}
+          </ReactMarkdown>
+
           <p className="mt-4 px-4 sm:px-0 w-full mx-auto prose 2xl:prose-lg md:w-3/4 lg:w-1/2">
             --
             <br />
