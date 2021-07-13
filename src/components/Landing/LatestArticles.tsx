@@ -3,7 +3,7 @@
 import { format, parseISO } from 'date-fns'
 import Link from 'next/link'
 import React, { FC } from 'react'
-import { AllBlogPosts } from '../../containers/types/types'
+import { AllBlogPosts } from '../../types/common'
 import Emoji from '../Emoji'
 import { ClickArrow } from '../Icons/Icons'
 
@@ -27,7 +27,7 @@ const LatestArticles: FC<AllBlogPosts> = ({ devtoBlogPosts }) => {
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-gray-400 prose text-sm leading-6">
-                        <time>{format(parseISO(published_at), 'MMMM dd, yyyy')} </time>
+                        <time>{format(parseISO(published_at), 'MMM dd, yyyy')} </time>
                       </dd>
                     </dl>
                     <span className="text-gray-400 text-sm flex">

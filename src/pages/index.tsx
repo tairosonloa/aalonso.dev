@@ -4,8 +4,8 @@ import React from 'react'
 import Bio from '../components/Landing/Bio'
 import LatestArticles from '../components/Landing/LatestArticles'
 import { DOMAIN } from '../constants'
-import { AllBlogPosts } from '../containers/types/types'
 import { getAllPosts } from '../libs/dev-to-api'
+import { AllBlogPosts } from '../types/common'
 
 const Home: NextPage<AllBlogPosts> = (props) => {
   const { devtoBlogPosts } = props

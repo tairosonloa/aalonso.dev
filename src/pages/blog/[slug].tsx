@@ -8,11 +8,11 @@ import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 import urlcat from 'urlcat'
 import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
-import { DevtoBlogPost } from '../../containers/types/types'
 import { getAllPosts, getPostById } from '../../libs/dev-to-api'
+import { DevtoArticleDetails } from '../../types/devto'
 
 export type BlogPageProps = {
-  blogPost: DevtoBlogPost
+  blogPost: DevtoArticleDetails
 }
 
 const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
@@ -80,7 +80,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
                 <div className="ml-2">
                   <p className="font-semibold"> {blogPost.user.name}</p>
                   <p className="text-sm text-gray-400">
-                    {format(parseISO(blogPost.published_at), 'MMMM dd, yyyy')}
+                    {format(parseISO(blogPost.published_at), 'MMM dd, yyyy')}
                   </p>
                 </div>
               </div>
