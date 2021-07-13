@@ -26,7 +26,7 @@ const LatestArticles: FC<AllBlogPosts> = ({ devtoBlogPosts }) => {
                   <div className="flex justify-between mb-1">
                     <dl>
                       <dt className="sr-only">Published on</dt>
-                      <dd className="text-gray-400 prose text-sm  leading-6">
+                      <dd className="text-gray-400 prose text-sm leading-6">
                         <time>{format(parseISO(published_at), 'MMMM dd, yyyy')} </time>
                       </dd>
                     </dl>

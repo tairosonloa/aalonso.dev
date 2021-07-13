@@ -7,7 +7,6 @@ import React, { useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 import urlcat from 'urlcat'
-import Emoji from '../../components/Emoji'
 import { DOMAIN, SOCIAL_MEDIA_URLS } from '../../constants'
 import { DevtoBlogPost } from '../../containers/types/types'
 import { getAllPosts, getPostById } from '../../libs/dev-to-api'
@@ -85,10 +84,9 @@ const BlogPage: NextPage<BlogPageProps> = ({ blogPost }) => {
                   </p>
                 </div>
               </div>
-              <div className="self-center">
+              <div className="self-center gap-x-5">
                 <p className="text-sm flex justify-end text-gray-400">
-                  {blogPost.public_reactions_count}&nbsp;
-                  <Emoji emoji="❤️" label="likes" />
+                  {blogPost.reading_time_minutes}&nbsp;min&nbsp;read
                 </p>
               </div>
             </div>
